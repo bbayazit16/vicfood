@@ -16,6 +16,8 @@ export default function Time() {
     const date = currentDayUTC()
     const week = currentWeek()
 
+    date.setDate(date.getDate() + 1)
+
     const dayOfWeek = new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(date)
 
     return (
