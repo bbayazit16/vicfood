@@ -61,7 +61,7 @@ def parse_menu_item(item: element.Tag) -> Dict[str, any]:
     # EXPERIMENTAL: catch any remaining parentheses
     # Noticed that some menu items have double parentheses in the original menu,
     # i.e sides of Week 1 Tuesday Lunch:
-    # 
+    #
     # Roasted Broccoli & Carrots
     # (GF))(VGN)
     menu_item_text = menu_item_text.strip().replace(")", "").replace("(", "")
