@@ -31,7 +31,7 @@ def get_food_type(item: BeautifulSoup) -> str:
         case "entrée":
             return "entree"
         case "vegetarianentrée":
-            return "vegetarian_entree"
+            return "vegetarianentree"
 
     return normalized_text
 
@@ -39,6 +39,7 @@ def get_food_type(item: BeautifulSoup) -> str:
 def parse_menu_item(item: element.Tag) -> Dict[str, any]:
     food_type: str = get_food_type(item)
 
+    # Regex pattern to extract (item): \(.+\)
     tags: List[str] = []
     if "(H)" in item.text:
         tags.append("H")
@@ -95,7 +96,8 @@ def scrape_menus() -> List[List[Dict[str, List[Dict[str, str]]]]]:
 
                 for ul_element in ul_elements:
                     category = "lunch" if "Lunch" in ul_element.find_previous(
-                        'h3').text else "dinner"
+                        'h3'
+                    ).text else "dinner"
                     menu_items = ul_element.find_all("li")
 
                     for item in menu_items:
