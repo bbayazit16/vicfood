@@ -10,7 +10,7 @@ const ALL_TAGS: { icon: Tag; label: string }[] = [
 
 export default function Footer() {
     return (
-        <footer className="p-4 border-t border-gray-800">
+        <footer className="p-4 border-t border-gray-800 dark:border-gray-200">
             <p className="text-center">
                 VicFood is not affiliated with Victoria College or the University of Toronto. All
                 provided data is as is, with no guarantee of accuracy.

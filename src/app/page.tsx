@@ -19,6 +19,7 @@ export default function Home() {
                 <Button
                     onClick={() =>
                         setDay(prevDay => {
+                            if (prevDay.getTime() < new Date(2023, 8, 4).getTime()) return prevDay
                             const newDay = new Date(prevDay)
                             newDay.setDate(newDay.getDate() - 1)
                             return newDay
@@ -28,7 +29,7 @@ export default function Home() {
                     Previous Day
                 </Button>
 
-                <div className="m-auto">{getDayString(day) || ""}</div>
+                <p className="flex items-center">{getDayString(day) || ""}</p>
 
                 <Button
                     onClick={() =>

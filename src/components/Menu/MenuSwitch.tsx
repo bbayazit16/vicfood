@@ -15,7 +15,7 @@ export default function MenuSwitch({ selectedMeal, onSwitch }: MenuSwitchProps) 
                     <span className="uppercase">{meal}</span>
                     <div className="relative overflow-hidden h-0.5 w-full">
                         <div
-                            className={`absolute bottom-0 left-0 h-0.5 bg-black transition-all duration-300 ease-in-out`}
+                            className={`absolute bottom-0 left-0 h-0.5 dark:bg-white bg-black transition-all duration-300 ease-in-out`}
                             style={{ width: selectedMeal === meal ? "100%" : "0%" }}
                         />
                     </div>

@@ -12,7 +12,7 @@ function currentWeek(): number {
     return (Math.floor(dayDifference / 7) % 3) + 1
 }
 
-export default function Time() {
+export default function TimeText() {
     const date = currentDayUTC()
     const week = currentWeek()
 

@@ -61,7 +61,7 @@ export default function Menu({ menu }: MenuProps) {
                                 {itemsOfType.map((item, index) => (
                                     <div key={index} className="flex justify-between">
                                         <span className="font-normal">{item.item}</span>
-                                        <span className="font-normal">
+                                        <span className="flex items-center font-normal">
                                             <Icons icons={normalizeTags(item.tags, type)} />
                                         </span>
                                     </div>
