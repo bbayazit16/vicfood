@@ -88,7 +88,6 @@ export default function Menu({ menu, dateData }: MenuProps) {
                     }
 
                     if (itemsOfType.length > 0) {
-                        // console.log(itemsOfType, type)
                         return (
                             <div key={type} className="mb-8">
                                 <h3 className="text-lg font-bold uppercase tracking-wide mb-5">
