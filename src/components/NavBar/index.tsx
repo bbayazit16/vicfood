@@ -34,7 +34,7 @@ function currentlyServing() {
 }
 
 export default function NavBar() {
-    const verticalBar = <span className="hidden sm:inline mx-2 select-none">|</span>
+    const verticalBar = <span className="hidden sm:inline mx-2">|</span>
 
     return (
         <nav className="flex flex-col sm:flex-row items-center justify-between w-full p-2 md:p-6 border-b md:text-base border-gray-800 dark:border-gray-200">

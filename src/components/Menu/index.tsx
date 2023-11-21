@@ -72,7 +72,21 @@ export default function Menu({ menu, dateData }: MenuProps) {
                 </div>
             ) : (
                 Object.keys(FOOD_TYPE_TITLES).map(type => {
-                    const itemsOfType = menu[mealType].filter(item => item.foodtype === type)
+                    let itemsOfType = menu[mealType].filter(item => item.foodtype === type)
+
+                    // if mealType is dinner, byoglutenfree and soups will always be missing.
+                    // they should be added from the lunch menu
+                    // This should optimally be handled in the scraping process, but I adopted
+                    // this approach to keep the scraping process independent from the UI. Scraper
+                    // should display the data as is, and the UI should handle the data as it sees fit.
+                    // However, I will consider changing this in the future.
+                    if (mealType === "dinner" && (type === "byoglutenfree" || type === "soups")) {
+                        itemsOfType = [
+                            ...itemsOfType,
+                            ...menu.lunch.filter(item => item.foodtype === type),
+                        ]
+                    }
+
                     if (itemsOfType.length > 0) {
                         return (
                             <div key={type} className="mb-8">
