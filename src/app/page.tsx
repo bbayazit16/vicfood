@@ -21,13 +21,13 @@ function getDayString(date: TorontoDate): string | null {
 }
 
 export default function Home() {
-    const [day, setDay] = useState<TorontoDate>(TorontoDate.today())
+    const [day, setDay] = useState<TorontoDate>(TorontoDate.now())
 
     const menu = getMenu(day)
 
     return (
         <main className="flex-grow p-4 md:p-8 md:px-16">
-            <div className="flex flex-col md:flex-row justify-between m-4 space-y-4 md:space-y-0">
+            <div className="flex flex-row justify-between items-center m-4">
                 <Button
                     onClick={() =>
                         setDay(day => {
@@ -38,10 +38,13 @@ export default function Home() {
                         })
                     }
                 >
-                    Previous Day
+                    {/* <>
+                    </> */}
+                    <span className="text-sm hidden md:inline md:text-base">Previous Day</span>
+                    <span className="text-sm inline md:hidden md:text-base">Prev Day</span>
                 </Button>
 
-                <p className="flex items-center justify-center">{getDayString(day) || ""}</p>
+                <p className="text-center text-sm md:text-base">{getDayString(day) || ""}</p>
 
                 <Button
                     onClick={() =>
@@ -54,7 +57,7 @@ export default function Home() {
                         })
                     }
                 >
-                    Next Day
+                    <span className="text-sm md:text-base">Next Day</span>
                 </Button>
             </div>
             {menu ? (

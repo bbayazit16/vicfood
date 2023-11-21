@@ -11,11 +11,11 @@ const ALL_TAGS: { icon: Tag; label: string }[] = [
 export default function Footer() {
     return (
         <footer className="p-4 border-t border-gray-800 dark:border-gray-200">
-            <p className="text-center">
+            <p className="text-center text-gray-800 dark:text-gray-200 text-sm">
                 VicFood is not affiliated with Victoria College or the University of Toronto. All
-                provided data is as is, with no guarantee of accuracy.
+                data provided is as is, with no guarantee of accuracy.
             </p>
-            <div className="flex flex-col md:flex-row items-center justify-center space-y-2 md:space-y-0 md:space-x-4 mt-2">
+            <div className="grid grid-cols-2 place-items-center md:flex md:justify-center md:space-x-4 mt-2">
                 {ALL_TAGS.map((tag, index) => (
                     <div key={index} className="flex flex-row items-center space-x-2">
                         <Icons icons={[tag.icon]} />

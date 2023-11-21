@@ -4,6 +4,7 @@ import Icons from "./Icons"
 import MenuSwitch from "./MenuSwitch"
 import getReviewsForDay from "@/firebase"
 import Embed from "./Embed"
+import TorontoDate from "@/TorontoDate"
 
 import { useEffect, useState } from "react"
 
@@ -15,17 +16,12 @@ const FOOD_TYPE_TITLES: { [key: string]: string } = {
     soups: "Soups",
 }
 
-function getTorontoTime() {
-    const torontoTime = new Date().toLocaleString("en-US", { timeZone: "America/Toronto" })
-    return new Date(torontoTime)
-}
-
 function shouldDisplayLunch(): boolean {
-    const now = getTorontoTime()
-    const lunchEndTime = new Date(now)
-    lunchEndTime.setHours(15, 30, 0, 0) // 3:30 p.m.
+    const now = TorontoDate.now()
+    const { year, month, day } = now.getDateData()
+    const lunchEndTime = TorontoDate.customDate(year, month, day, 15, 30)
 
-    return now < lunchEndTime // Before 3:30 p.m., display lunch
+    return now.isBefore(lunchEndTime) // Before 3:30 p.m., display lunch
 }
 
 function normalizeTags(tags: Tag[], type: string): Tag[] {
@@ -70,6 +66,9 @@ export default function Menu({ menu, dateData }: MenuProps) {
                     <div className="flex justify-center">
                         <Embed review={review} />
                     </div>
+                    <p className="text-center text-gray-800 dark:text-gray-200 text-sm">
+                        Reviews supplied by Burwash Food Review.
+                    </p>
                 </div>
             ) : (
                 Object.keys(FOOD_TYPE_TITLES).map(type => {

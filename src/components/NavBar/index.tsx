@@ -4,17 +4,11 @@ import TimeText from "./TimeText"
 import ThemeHandler from "./ThemeHandler"
 
 import { LuGithub } from "react-icons/lu"
-
-function getTorontoTime() {
-    const torontoTime = new Date().toLocaleString("en-US", { timeZone: "America/Toronto" })
-    return new Date(torontoTime)
-}
+import TorontoDate from "@/TorontoDate"
 
 function currentlyServing() {
-    const now = getTorontoTime()
-    const day = now.getDay()
-    const hour = now.getHours()
-    const minute = now.getMinutes()
+    const now = TorontoDate.now()
+    const { day, hour, minute } = now.getTimeData()
 
     if (day >= 1 && day <= 5) {
         // Monday - Friday
@@ -40,17 +34,21 @@ function currentlyServing() {
 }
 
 export default function NavBar() {
-    const verticalBar = <span className="hidden sm:inline mx-2">|</span>
+    const verticalBar = <span className="hidden sm:inline mx-2 select-none">|</span>
 
     return (
-        <nav className="flex flex-col sm:flex-row items-center justify-between w-full p-6 border-b border-gray-800 dark:border-gray-200">
+        <nav className="flex flex-col sm:flex-row items-center justify-between w-full p-2 md:p-6 border-b md:text-base border-gray-800 dark:border-gray-200">
             <div className="flex flex-col sm:flex-row items-center mb-4 sm:mb-0">
-                <Link href="/">vicfood.ca</Link>
-                <span>
-                    {verticalBar}Burwash Dining Hall{verticalBar}
-                </span>
-                Currently Serving:{" "}
-                <span className="font-semibold">&nbsp; {currentlyServing()}</span>
+                <div className="flex flex-row space-x-2 md:space-x-0">
+                    <Link href="/">vicfood.ca</Link>
+                    <span>
+                        {verticalBar}Burwash Dining Hall{verticalBar}
+                    </span>
+                </div>
+                <div className="flex flex-row space-x-2 md:space-x-0">
+                    Currently Serving:{" "}
+                    <span className="font-semibold">&nbsp; {currentlyServing()}</span>
+                </div>
             </div>
             <div className="flex flex-row space-x-4">
                 <div className="flex flex-row items-center justify-center space-x-4 m-auto">

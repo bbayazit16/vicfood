@@ -3,11 +3,11 @@ import moment from "moment-timezone"
 export default class TorontoDate {
     private momentInstance: moment.Moment
 
-    constructor(date?: string | Date) {
+    private constructor(date?: string | Date) {
         this.momentInstance = moment.tz(date, "America/Toronto")
     }
 
-    static today(): TorontoDate {
+    static now(): TorontoDate {
         return new TorontoDate()
     }
 
@@ -22,6 +22,14 @@ export default class TorontoDate {
             year: this.momentInstance.year(),
             month: this.momentInstance.month() + 1,
             day: this.momentInstance.date(),
+        }
+    }
+
+    getTimeData(): { day: number; hour: number; minute: number } {
+        return {
+            day: this.momentInstance.date(),
+            hour: this.momentInstance.hour(),
+            minute: this.momentInstance.minute(),
         }
     }
 
