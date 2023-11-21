@@ -6,34 +6,34 @@ import { LuMoon } from "react-icons/lu"
 import { LuSun } from "react-icons/lu"
 
 function detectTheme() {
-    if (localStorage.getItem("lightTheme")) {
-        document.documentElement.classList.remove("dark")
-    } else {
+    if (localStorage.getItem("darkTheme")) {
         document.documentElement.classList.add("dark")
+    } else {
+        document.documentElement.classList.remove("dark")
     }
 }
 
 export default function ThemeHandler() {
-    const [icon, setIcon] = useState<JSX.Element>(<LuSun />)
+    const [icon, setIcon] = useState<JSX.Element>(<LuMoon />)
 
     function updateTheme() {
-        localStorage.getItem("lightTheme")
-            ? localStorage.removeItem("lightTheme")
-            : localStorage.setItem("lightTheme", "1")
+        localStorage.getItem("darkTheme")
+            ? localStorage.removeItem("darkTheme")
+            : localStorage.setItem("darkTheme", "1")
         detectTheme()
-        if (localStorage.getItem("lightTheme")) {
-            setIcon(<LuMoon />)
-        } else {
+        if (localStorage.getItem("darkTheme")) {
             setIcon(<LuSun />)
+        } else {
+            setIcon(<LuMoon />)
         }
     }
 
     useEffect(() => {
         detectTheme()
-        if (localStorage.getItem("lightTheme")) {
-            setIcon(<LuMoon />)
-        } else {
+        if (localStorage.getItem("darkTheme")) {
             setIcon(<LuSun />)
+        } else {
+            setIcon(<LuMoon />)
         }
     }, [])
 

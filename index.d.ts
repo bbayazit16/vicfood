@@ -12,3 +12,8 @@ type DayMeal = {
 }
 
 type Menu = DayMeal[][]
+
+type IGReview = {
+    lunch?: string
+    dinner?: string
+}

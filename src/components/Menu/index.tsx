@@ -1,7 +1,11 @@
+"use client"
+
 import Icons from "./Icons"
 import MenuSwitch from "./MenuSwitch"
+import getReviewsForDay from "@/firebase"
+import Embed from "./Embed"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const FOOD_TYPE_TITLES: { [key: string]: string } = {
     entree: "Entrees",
@@ -37,41 +41,61 @@ function normalizeTags(tags: Tag[], type: string): Tag[] {
 
 type MenuProps = {
     menu: DayMeal
+    dateData: {
+        year: number
+        month: number
+        day: number
+    }
 }
 
-export default function Menu({ menu }: MenuProps) {
-    const [mealType, setMealType] = useState<"lunch" | "dinner">(
+export default function Menu({ menu, dateData }: MenuProps) {
+    const [mealType, setMealType] = useState<"lunch" | "dinner" | "reviews">(
         shouldDisplayLunch() ? "lunch" : "dinner"
     )
+    const [review, setReview] = useState<IGReview | undefined>()
+
+    useEffect(() => {
+        getReviewsForDay(dateData.year, dateData.month, dateData.day).then(review => {
+            setReview(review)
+        })
+    }, [dateData])
 
     return (
         <div className="p-4">
             <div className="flex justify-center">
                 <MenuSwitch selectedMeal={mealType} onSwitch={setMealType} />
             </div>
-            {Object.keys(FOOD_TYPE_TITLES).map(type => {
-                const itemsOfType = menu[mealType].filter(item => item.foodtype === type)
-                if (itemsOfType.length > 0) {
-                    return (
-                        <div key={type} className="mb-8">
-                            <h3 className="text-lg font-bold uppercase tracking-wide mb-5">
-                                {FOOD_TYPE_TITLES[type]}
-                            </h3>
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-32 gap-y-6">
-                                {itemsOfType.map((item, index) => (
-                                    <div key={index} className="flex justify-between">
-                                        <span className="font-normal">{item.item}</span>
-                                        <span className="flex items-center font-normal">
-                                            <Icons icons={normalizeTags(item.tags, type)} />
-                                        </span>
-                                    </div>
-                                ))}
+            {mealType === "reviews" ? (
+                <div className="m-auto">
+                    <div className="flex justify-center">
+                        <Embed review={review} />
+                    </div>
+                </div>
+            ) : (
+                Object.keys(FOOD_TYPE_TITLES).map(type => {
+                    const itemsOfType = menu[mealType].filter(item => item.foodtype === type)
+                    if (itemsOfType.length > 0) {
+                        return (
+                            <div key={type} className="mb-8">
+                                <h3 className="text-lg font-bold uppercase tracking-wide mb-5">
+                                    {FOOD_TYPE_TITLES[type]}
+                                </h3>
+                                <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-32 gap-y-6">
+                                    {itemsOfType.map((item, index) => (
+                                        <div key={index} className="flex justify-between">
+                                            <span className="font-normal">{item.item}</span>
+                                            <span className="flex items-center font-normal">
+                                                <Icons icons={normalizeTags(item.tags, type)} />
+                                            </span>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                    )
-                }
-                return null
-            })}
+                        )
+                    }
+                    return null
+                })
+            )}
         </div>
     )
 }

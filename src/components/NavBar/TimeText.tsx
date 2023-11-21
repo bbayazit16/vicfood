@@ -1,30 +1,14 @@
-import { currentDayUTC } from "@/menu"
-
-function currentWeek(): number {
-    const date = currentDayUTC()
-
-    let startDate = new Date("2023-09-04")
-
-    let timeDifference = date.getTime() - startDate.getTime()
-
-    let dayDifference = timeDifference / (1000 * 3600 * 24)
-
-    return (Math.floor(dayDifference / 7) % 3) + 1
-}
+import TorontoDate from "@/TorontoDate"
 
 export default function TimeText() {
-    const date = currentDayUTC()
-    const week = currentWeek()
-
-    date.setDate(date.getDate() + 1)
-
-    const dayOfWeek = new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(date)
+    const dayOffset = TorontoDate.dayOffset(TorontoDate.today(), TorontoDate.customDate(2023, 9, 4))
+    const week = (Math.floor(dayOffset / 7) % 3) + 1
 
     return (
         <span>
             Week {week}
             <span className="mx-2">|</span>
-            {dayOfWeek}
+            {TorontoDate.today().getCurrentDayAsString()}
         </span>
     )
 }

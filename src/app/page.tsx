@@ -1,15 +1,27 @@
 "use client"
 
+import TorontoDate from "@/TorontoDate"
 import Button from "@/components/Button"
 import Menu from "@/components/Menu"
-import getDayString from "@/formattime"
-import getMenu from "@/menu"
+import getMenu, { getMenuIndices } from "@/menu"
 
-import { currentDayUTC } from "@/menu"
 import { useState } from "react"
 
+function getDayString(date: TorontoDate): string | null {
+    const indices = getMenuIndices(date)
+
+    if (!indices) return null
+
+    const { menu } = indices
+
+    const dayOfWeek = date.getCurrentDayAsString()
+    const { day, month } = date.getDateData()
+
+    return `${dayOfWeek} ${month}/${day} | Week ${menu + 1} Menu`
+}
+
 export default function Home() {
-    const [day, setDay] = useState(currentDayUTC())
+    const [day, setDay] = useState<TorontoDate>(TorontoDate.today())
 
     const menu = getMenu(day)
 
@@ -18,11 +30,11 @@ export default function Home() {
             <div className="flex flex-col md:flex-row justify-between m-4 space-y-4 md:space-y-0">
                 <Button
                     onClick={() =>
-                        setDay(prevDay => {
-                            if (prevDay.getTime() < new Date(2023, 8, 4).getTime()) return prevDay
-                            const newDay = new Date(prevDay)
-                            newDay.setDate(newDay.getDate() - 1)
-                            return newDay
+                        setDay(day => {
+                            if (day.isBefore(TorontoDate.customDate(2023, 9, 4))) return day
+                            const prevDay = day.clone()
+                            prevDay.subtractDays(1)
+                            return prevDay
                         })
                     }
                 >
@@ -35,9 +47,10 @@ export default function Home() {
                     onClick={() =>
                         setDay(prevDay => {
                             if (!menu) return prevDay
-                            const newDay = new Date(prevDay)
-                            newDay.setDate(newDay.getDate() + 1)
-                            return newDay
+
+                            const nextDay = prevDay.clone()
+                            nextDay.addDays(1)
+                            return nextDay
                         })
                     }
                 >
@@ -45,7 +58,7 @@ export default function Home() {
                 </Button>
             </div>
             {menu ? (
-                <Menu menu={menu} />
+                <Menu menu={menu} dateData={day.getDateData()} />
             ) : (
                 <div className="flex flex-col items-center justify-center">
                     <h1 className="text-2xl font-semibold">Menu Not Available 🥲</h1>
