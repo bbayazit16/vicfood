@@ -8,7 +8,7 @@ This is the source code for [vicfood.ca](https://vicfood.ca).
 
 ## Run & Build
 
-This website uses Next.js, React, Typescript, and TailwinDCSS.
+This website uses Next.js, React, Typescript, and TailwindCSS. It is hosted on Vercel.
 
 ```sh
 yarn dev # run
