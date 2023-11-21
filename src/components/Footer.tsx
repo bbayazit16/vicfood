@@ -13,7 +13,7 @@ export default function Footer() {
         <footer className="p-4 border-t border-gray-800 dark:border-gray-200">
             <p className="text-center text-gray-800 dark:text-gray-200 text-sm">
                 VicFood is not affiliated with Victoria College or the University of Toronto. All
-                data provided is as is, with no guarantee of accuracy.
+                data is provided as is, with no guarantee of accuracy.
             </p>
             <div className="grid grid-cols-2 place-items-center md:flex md:justify-center md:space-x-4 mt-2">
                 {ALL_TAGS.map((tag, index) => (
