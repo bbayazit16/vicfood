@@ -11,6 +11,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
     title: "VicFood",
     description: "See the daily Burwash Dining Hall menu",
+    icons: {
+        shortcut: "/favicon.ico",
+    },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

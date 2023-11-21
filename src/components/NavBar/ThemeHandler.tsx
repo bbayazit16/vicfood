@@ -1,9 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-
-import { LuMoon } from "react-icons/lu"
-import { LuSun } from "react-icons/lu"
+import { LuMoon, LuSun } from "react-icons/lu"
 
 function detectTheme() {
     if (localStorage.getItem("darkTheme")) {
@@ -22,8 +20,10 @@ export default function ThemeHandler() {
             : localStorage.setItem("darkTheme", "1")
         detectTheme()
         if (localStorage.getItem("darkTheme")) {
+            document.querySelector('meta[name="theme-color"]')?.setAttribute("content", "#18181B")
             setIcon(<LuSun />)
         } else {
+            document.querySelector('meta[name="theme-color"]')?.setAttribute("content", "#ffffff")
             setIcon(<LuMoon />)
         }
     }
