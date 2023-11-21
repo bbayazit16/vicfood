@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# vicfood.ca
 
-## Getting Started
+VicFood displays the food currently served at the University of Toronto, Victoria University's Burwash Dining Hall.
 
-First, run the development server:
+Motivation: As a student at Victoria College, I found it hard to check what food is being served at Burwash Dining Hall. The only way to check the menu was to go on the Victoria College website, click on the Burwash Dining Hall page, and then click on the menu, and then choose the correct week, and then the day, etc. This was a very tedious process, and I wanted to make it easier for myself and other students to check the menu. VicFood automatically displays the menu for the current day, and also allows users to check the menu for other days.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+This is the source code for [vicfood.ca](https://vicfood.ca).
+
+## Run & Build
+
+This website uses Next.js, React, Typescript, and TailwinDCSS.
+
+```sh
+yarn dev # run
+yarn build # build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## License
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[AGPL-3.0-only](LICENSE)

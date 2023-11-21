@@ -41,7 +41,7 @@ export default function Home() {
                     Previous Day
                 </Button>
 
-                <p className="flex items-center">{getDayString(day) || ""}</p>
+                <p className="flex items-center justify-center">{getDayString(day) || ""}</p>
 
                 <Button
                     onClick={() =>

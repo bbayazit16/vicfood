@@ -3,6 +3,8 @@ import Link from "next/link"
 import TimeText from "./TimeText"
 import ThemeHandler from "./ThemeHandler"
 
+import { LuGithub } from "react-icons/lu"
+
 function getTorontoTime() {
     const torontoTime = new Date().toLocaleString("en-US", { timeZone: "America/Toronto" })
     return new Date(torontoTime)
@@ -50,7 +52,18 @@ export default function NavBar() {
                 Currently Serving:{" "}
                 <span className="font-semibold">&nbsp; {currentlyServing()}</span>
             </div>
-            <div className="flex flex-row space-x-2">
+            <div className="flex flex-row space-x-4">
+                <div className="flex flex-row items-center justify-center space-x-4 m-auto">
+                    <a
+                        href="https://github.com/bbayazit16/vicfood"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex flex-row items-center space-x-2"
+                    >
+                        <LuGithub />
+                        <span>GitHub</span>
+                    </a>
+                </div>
                 <TimeText />
                 <div className="m-auto text-2xl">
                     <ThemeHandler />
