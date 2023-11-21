@@ -7,7 +7,7 @@ import getMenu, { getMenuIndices } from "@/menu"
 
 import { useState } from "react"
 
-function getDayString(date: TorontoDate): string | null {
+function getDayString(date: TorontoDate): string[] | null {
     const indices = getMenuIndices(date)
 
     if (!indices) return null
@@ -17,7 +17,7 @@ function getDayString(date: TorontoDate): string | null {
     const dayOfWeek = date.getCurrentDayAsString()
     const { day, month } = date.getDateData()
 
-    return `${dayOfWeek} ${month}/${day} | Week ${menu + 1} Menu`
+    return [`${dayOfWeek} ${month}/${day}`, `Week ${menu + 1} Menu`]
 }
 
 export default function Home() {
@@ -25,9 +25,11 @@ export default function Home() {
 
     const menu = getMenu(day)
 
+    const [dayString, weekString] = getDayString(day) || ["", ""]
+
     return (
         <main className="flex-grow p-4 md:p-8 md:px-16">
-            <div className="flex flex-row justify-between items-center m-4">
+            <div className="flex flex-row justify-between items-center sm:m-2 md:m-4">
                 <Button
                     onClick={() =>
                         setDay(day => {
@@ -38,13 +40,15 @@ export default function Home() {
                         })
                     }
                 >
-                    {/* <>
-                    </> */}
                     <span className="text-sm hidden md:inline md:text-base">Previous Day</span>
                     <span className="text-sm inline md:hidden md:text-base">Prev Day</span>
                 </Button>
 
-                <p className="text-center text-sm md:text-base">{getDayString(day) || ""}</p>
+                <div className="flex flex-col md:flex-row items-center justify-center m-auto">
+                    <span className="text-center text-sm md:text-base">{dayString}</span>
+                    <span className="mx-2 hidden md:inline">|</span>
+                    <span className="text-center text-sm md:text-base">{weekString}</span>
+                </div>
 
                 <Button
                     onClick={() =>
