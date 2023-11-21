@@ -10,7 +10,7 @@ import { useEffect, useState } from "react"
 
 const FOOD_TYPE_TITLES: { [key: string]: string } = {
     entree: "Entrees",
-    vegeterianentree: "Vegetarian Entrees",
+    vegetarianentree: "Vegetarian Entrees",
     byoglutenfree: "Gluten-Free Options",
     sides: "Side Dishes",
     soups: "Soups",
@@ -88,6 +88,7 @@ export default function Menu({ menu, dateData }: MenuProps) {
                     }
 
                     if (itemsOfType.length > 0) {
+                        // console.log(itemsOfType, type)
                         return (
                             <div key={type} className="mb-8">
                                 <h3 className="text-lg font-bold uppercase tracking-wide mb-5">

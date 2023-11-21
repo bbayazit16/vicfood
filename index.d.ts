@@ -1,7 +1,7 @@
 type Tag = "GF" | "H" | "VEG" | "DF" | "VGN"
 
 type MenuItem = {
-    foodtype: "entree" | "vegeterianentree" | "byoglutenfree" | "sides" | "soups"
+    foodtype: "entree" | "vegetarianentree" | "byoglutenfree" | "sides" | "soups"
     item: string
     tags: Tag[]
 }
