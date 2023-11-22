@@ -2,9 +2,9 @@ import Link from "next/link"
 
 import TimeText from "./TimeText"
 import ThemeHandler from "./ThemeHandler"
+import Serving from "./Serving"
 
 import { LuGithub } from "react-icons/lu"
-import Serving from "./Serving"
 
 export default function NavBar() {
     const verticalBar = <span className="inline mx-2">|</span>
@@ -41,5 +41,3 @@ export default function NavBar() {
         </nav>
     )
 }
-
-export const cache = "dynamic"
