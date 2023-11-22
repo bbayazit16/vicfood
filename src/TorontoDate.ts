@@ -17,6 +17,48 @@ export default class TorontoDate {
         )
     }
 
+    public minute(): number {
+        return this.momentInstance.minute()
+    }
+
+    public hour(): number {
+        return this.momentInstance.hour()
+    }
+
+    public day(): number {
+        return this.momentInstance.date()
+    }
+
+    public month(): number {
+        return this.momentInstance.month() + 1
+    }
+
+    public year(): number {
+        return this.momentInstance.year()
+    }
+
+    isWeekday(): boolean {
+        return !this.isWeekend()
+    }
+
+    isWeekend(): boolean {
+        const dayOfWeek = this.momentInstance.day()
+        return dayOfWeek === 0 || dayOfWeek === 6
+    }
+
+    timeBetween(
+        startHour: number,
+        startMinute: number,
+        endHour: number,
+        endMinute: number
+    ): boolean {
+        const currentTime = this.momentInstance.clone()
+        const startTime = this.momentInstance.clone().hour(startHour).minute(startMinute).second(0)
+        const endTime = this.momentInstance.clone().hour(endHour).minute(endMinute).second(0)
+
+        return currentTime.isSameOrAfter(startTime) && currentTime.isBefore(endTime)
+    }
+
     getDateData(): { year: number; month: number; day: number } {
         return {
             year: this.momentInstance.year(),
