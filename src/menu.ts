@@ -15,7 +15,7 @@ export default function getMenu(date: TorontoDate): DayMeal | null {
 // Possible refactor: hardcode in switch case
 export function getMenuIndices(date: TorontoDate): { menu: number; day: number } | null {
     date.dayStart()
-    if (TorontoDate.customDate(2023, 12, 25).isBefore(date)) return null
+    if (TorontoDate.customDate(2023, 12, 20).isBefore(date)) return null
 
     const startDate = TorontoDate.customDate(2023, 9, 4)
 
