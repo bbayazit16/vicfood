@@ -28,12 +28,12 @@ export default function Embed({ review }: EmbedProps) {
         >
             {review.lunch && (
                 <div className="flex flex-col items-center justify-start">
-                    <InstagramEmbed url={review.lunch} width={328} />
+                    <InstagramEmbed key={review.lunch} url={review.lunch} width={328} />
                 </div>
             )}
             {review.dinner && (
                 <div className="flex flex-col items-center justify-start">
-                    <InstagramEmbed url={review.dinner} width={328} />
+                    <InstagramEmbed key={review.dinner} url={review.dinner} width={328} />
                 </div>
             )}
         </div>
