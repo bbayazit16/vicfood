@@ -20,7 +20,10 @@ export default async function getReviewsForDay(
     month: number,
     day: number
 ): Promise<IGReview> {
-    const documentId = `${year}-${month}-${day}`
+    const paddedMonth = month.toString().padStart(2, "0")
+    const paddedDay = day.toString().padStart(2, "0")
+
+    const documentId = `${year}-${paddedMonth}-${paddedDay}`
 
     if (cache[documentId]) {
         return cache[documentId]
