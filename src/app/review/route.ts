@@ -17,6 +17,7 @@ if (!admin.apps.length) {
         credential: admin.credential.cert(cred),
     })
 }
+
 const db = admin.firestore()
 
 export async function POST(request: Request) {
