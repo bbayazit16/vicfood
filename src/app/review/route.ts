@@ -70,3 +70,8 @@ export async function POST(request: Request) {
         return Response.json({ message: error })
     }
 }
+
+// DO NOT delete this.
+// Although this is a POST route, Next.js 
+// quite literally "insists!" on caching this???
+export const dynamic = "force-dynamic"

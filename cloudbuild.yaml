@@ -2,16 +2,12 @@ options:
   logging: CLOUD_LOGGING_ONLY 
 
 steps:
-  - name: 'gcr.io/cloud-builders/gcloud'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        gcloud secrets versions access latest --secret=FIREBASE_ADMIN_KEY > /workspace/firebase_admin_key.json
-
-  # Step 2: Build the Docker image with FIREBASE_ADMIN_KEY as an environment variable
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '--build-arg', 'FIREBASE_ADMIN_KEY=$(cat /workspace/firebase_admin_key.json)', '-t', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA', '.']
+    args: ['build', '-t', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA', '.']
+
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA']
 
 
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
