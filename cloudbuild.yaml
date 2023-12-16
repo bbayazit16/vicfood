@@ -1,0 +1,25 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA', '.']
+
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA']
+
+
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args: ['run', 'deploy', 'vicfood-service', '--image', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA', '--region', 'your-region', '--platform', 'managed']
+
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        gcloud container images delete gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA --force-delete-tags --quiet
+
+timeout: '600s'
+
+images:
+  - 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA'
