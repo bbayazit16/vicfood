@@ -15,6 +15,10 @@ steps:
     args: ['build', '-t', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA', '--cache-from=gcr.io/vicfood-596fd/vicfood:cache', '.']
     id: 'build'
 
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA']
+    id: 'push'
+
 
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
