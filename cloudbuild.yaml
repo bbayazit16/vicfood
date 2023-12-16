@@ -3,16 +3,33 @@ options:
 
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA', '.']
+    id: 'pull-cache'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        docker pull gcr.io/vicfood-596fd/vicfood:cache || true
 
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA']
+    args: ['build', '-t', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA', '--cache-from=gcr.io/vicfood-596fd/vicfood:cache', '.']
+    id: 'build'
 
 
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args: ['run', 'deploy', 'vicfood-service', '--image', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA', '--region', 'your-region', '--platform', 'managed']
+    id: 'deploy'
+
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/vicfood-596fd/vicfood:cache', '--cache-from=gcr.io/vicfood-596fd/vicfood:cache', '--target=cache', '.']
+    id: 'update-cache'
+
+
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/vicfood-596fd/vicfood:cache']
+    id: 'push-cache'
 
 
   - name: 'gcr.io/cloud-builders/gcloud'
@@ -21,8 +38,11 @@ steps:
       - '-c'
       - |
         gcloud container images delete gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA --force-delete-tags --quiet
+    id: 'delete-image'
+
 
 timeout: '600s'
 
 images:
   - 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA'
+  - 'gcr.io/vicfood-596fd/vicfood:cache'

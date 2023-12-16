@@ -1,4 +1,4 @@
-import db from "@/admin"
+import admin from "firebase-admin"
 
 const PASSWORD_HASH = "75b3e611894f08465e75c585620b299585fe5cd20136b8890a600fd276434267"
 
@@ -12,6 +12,15 @@ async function sha256(input: string): Promise<string> {
 }
 
 export async function POST(request: Request) {
+    if (!admin.apps.length) {
+        const cred = JSON.parse(process.env.FIREBASE_ADMIN_KEY!)
+        admin.initializeApp({
+            credential: admin.credential.cert(cred),
+        })
+    }
+
+    const db = admin.firestore()
+
     const headers = request.headers
 
     const password = headers.get("password")
@@ -70,8 +79,3 @@ export async function POST(request: Request) {
         return Response.json({ message: error })
     }
 }
-
-// DO NOT delete this.
-// Although this is a POST route, Next.js 
-// quite literally "insists!" on caching this???
-export const dynamic = "force-dynamic"
