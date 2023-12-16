@@ -18,7 +18,7 @@ steps:
 
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
-    args: ['run', 'deploy', 'vicfood-service', '--image', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA', '--region', 'your-region', '--platform', 'managed']
+    args: ['run', 'deploy', 'vicfood-gcrun', '--image', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA', '--region', 'us-east4', '--platform', 'managed']
     id: 'deploy'
 
 
