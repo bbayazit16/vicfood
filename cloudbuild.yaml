@@ -8,45 +8,31 @@ steps:
     args:
       - '-c'
       - |
-        docker pull gcr.io/vicfood-596fd/vicfood:cache || true
-
+        docker pull us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:cache || true
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA', '--cache-from=gcr.io/vicfood-596fd/vicfood:cache', '.']
+    args: ['build', '-t', 'us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:$COMMIT_SHA', '--cache-from=us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:cache', '.']
     id: 'build'
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA']
+    args: ['push', 'us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:$COMMIT_SHA']
     id: 'push'
-
 
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
-    args: ['run', 'deploy', 'vicfood-gcrun', '--image', 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA', '--region', 'us-east4', '--platform', 'managed']
+    args: ['run', 'deploy', 'vicfood-gcrun', '--image', 'us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:$COMMIT_SHA', '--region', 'us-east4', '--platform', 'managed']
     id: 'deploy'
 
-
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/vicfood-596fd/vicfood:cache', '--cache-from=gcr.io/vicfood-596fd/vicfood:cache', '--target=cache', '.']
+    args: ['build', '-t', 'us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:cache', '--cache-from=us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:cache', '--target=cache', '.']
     id: 'update-cache'
 
-
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/vicfood-596fd/vicfood:cache']
+    args: ['push', 'us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:cache']
     id: 'push-cache'
-
-
-  - name: 'gcr.io/cloud-builders/gcloud'
-    entrypoint: 'bash'
-    args:
-      - '-c'
-      - |
-        gcloud container images delete gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA --force-delete-tags --quiet
-    id: 'delete-image'
-
 
 timeout: '600s'
 
 images:
-  - 'gcr.io/vicfood-596fd/vicfood:$COMMIT_SHA'
-  - 'gcr.io/vicfood-596fd/vicfood:cache'
+  - 'us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:$COMMIT_SHA'
+  - 'us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:cache'
