@@ -7,7 +7,9 @@ steps:
     args:
       - --destination=us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:$COMMIT_SHA
       - --cache=true
-      - --cache-ttl=24h
+      - --compressed-caching=false
+      - --use-new-run 
+      - --cleanup
       - --context=.
       - --dockerfile=./Dockerfile
 
