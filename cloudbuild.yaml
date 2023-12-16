@@ -11,7 +11,7 @@ steps:
         docker pull us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:cache || true
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:$COMMIT_SHA', '--cache-from=us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:cache', '.']
+    args: ['build', '-t', 'us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:$COMMIT_SHA', '--cache-from=us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:cache', '--target=deps', '.']
     id: 'build'
 
   - name: 'gcr.io/cloud-builders/docker'
@@ -24,8 +24,8 @@ steps:
     id: 'deploy'
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:cache', '--cache-from=us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:cache', '--target=cache', '.']
-    id: 'update-cache'
+    args: ['tag', 'us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:$COMMIT_SHA', 'us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:cache']
+    id: 'tag-cache'
 
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'us-east4-docker.pkg.dev/vicfood-596fd/builds/vicfood:cache']
