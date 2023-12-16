@@ -1,4 +1,4 @@
-import admin from "firebase-admin"
+import db from "@/admin"
 
 const PASSWORD_HASH = "75b3e611894f08465e75c585620b299585fe5cd20136b8890a600fd276434267"
 
@@ -10,15 +10,6 @@ async function sha256(input: string): Promise<string> {
     const hashHex = hashArray.map(byte => byte.toString(16).padStart(2, "0")).join("")
     return hashHex
 }
-
-if (!admin.apps.length) {
-    const cred = JSON.parse(process.env.FIREBASE_ADMIN_KEY!)
-    admin.initializeApp({
-        credential: admin.credential.cert(cred),
-    })
-}
-
-const db = admin.firestore()
 
 export async function POST(request: Request) {
     const headers = request.headers
