@@ -7,6 +7,7 @@ import Embed from "./Embed"
 import TorontoDate from "@/TorontoDate"
 
 import { useEffect, useState } from "react"
+import { usePlausible } from "next-plausible"
 
 const FOOD_TYPE_TITLES: { [key: string]: string } = {
     entree: "Entrees",
@@ -50,6 +51,8 @@ export default function Menu({ menu, dateData }: MenuProps) {
     )
     const [review, setReview] = useState<IGReview | undefined>()
 
+    const plausible = usePlausible()
+
     useEffect(() => {
         getReviewsForDay(dateData.year, dateData.month, dateData.day).then(review => {
             setReview(review)
@@ -59,7 +62,21 @@ export default function Menu({ menu, dateData }: MenuProps) {
     return (
         <div className="p-4">
             <div className="flex justify-center">
-                <MenuSwitch selectedMeal={mealType} onSwitch={setMealType} />
+                <MenuSwitch
+                    selectedMeal={mealType}
+                    onSwitch={(meal: "lunch" | "dinner" | "reviews") => {
+                        setMealType(meal)
+
+                        if (meal === "reviews") {
+                            plausible("ReviewViewed", {
+                                props: {
+                                    date: `${dateData.year}-${dateData.month}-${dateData.day}`,
+                                },
+                            })
+                            return
+                        }
+                    }}
+                />
             </div>
             {mealType === "reviews" ? (
                 <div className="m-auto">

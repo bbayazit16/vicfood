@@ -20,14 +20,26 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
+            <head>
+                <PlausibleProvider
+                    domain="vicfood.ca"
+                    customDomain="analytics.vicfood.ca"
+                    selfHosted
+                    trackOutboundLinks
+                    taggedEvents
+
+                    enabled
+                    trackLocalhost
+                    // If the prop `enabled` is not set, tracking is enabled in production.
+                    // enabled={process.env.NODE_ENV === "production"}
+                />
+            </head>
             <body className={inter.className}>
-                <PlausibleProvider domain="analytics.vicfood.ca">
-                    <div className="flex flex-col min-h-screen">
-                        <NavBar />
-                        {children}
-                        <Footer />
-                    </div>
-                </PlausibleProvider>
+                <div className="flex flex-col min-h-screen">
+                    <NavBar />
+                    {children}
+                    <Footer />
+                </div>
             </body>
         </html>
     )
