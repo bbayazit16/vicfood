@@ -1,9 +1,9 @@
 import "./globals.css"
 
-import { Analytics } from "@vercel/analytics/react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 
+import PlausibleProvider from "next-plausible"
 import Footer from "@/components/Footer"
 import NavBar from "@/components/NavBar"
 
@@ -21,12 +21,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en">
             <body className={inter.className}>
-                <div className="flex flex-col min-h-screen">
-                    <NavBar />
-                    {children}
-                    <Footer />
-                    <Analytics />
-                </div>
+                <PlausibleProvider domain="analytics.vicfood.ca">
+                    <div className="flex flex-col min-h-screen">
+                        <NavBar />
+                        {children}
+                        <Footer />
+                    </div>
+                </PlausibleProvider>
             </body>
         </html>
     )
