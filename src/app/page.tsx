@@ -7,6 +7,12 @@ import getMenu, { getMenuIndices } from "@/menu"
 
 import { useState } from "react"
 
+const FALL_FIRST_MEAL = TorontoDate.customDate(2023, 9, 4)
+const FALL_LAST_MEAL = TorontoDate.customDate(2023, 12, 20)
+
+const WINTER_FIRST_MEAL = TorontoDate.customDate(2024, 1, 8)
+const WINTER_LAST_MEAL = TorontoDate.customDate(2024, 5, 1)
+
 function getDayString(date: TorontoDate): string[] | null {
     const indices = getMenuIndices(date)
 
@@ -33,7 +39,10 @@ export default function Home() {
                 <Button
                     onClick={() =>
                         setDay(day => {
-                            if (day.isBefore(TorontoDate.customDate(2023, 9, 4))) return day
+                            if (day.isBefore(FALL_FIRST_MEAL)) return day
+
+                            if (day.isSameDay(WINTER_FIRST_MEAL)) return FALL_LAST_MEAL
+
                             const prevDay = day.clone()
                             prevDay.subtractDays(1)
                             return prevDay
@@ -46,13 +55,15 @@ export default function Home() {
 
                 <div className="flex flex-col md:flex-row items-center justify-center m-auto">
                     <span className="text-center text-sm md:text-base">{dayString}</span>
-                    <span className="mx-2 hidden md:inline">|</span>
+                    <span className="mx-2 hidden md:inline">{menu ? "|" : ""}</span>
                     <span className="text-center text-sm md:text-base">{weekString}</span>
                 </div>
 
                 <Button
                     onClick={() =>
                         setDay(prevDay => {
+                            if (prevDay.isSameDay(FALL_LAST_MEAL)) return WINTER_FIRST_MEAL
+
                             if (!menu) return prevDay
 
                             const nextDay = prevDay.clone()

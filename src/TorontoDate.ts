@@ -37,13 +37,17 @@ export default class TorontoDate {
         return this.momentInstance.year()
     }
 
-    isWeekday(): boolean {
+    public isWeekday(): boolean {
         return !this.isWeekend()
     }
 
-    isWeekend(): boolean {
+    public isWeekend(): boolean {
         const dayOfWeek = this.momentInstance.day()
         return dayOfWeek === 0 || dayOfWeek === 6
+    }
+
+    public isSameDay(date: TorontoDate): boolean {
+        return this.momentInstance.isSame(date.momentInstance, "day")
     }
 
     timeBetween(
