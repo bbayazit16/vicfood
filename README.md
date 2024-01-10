@@ -20,7 +20,7 @@ As a student at Victoria College, I found it hard to check what food is being se
 -   Hosted on Vercel with Firebase Firestore for storing reviews.
 -   Uses open-source, GDPR-compliant [Plausible Analytics](https://plausible.io), hosted on a Google Cloud Engine E2 Micro instance. The Plausible instance is available at [analytics.vicfood.ca](https://analytics.vicfood.ca).
 -   Vicfood.ca is behind Cloudflare for caching and SSL.
--   For potential future migration to GCP Cloud Run, [Dockerfile](Dockerfile) and [cloudbuild.yaml](cloudbuild.yaml) file are included.
+-   For potential future migration to GCP Cloud Run, [Dockerfile](Dockerfile) and [cloudbuild.yaml](cloudbuild.yaml) files are included.
 
 ## Contributing
 
