@@ -27,7 +27,9 @@ function getDayString(date: TorontoDate): string[] | null {
 }
 
 export default function Home() {
-    const [day, setDay] = useState<TorontoDate>(TorontoDate.now())
+    const [day, setDay] = useState<TorontoDate>(
+        TorontoDate.now().isAfter(WINTER_LAST_MEAL) ? WINTER_LAST_MEAL : TorontoDate.now()
+    )
 
     const menu = getMenu(day)
 
@@ -80,7 +82,11 @@ export default function Home() {
             ) : (
                 <div className="flex flex-col items-center justify-center">
                     <h1 className="text-2xl font-semibold">Menu Not Available 🥲</h1>
-                    <p className="text-lg">Check back later!</p>
+                    {day.isAfter(WINTER_LAST_MEAL) ? (
+                        <p className="text-lg">The academic year is over. Go back to check the old menu.</p>
+                    ) : (
+                        <p className="text-lg">Check back later!</p>
+                    )}
                 </div>
             )}
         </main>
