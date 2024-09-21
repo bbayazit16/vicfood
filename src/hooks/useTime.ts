@@ -13,4 +13,5 @@ export default function useTime() {
         return () => clearInterval(interval)
     }, [])
 
-    return dat
+    return date
+}
