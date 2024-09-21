@@ -1,0 +1,619 @@
+[
+    {
+        "type": "breakfast",
+        "monday": {
+            "eggs": ["Scrambled Eggs (VEG)(GF)", "Soft-Boiled Eggs (VEG)(GF)"],
+            "eggs specialty": ["Fried Egg (VEG)(GF)"],
+            "sweet breakfast": ["Pancakes (VEG)"],
+            "potato": ["Plain Home Fries (GF)(VGN)"],
+            "protein": ["Bacon (GF)", "Beef Sausage Patty (H)(GF)(DF)"],
+            "plant_based": [
+                "Roasted Sweet Potato, Black Beans, & Poblano (GF)(VGN)",
+                " Spiced Tofu Scramble (GF)(VGN)"
+            ],
+            "smoothies": ["Classic Green Smoothie", "Tropical"]
+        },
+        "tuesday": {
+            "eggs": ["Scrambled Eggs (VEG)(GF)", " Soft-Boiled Eggs (VEG)(GF)"],
+            "eggs specialty": ["Mexican Omelette (VEG)(GF)"],
+            "sweet breakfast": ["Belgian Waffles (VEG)"],
+            "potato": ["Potato Tots (VEG)(GF)"],
+            "protein": ["Bacon (GF)", " Chicken Sausage Patty (H)"],
+            "plant_based": ["Baked Beans (GF)(VGN)", " Spiced Tofu Scramble (GF)(VGN)"],
+            "smoothies": ["Classic Green Smoothie", "Mixed Berry"]
+        },
+        "wednesday": {
+            "eggs": ["Scrambled Eggs (VEG)(GF)", " Soft-Boiled Eggs (VEG)(GF)"],
+            "eggs specialty": ["Fried Egg (VEG)(GF)"],
+            "sweet breakfast": ["Pancakes (VEG)"],
+            "potato": ["Potato Cakes (VEG)(GF)"],
+            "protein": ["Bacon (GF)", " Beef Sausage Patty (H)(GF)(DF)"],
+            "plant_based": ["Beyond Meat Sausage (GF)(VGN)", "Spiced Tofu Scramble (GF)(VGN)"],
+            "smoothies": ["Classic Green Smoothie", "Strawberry Banana"]
+        },
+        "thursday": {
+            "eggs": ["Scrambled Eggs (VEG)(GF)", " Soft-Boiled Eggs (VEG)(GF)"],
+            "eggs specialty": ["Eggs Benedict (VEG)(GF)"],
+            "sweet breakfast": ["Belgian Waffles (VEG)"],
+            "potato": ["Sweet Potato Tots (VEG)(GF)"],
+            "protein": ["Bacon (GF)", " Chicken Sausage Patty (H)"],
+            "plant_based": [
+                "Roasted Sweet Potato, Black Beans, & Poblano (GF)(VGN)",
+                " Spiced Tofu Scramble (GF)(VGN)"
+            ],
+            "smoothies": ["Classic Green Smoothie", "Tropical"]
+        },
+        "friday": {
+            "eggs": ["Scrambled Eggs (VEG)(GF)", " Soft-Boiled Eggs (VEG)(GF)"],
+            "eggs specialty": ["Fried Egg (VEG)(GF)"],
+            "sweet breakfast": ["Pancakes (VEG)"],
+            "potato": ["Plain Home Fries (GF)(VGN)"],
+            "protein": ["Bacon (GF)", " Beef Sausage Patty (H)(GF)(DF)"],
+            "plant_based": ["Baked Beans (GF)(VGN)", " Spiced Tofu Scramble (GF)(VGN)"],
+            "smoothies": ["Classic Green Smoothie", "Mixed Berry"]
+        },
+        "saturday": {
+            "eggs": ["Scrambled Eggs (VEG)(GF)", " Soft-Boiled Eggs (VEG)(GF)"],
+            "eggs specialty": [],
+            "sweet breakfast": ["Waffle Bar"],
+            "potato": ["Potato Tots (VEG)(GF)"],
+            "protein": ["Bacon (GF)", " Chicken Sausage Patty (H)"],
+            "plant_based": ["Beyond Meat Sausage (GF)(VGN)", "Spiced Tofu Scramble (GF)(VGN)"],
+            "smoothies": []
+        },
+        "sunday": {
+            "eggs": ["Scrambled Eggs (VEG)(GF)", " Soft-Boiled Eggs (VEG)(GF)"],
+            "eggs specialty": [],
+            "sweet breakfast": ["Waffle Bar"],
+            "potato": ["Potato cakes (VEG)(GF)"],
+            "protein": ["Bacon (GF)", " Beef Sausage Patty (H)(GF)(DF)"],
+            "plant_based": ["Beyond Meat Sausage (GF)(VGN)", "Spiced Tofu Scramble (GF)(VGN)"],
+            "smoothies": []
+        },
+        "daily": "OATMEAL, CEREAL, BREAKFAST PASTRIES, SLICED FRUIT, BEVERAGES, WHOLE FRUIT, YOGURT BAR"
+    },
+    {
+        "type": "lunch",
+        "week": 1,
+        "monday": {
+            "entree": ["Pesto Chicken (H)(GF)(DF)"],
+            "veg_entree": ["Pesto Plant Based Strips (GF)(VGN)"],
+            "sides": [
+                "Mushroom Tetrazzini Bake (VEG)",
+                "Roasted Vegetable Medley (GF)(VGN)",
+                "Garlic Bread (VGN)"
+            ],
+            "gluten-free": ["Baked Potato Bar (Roasted Mushrooms/Onion & Peppers/Bacon)"],
+            "soup": ["Harvest Tomato Vegetable (VGN)", "Turkey Noodle (H)(DF)"],
+            "food_bar": ["Panini (Buffalo Chicken, Grilled BLT, Crispy Tofu, Grilled Cheese)"]
+        },
+        "tuesday": {
+            "entree": ["Sweet Italian Sausage/Buns (H)(DF)"],
+            "veg_entree": ["Sausage/Buns (VGN)"],
+            "sides": [
+                "Skin On French Fries (GF)(VGN)",
+                "Sauteed Onions & Peppers (GF)(VGN)",
+                "Roasted Broccoli & Carrots (GF)(VGN)"
+            ],
+            "gluten-free": ["Nacho Bar (Meat/Three Bean Chili)"],
+            "soup": ["Broccoli & Cheddar (VGN)", "Hearty Chicken Crockpot (GF)(DF)"],
+            "food_bar": ["Pizza (Pepperoni \u2013 Halal, BBQ Chicken, Garden Veggie, Cheese Pizza)"]
+        },
+        "wednesday": {
+            "entree": ["Greek Style Grilled Chicken (H)(GF)(DF)"],
+            "veg_entree": ["Falafels (GF)(VGN)"],
+            "sides": [
+                "Greek Lemon Rice (GF)(VGN)",
+                "Chunky Vegetable Souvlaki No stick (GF)(VGN)",
+                "Greek Pita/Tzatziki (VEG)"
+            ],
+            "gluten-free": ["Gluten-Free Pasta Bar (Meat/Arabiata Sauce/Toasted Chickpeas)"],
+            "soup": ["Lentil Spinach (GF)(VGN)", "Woodland Mushroom (GF)(VEG)"],
+            "food_bar": [
+                "Quesadilla (Marinated Chicken Strips/Roasted Vegetable, Roasted Corn, Black Beans Monterey Jack Cheese)"
+            ]
+        },
+        "thursday": {
+            "entree": ["Lasagna in Marinara Sauce (H)"],
+            "veg_entree": ["Spinach/Cheese Lasagna(VGN)", "Bake Pasta with Tempeh (VGN)"],
+            "sides": [
+                "Fresh Mix Vegetable (GF)(VGN)",
+                "Marinara Sauce (GF)(VGN)",
+                "Garlic Bread (VGN)"
+            ],
+            "gluten-free": ["Poutine Bar (Pulled Pork/Jackfruit/Provide Vegan Cheese)"],
+            "soup": ["Spanish and Kale (GF)(VGN)", "Chicken Tortilla Soup (H)(GF)(DF)"],
+            "food_bar": ["Pizza (Hawaiian/Ham, Greek Chicken, Pesto Mushroom, Cheese Pizza)"]
+        },
+        "friday": {
+            "entree": ["Cedar Spiced Atlantic Salmon on Wilted Greens (H)(GF)(DF)"],
+            "veg_entree": ["Vegetable Beans Cacciatore (GF)(VGN)"],
+            "sides": [
+                "Wild Rice Pilaf (GF)(VGN)",
+                "Crispy Brussel Sprouts with Tzatziki Sauce (VGN)",
+                "Winter Vegetable Mix (GF)(VGN)"
+            ],
+            "gluten-free": ["Soba Noodle Bowl (Chicken/Tofu Teriyaki)"],
+            "soup": ["Cream Of Roasted Squash (GF)(VGN)", "New England Clam Chowder (H)(GF)"],
+            "food_bar": ["Panini (Tuna Melt, Philly Beef, Plant Based Philly, Grilled Cheese)"]
+        },
+        "saturday": {
+            "entree": ["Szechuan Chicken Stir-Fry (H)(GF)(DF)"],
+            "veg_entree": ["Szechuan Tofu Stir-Fry  (GF)(VGN)"],
+            "sides": [
+                "Vegetable Chow Mein (VGN)",
+                "Spring Rolls (VGN)",
+                "Asian Vegetable Medley (GF)(VGN)"
+            ],
+            "gluten-free": [],
+            "soup": ["Hot and Sour with Tofu (GF)(VGN)", "Spicy Thai Chicken (H)(GF)(DF)"],
+            "food_bar": ["Pizza (Pepperoni - Halal, Jerk Chicken, Garden Veggie, Cheese Pizza)"]
+        },
+        "sunday": {
+            "entree": ["Meatballs in Marinara (H)(DF)"],
+            "veg_entree": ["Plant Based balls in Marinara (VGN)"],
+            "sides": ["Rigatoni Pasta (VGN)", "Italian Blend (GF)(VGN)", "Garlic Bread (VGN)"],
+            "gluten-free": [],
+            "soup": ["Moroccan Chickpea (GF)(VGN)", "Herb Chicken Rice (H)(GF)(DF)"],
+            "food_bar": ["Pizza (Pepperoni - Halal, Tuscan Chicken, Garden Veggie, Cheese Pizza)"]
+        }
+    },
+    {
+        "type": "lunch",
+        "week": 2,
+        "monday": {
+            "entree": ["Butter Chicken (H)(GF)"],
+            "veg_entree": ["Paneer Tikka Masala (GF)(VEG)"],
+            "sides": [
+                "Basmati Rice (GF)(VGN)",
+                "Naan Bread/Raita (VEG)",
+                "Steamed Vegetable Mix (GF)(VGN)",
+                "Vegetable Samosas (VGN)"
+            ],
+            "gluten-free": ["Tater Tot Bar (Spicy Vegan Strips/Pulled Pork)"],
+            "soup": ["Mexican Bean (GF)(VGN)", "Lemon Turkey Orzo (H)(DF)"],
+            "food_bar": ["Panini (Buffalo Chicken", "Grilled BLT", "Crispy Tofu", "Grilled Cheese)"]
+        },
+        "tuesday": {
+            "entree": ["Cheesy Beef Penne Pasta (H)"],
+            "veg_entree": ["Cheesy Vegetarian Strips Penne Pasta (GF)(VEG)"],
+            "sides": [
+                "Fried Pickle (VEG) ",
+                "Sautéd Green & Yellow Beans (GF)(VGN)",
+                "Garlic Butter Roll (GF)(VGN)"
+            ],
+            "gluten-free": ["Taco Bar (Meat/Vegan Stuffing)"],
+            "soup": ["Lentil Dahl (GF)(VGN)", "Italian Wedding (H)(DF)"],
+            "food_bar": ["Pizza (Pepperoni \u2013 Halal, BBQ Chicken, Garden Veggie, Cheese Pizza)"]
+        },
+        "wednesday": {
+            "entree": ["Skewer less Chicken & Vegetable Souvlaki (H)(GF)(DF)"],
+            "veg_entree": ["Skewer less Tofu Vegetable Souvlaki  (GF)(VGN)"],
+            "sides": [
+                "Yahni Potatoes (GF)(VGN) ",
+                "Garlic Sauteed Rapini (GF)(VGN)",
+                "Spanakopita/Tzatziki (VEG)"
+            ],
+            "gluten-free": [
+                "Dips and Chips Tapas (Hummaus, Babaganoush, Tzatzki , Pickled Vegetables)"
+            ],
+            "soup": ["Roasted Curry Cauliflower (GF)(VGN)", "Tom Yum Chicken (H)(GF)(DF)"],
+            "food_bar": [
+                "Quesadilla (Marinated Chicken Strips/Roasted Vegetable, Roasted Corn, Black Bean Monterey Jack Cheese)"
+            ]
+        },
+        "thursday": {
+            "entree": ["BBQ Beef Burgers/Buns Bacon Jam (H)(GF)(DF)"],
+            "veg_entree": ["Impossible Burger/Buns Onion Jam (GF)(VGN)"],
+            "sides": [
+                "Sautéd Yellow and Green Zucchini with Tomatoes (GF)(VGN) ",
+                "French Fries (GF)(VGN)",
+                "Poutine with Gravy (VGN)"
+            ],
+            "gluten-free": ["Rice Vermicelli Bar (Tofu Strips/Edamame/Ginger Soy Pork)"],
+            "soup": ["Miso-Mushroom (GF)(VGN)", "Chicken Mulligatawny (H)(DF)"],
+            "food_bar": ["Pizza (Hawaiian/Ham", "Greek Chicken", "Pesto Mushroom", "Cheese Pizza)"]
+        },
+        "friday": {
+            "entree": ["Fish Taco Shell (H)(DF)"],
+            "veg_entree": ["Crispy Tofu Baton Taco Shell (GF)(VGN)"],
+            "sides": [
+                "Spicey Mexican Rice N peas (GF)(VGN) ",
+                "Sauteed Sugar Snap Peas and Baby Corn (GF)(VGN)",
+                "Cole Slaw (GF)(VGN)"
+            ],
+            "gluten-free": ["Quinoa Bowl (Chimichurri Chicken/Tempeh)"],
+            "soup": ["Tomato Roasted Pepper (GF)(VGN)", "Seafood Creole (H)(GF)"],
+            "food_bar": ["Panini (Tuna Melt, Philly Beef, Plant Based Philly, Grilled Cheese)"]
+        },
+        "saturday": {
+            "entree": ["Sweet & Sour Chicken balls (H)"],
+            "veg_entree": ["Sweet & Sour Vegan balls (VGN)"],
+            "sides": [
+                "Vegetable Fried Rice (GF)(VGN) ",
+                "Spring Rolls (VGN)",
+                "Asian Vegetable Medley (GF)(VGN)"
+            ],
+            "gluten-free": [],
+            "soup": ["Moroccan Chickpea (GF)(VGN)", "Spicy Thai Chicken (H)(GF)(DF)"],
+            "food_bar": ["Pizza (Pepperoni - Halal, Jerk Chicken, Garden Veggie, Cheese Pizza)"]
+        },
+        "sunday": {
+            "entree": ["Beef Sausage in Basil Tomato (H)(DF)"],
+            "veg_entree": ["Romano Bean Primavera (GF)(VGN)"],
+            "sides": ["Rigatoni Pasta (VGN) ", "Italian Blend (GF)(VGN)", "Garlic Bread (VGN)"],
+            "gluten-free": [],
+            "soup": ["Hot and Sour with Tofu (GF)(VGN)", "Beef & Red Bean (H)(GF)(DF)"],
+            "food_bar": ["Pizza (Pepperoni - Halal, Tuscan Chicken, Garden Veggie, Cheese Pizza)"]
+        }
+    },
+    {
+        "type": "lunch",
+        "week": 3,
+        "monday": {
+            "entree": ["Creamy Chicken/Spinach with Parmesan Sauce (H)(GF)"],
+            "veg_entree": ["Creamy Cauliflower and Chickpea with Parmesan Sauce (GF)(VEG)"],
+            "sides": [
+                "Onion Rice Pilaf (GF)(VGN)",
+                "Balsamic Roast Tomatoes (VEG)",
+                "Garlic Sautéd Purple and Green Kale (GF)(VGN)",
+                "Vegetable Samosas (VGN)"
+            ],
+            "gluten-free": ["Nacho Bar (Five Bean Chili/Meat)"],
+            "soup": ["Split Pea and Roasted Pepper (GF)(VGN)", "Roasted Corn Chowder (GF)(VEG)"],
+            "food_bar": ["Panini (Buffalo Chicken, Grilled BLT, Crispy Tofu, Grilled Cheese)"]
+        },
+        "tuesday": {
+            "entree": ["Texas Style Pulled Pork/ Bao Bun (H)(GF)(DF)"],
+            "veg_entree": ["Spicy Pull Cauliflower & Jackfruit/ Bao Bun (GF)(VEG)"],
+            "sides": [
+                "Southwest Fried Rice (GF)(VGN)",
+                "Sautéd Corn Succotash (GF)(VGN)",
+                "Vegetable Spring Rolls (VGN)"
+            ],
+            "gluten-free": ["Shawarma Bar (Falafel with Flatbread/Chicken Shawarma)"],
+            "soup": ["Navy Bean & Garden Vegetable (GF)(VGN)", "Chicken Noodle (H)(DF)"],
+            "food_bar": ["Pizza (Pepperoni \u2013 Halal, BBQ Chicken, Garden Veggie, Cheese Pizza)"]
+        },
+        "wednesday": {
+            "entree": ["Southern Fried Chicken/ White Gravy (H)"],
+            "veg_entree": ["Portobello Stuffed with Spinach and Havarti (GF)(VEG)"],
+            "sides": [
+                "Red Skin Potato Wedges (GF)(VGN)",
+                "Corn on the Cob (GF)(VGN)",
+                "Kale Slaw (GF)(VGN)"
+            ],
+            "gluten-free": ["Pasta Bar (Arabiata Sauce/Meat)"],
+            "soup": ["Wild Mushroom (GF)(VGN)", "Hearty Beef vegetable (H)(GF)(DF)"],
+            "food_bar": [
+                "Quesadilla (Marinated Chicken Strips/Roasted Vegetable, Roasted Corn, Black Bean Monterey Jack Cheese)"
+            ]
+        },
+        "thursday": {
+            "entree": ["Korean Beef Stir Fry (H)(GF)"],
+            "veg_entree": ["Gochujang Tofu Stir Fry (GF)(VGN)"],
+            "sides": [
+                "Jasmine Rice (GF)(VGN) ",
+                "Stir-Fried Choy Sum Vegetable and Broccoli  (GF)(VGN)",
+                "Pot Sticker (VGN)"
+            ],
+            "gluten-free": ["Poke Bowl (Edamame/Shrimp Ceviche)"],
+            "soup": ["Brown Lentil & Spinach (GF)(VGN)", "Tom Yum Chicken (H)(GF)(DF)"],
+            "food_bar": ["Pizza (Hawaiian/Ham, Greek Chicken, Pesto Mushroom, Cheese Pizza)"]
+        },
+        "friday": {
+            "entree": ["Homemade Tempura Haddock Fish (H)(DF)"],
+            "veg_entree": ["Mediterranean Chickpeas Button Mushroom Pasta Bake (VEG)"],
+            "sides": [
+                "French Fries (GF)(VGN) ",
+                "Steamed Broccoli, Carrots, Cauliflower and Green Peas (GF)(VGN)",
+                "ColeSlaw (GF)(VGN)"
+            ],
+            "gluten-free": ["Greek Pasta Salad (Plant Based Strips/Chicken)"],
+            "soup": ["Spicy Black Bean (GF)(VGN)", "Potato Leek (GF)(VEG)"],
+            "food_bar": ["Panini (Tuna Melt, Philly Beef, Plant Based Philly, Grilled Cheese)"]
+        },
+        "saturday": {
+            "entree": ["Lemongrass Chicken (H)(GF)(DF)"],
+            "veg_entree": ["Lemongrass Tofu (GF)(VGN)"],
+            "sides": [
+                "Steamed Lo-mein (VGN) ",
+                "Spring Rolls (VGN)",
+                "Asian Vegetable Medley (GF)(VGN"
+            ],
+            "gluten-free": [],
+            "soup": ["Moroccan Chickpea (GF)(VGN)", "Beef Barley Vegetable (H)(DF)"],
+            "food_bar": ["Pizza (Pepperoni - Halal, Jerk Chicken, Garden Veggie, Cheese Pizza)"]
+        },
+        "sunday": {
+            "entree": ["Beef Tips with Marinara (H)(GF)(DF)"],
+            "veg_entree": ["Edamame Primavera (GF)(VGN)"],
+            "sides": ["Rigatoni Pasta (VGN) ", "Italian Blend (GF)(VGN)", "Garlic Bread (VGN)"],
+            "gluten-free": [],
+            "soup": ["Hot and Sour with Tofu (GF)(VGN)", "Chicken Orzo (H)(DF)"],
+            "food_bar": ["Pizza (Pepperoni - Halal, Tuscan Chicken, Garden Veggie, Cheese Pizza)"]
+        }
+    },
+    {
+        "type": "dinner",
+        "week": 1,
+        "monday": {
+            "entree": ["Asian BBQ Beef Brisket (H)(GF)(DF)"],
+            "veg_entree": ["Thai Sweet Chili Tofu and Vegetable Stir-Fry (GF)(VGN)"],
+            "sides": [
+                "Vegetable Rice vermicelli (GF)(VGN)",
+                "Garlic Sautéd Gai Lan Vegetable Mix (GF)(VGN)",
+                "Vegetable Spring Rolls (VGN)"
+            ],
+            "gluten-free": ["Baked Potato Bar (Roasted Mushrooms/Onion & Peppers/Bacon)"],
+            "soup": ["Harvest Tomato Vegetable (VGN)", "Turkey Noodle (H)(DF)"],
+            "food_bar": ["Panini (Buffalo Chicken, Grilled BLT, Crispy Tofu, Grilled Cheese)"]
+        },
+        "tuesday": {
+            "entree": ["Peruvian Chicken in Green Sauce (H)(GF)(DF)"],
+            "veg_entree": ["Peruvian Grilled Tofu/ Lima Bean in Green Sauce (GF)(VGN)"],
+            "sides": [
+                "Cilantro Chaufa Rice (GF)(VGN)",
+                "Green Beans with Red Onions and Tomatoes (GF)(VGN)",
+                "Battered Yam (GF)(VGN)"
+            ],
+            "gluten-free": ["Nacho Bar (Meat/Three Bean Chili)"],
+            "soup": ["Broccoli & Cheddar (VGN)", "Hearty Chicken Crockpot (GF)(DF)"],
+            "food_bar": [
+                "Pizza (Pepperoni \u2013 Halal",
+                "BBQ Chicken",
+                "Garden Veggie",
+                "Cheese Pizza)"
+            ]
+        },
+        "wednesday": {
+            "entree": ["Beef Fajita (H)(GF)(DF)"],
+            "veg_entree": ["Ground Soy, Bean Fajita with Bell Pepper (GF)(VGN)"],
+            "sides": [
+                "Spanish Rice with Corn (GF)(VGN)",
+                "Warm Flour Tortilla (VEG)",
+                "California Roast Vegetable (GF)(VGN)"
+            ],
+            "gluten-free": ["Gluten-Free Pasta Bar (Meat/Arabiata Sauce/Toasted Chickpeas)"],
+            "soup": ["Lentil Spinach (GF)(VGN)", "Woodland Mushroom (GF)(VEG)"],
+            "food_bar": [
+                "Quesadilla (Marinated Chicken Strips, Roasted Vegetable, Roasted Corn, Black Beans, Monterey Jack Cheese)"
+            ]
+        },
+        "thursday": {
+            "entree": ["Chicken Fingers Fried (H)"],
+            "veg_entree": ["NotCo Plant-Based Fingers (VGN)"],
+            "sides": [
+                "Mac and Cheese (VEG)",
+                "Daya Cheese Macaroni (GF)(VGN)",
+                "Maple Glazed Carrot & French Beans (GF)(VGN)",
+                "Vinegar Coleslaw (GF)(VGN)"
+            ],
+            "gluten-free": ["Poutine Bar (Pulled Pork/Jackfruit/Provide Vegan Cheese)"],
+            "soup": ["Spanish and Kale (GF)(VGN)", "Chicken Tortilla Soup (H)(GF)(DF)"],
+            "food_bar": ["Pizza (Hawaiian/Ham, Greek Chicken, Pesto Mushroom, Cheese Pizza)"]
+        },
+        "friday": {
+            "entree": ["Beef Tajine (H)(GF)(DF)"],
+            "veg_entree": ["Root Vegetable and Chickpea Tajine (GF)(VGN)"],
+            "sides": [
+                "Indian Style Saffron Rice (GF)(VGN)",
+                "Sabzi Indian Mixed Vegetable (GF)(VGN)",
+                "Naan Bread  (GF)(VGN)"
+            ],
+            "gluten-free": ["Soba Noodle Bowl (Chicken/Tofu Teriyaki)"],
+            "soup": ["Cream Of Roasted Squash (GF)(VGN)", "New England Clam Chowder (H)(GF)"],
+            "food_bar": [
+                "Panini (Tuna Melt",
+                "Philly Beef",
+                "Plant Based Philly",
+                "Grilled Cheese)"
+            ]
+        },
+        "saturday": {
+            "entree": ["Breaded Veal Cutlets on a Bun Creole Sauce  (H)(DF)"],
+            "veg_entree": ["Malibu Garden burger Veggie Creole Sauce on a Bun (VGN)"],
+            "sides": [
+                "Herb Red Skin Potato Wedges (GF)(VGN)",
+                "Sautéd Zucchini (GF)(VGN)",
+                "Kale Crunch Slaw (GF)(VGN)"
+            ],
+            "gluten-free": ["Indian Basmati Rice Bowl (Chicken/ Chickpea Curry)"],
+            "soup": ["Hot and Sour with Tofu (GF)(VGN)", "Spicy Thai Chicken (H)(GF)(DF)"],
+            "food_bar": ["Pizza (Pepperoni - Halal, Jerk Chicken, Garden Veggie, Cheese Pizza)"]
+        },
+        "sunday": {
+            "entree": ["BBQ Quarter Chicken - Dark / White (H)(GF)(DF)"],
+            "veg_entree": ["Impossible Nuggets with BBQ sauce on the side (VGN)"],
+            "sides": [
+                "Roasted Butternut Squash and Root Vegetable Blend (GF)(VGN)",
+                "Mashed Potato (GF)(VGN)",
+                "Creamy Coleslaw (GF)(VGN)"
+            ],
+            "gluten-free": ["Wild Rice Burrito Bowl (Shrimp/Brown lentils)"],
+            "soup": ["Moroccan Chickpea (GF)(VGN)", "Herb Chicken Rice (H)(GF)(DF)"],
+            "food_bar": ["Pizza (Pepperoni - Halal, Tuscan Chicken, Garden Veggie, Cheese Pizza)"]
+        }
+    },
+    {
+        "type": "dinner",
+        "week": 2,
+        "monday": {
+            "entree": ["Korean BBQ Bulgogi Beef (H)(GF)(DF)"],
+            "veg_entree": ["Korean Spicy BBQ Tofu Steak and Broccoli (GF)(VGN)"],
+            "sides": [
+                "Fluffy Rice (GF)(VGN)",
+                "Sautéd Bok Choy and Asian vegetable (GF)(VGN)",
+                "Mushroom Dumpling (VEG)"
+            ],
+            "gluten-free": ["Tater Tot Bar (Spicy Vegan Strips/Pulled Pork)"],
+            "soup": ["Mexican Bean (GF)(VGN)", "Lemon Turkey Orzo (H)(DF)"],
+            "food_bar": ["Panini (Buffalo Chicken, Grilled BLT, Crispy Tofu, Grilled Cheese)"]
+        },
+        "tuesday": {
+            "entree": ["Chicken a la King (H)(GF)"],
+            "veg_entree": ["Shepherd\u2019s Pie with Plant Based Gravy (GF)(VGN)"],
+            "sides": [
+                "Onion Rice Pilaf (GF)(VGN)",
+                "Roasted Heirloom Carrot & Peppers (GF)(VGN)",
+                "Vol Au Vent Pastry Puffs (VEG)"
+            ],
+            "gluten-free": ["Taco Bar (Meat/Vegan Stuffing)"],
+            "soup": ["Lentil Dahl (GF)(VGN)", "Italian Wedding (H)(DF)"],
+            "food_bar": ["Pizza (Pepperoni \u2013 Halal, BBQ Chicken, Garden Veggie, Cheese Pizza)"]
+        },
+        "wednesday": {
+            "entree": ["BBQ Pork Ribs (GF)(DF)"],
+            "veg_entree": ["Spicy BBQ Grilled Tofu (GF)(VGN)"],
+            "sides": [
+                "Bake Mini Potato (GF)(VGN)",
+                "Creamy Coleslaw (GF)(VGN)",
+                "Garlic Parmesan Brussel Sprouts (GF)(VGN)"
+            ],
+            "gluten-free": [
+                "Dips and Chips Tapas (Hummaus, Babaganoush, Tzatzki , Pickled Vegetables)"
+            ],
+            "soup": ["Roasted Curry Cauliflower (GF)(VGN)", "Tom Yum Chicken (H)(GF)(DF)"],
+            "food_bar": [
+                "Quesadilla (Marinated Chicken Strips/Roasted Vegetable, Roasted Corn, Black Bean Monterey Jack Cheese)"
+            ]
+        },
+        "thursday": {
+            "entree": ["Jerk Chicken Legs (H)(GF)(DF)"],
+            "veg_entree": ["Jamaican Vegetable and Chickpea Curry (GF)(VGN)"],
+            "sides": [
+                "Rice and Red Kidney Bean (GF)(VGN)",
+                "Roasted Okra and Tomato Medley (GF)(VGN)",
+                "Aloo Tikki (VEG)"
+            ],
+            "gluten-free": ["Rice Vermicelli Bar (Tofu Strips/Edamame/Ginger Soy Pork)"],
+            "soup": ["Miso-Mushroom (GF)(VGN)", "Chicken Mulligatawny (H)(DF)"],
+            "food_bar": ["Pizza (Hawaiian/Ham, Greek Chicken, Pesto Mushroom, Cheese Pizza)"]
+        },
+        "friday": {
+            "entree": ["Beef Easy Enchilada (H)"],
+            "veg_entree": ["Ground Soy, Bean Easy Enchilada (VEG)"],
+            "sides": [
+                "Mexican Rice with Corn (GF)(VGN)",
+                "California Roast vegetable Mix (GF)(VGN)",
+                "Jalapeno Poppers (VEG)"
+            ],
+            "gluten-free": ["Quinoa Bowl (Chimichurri Chicken/Tempeh)"],
+            "soup": ["Tomato Roasted Pepper (GF)(VGN)", "Seafood Creole (H)(GF)"],
+            "food_bar": ["Panini (Tuna Melt, Philly Beef, Plant Based Philly, Grilled Cheese)"]
+        },
+        "saturday": {
+            "entree": ["Glazed Pork Char Siu (GF)(DF)"],
+            "veg_entree": ["Tofu and Mushroom Satay (GF)(VGN)"],
+            "sides": [
+                "Honey Garlic String Beans and Root Vegetable Blend (GF)(VGN)",
+                "Jasmine Rice (GF)(VGN)",
+                "Tempura Vegetable (VGN)"
+            ],
+            "gluten-free": ["GF Pasta Bar (Meat/Arabiata Sauce/Beans)"],
+            "soup": ["Moroccan Chickpea (GF)(VGN)", "Spicy Thai Chicken (H)(GF)(DF)"],
+            "food_bar": ["Pizza (Pepperoni - Halal, Jerk Chicken, Garden Veggie, Cheese Pizza)"]
+        },
+        "sunday": {
+            "entree": ["Chicken Vindaloo (H)(GF)(DF)"],
+            "veg_entree": ["Mattar Paneer Curry (GF)(VEG)", "Chana Masala (GF)(VGN)"],
+            "sides": [
+                "Cumin Basmati Rice (GF)(VGN)",
+                "Roasted Button Mushroom, Bell Peppers & Cauliflower (GF)(VGN)",
+                "Mini Vegetable Samosa (VGN)"
+            ],
+            "gluten-free": ["Baked Potato Bar (Mushrooms/Bacon)"],
+            "soup": ["Hot and Sour with Tofu (GF)(VGN)", "Beef & Red Bean (H)(GF)(DF)"],
+            "food_bar": ["Pizza (Pepperoni - Halal, Tuscan Chicken, Garden Veggie, Cheese Pizza)"]
+        }
+    },
+    {
+        "type": "dinner",
+        "week": 3,
+        "monday": {
+            "entree": ["Hungarian Goulash (H)(GF)(DF)"],
+            "veg_entree": ["Vegetable Goulash (GF)(VGN)"],
+            "sides": [
+                "Herb Egg Noodles (VGN)",
+                "Sautéd Green & Yellow Beans (GF)(VGN)",
+                "Fried Pickle (VEG)"
+            ],
+            "gluten-free": ["Nacho Bar (Five Bean Chili/Meat)"],
+            "soup": ["Split Pea and Roasted Pepper (GF)(VGN)", "Roasted Corn Chowder (GF)(VEG)"],
+            "food_bar": ["Panini (Buffalo Chicken, Grilled BLT, Crispy Tofu, Grilled Cheese)"]
+        },
+        "tuesday": {
+            "entree": ["Roasted Turkey/ Gravy (H)(GF)(DF)"],
+            "veg_entree": ["Spinach & Cheese Cannelloni/Marinara Sauce (VEG)"],
+            "sides": [
+                "Garlic Mashed Potato (GF)(VGN)",
+                "Sautéd Seasonal Vegetables (GF)(VGN)",
+                "Cranberry Stuffing (GF)(VGN)"
+            ],
+            "gluten-free": ["Shawarma Bar (Falafel with Flatbread/Chicken Shawarma)"],
+            "soup": ["Navy Bean & Garden Vegetable (GF)(VGN)", "Chicken Noodle (H)(DF)"],
+            "food_bar": ["Pizza (Pepperoni \u2013 Halal, BBQ Chicken, Garden Veggie, Cheese Pizza)"]
+        },
+        "wednesday": {
+            "entree": ["Salmon Steaks with Orange Ginger Sauce (H)(GF)(DF)"],
+            "veg_entree": ["Vegetable Orange Ginger Tofu (GF)(VGN)"],
+            "sides": [
+                "Vegetable Fried Rice (GF)(VGN)",
+                "Yellow & Green Beans Sauté (GF)(VGN)",
+                "Vegetable Egg Roll (VEG)"
+            ],
+            "gluten-free": ["Pasta Bar (Arabiata Sauce/Meat)"],
+            "soup": ["Wild Mushroom (GF)(VGN)", "Hearty Beef vegetable (H)(GF)(DF)"],
+            "food_bar": [
+                "Quesadilla (Marinated Chicken Strips, Roasted Vegetable, Roasted Corn, Black Bean Monterey Jack Cheese)"
+            ]
+        },
+        "thursday": {
+            "entree": ["Dry Rub Chicken Wings (H)(GF)(DF)"],
+            "veg_entree": ["Beyond Burger and Buns (GF)(VGN)"],
+            "sides": [
+                "Mac \u2018n\u2019 Cheese (VEG)",
+                "Garlic Sautéd Yellow and Green Zucchini and Tomatoes (GF)(VGN)",
+                "Assortment of Sauces"
+            ],
+            "gluten-free": ["Poke Bowl (Edamame/Shrimp Ceviche)"],
+            "soup": ["Brown Lentil & Spinach (GF)(VGN)", "Tom Yum Chicken (H)(GF)(DF)"],
+            "food_bar": ["Pizza (Hawaiian/Ham, Greek Chicken, Pesto Mushroom, Cheese Pizza)"]
+        },
+        "friday": {
+            "entree": ["Beef Tips with Mushroom Gravy (H)(GF)(DF)"],
+            "veg_entree": ["Plant Based Sausage Mushroom Gravy (GF)(VGN)"],
+            "sides": [
+                "Sauteed Perogies (VEG)",
+                "Stir fried Red &Green Cabbage (GF)(VGN)",
+                "Breaded Spear Dill (VEG)"
+            ],
+            "gluten-free": ["Greek Pasta Salad (Plant Based Strips/Chicken)"],
+            "soup": ["Spicy Black Bean (GF)(VGN)", "Potato Leek (GF)(VEG)"],
+            "food_bar": ["Panini (Tuna Melt, Philly Beef, Plant Based Philly, Grilled Cheese)"]
+        },
+        "saturday": {
+            "entree": ["Maple Balsamic Glaze Grilled Baked Pork Chop (GF)(DF)"],
+            "veg_entree": ["Maple Balsamic Glaze Impossible Meatless Patty (GF)(VGN)"],
+            "sides": [
+                "Scalloped Potatoes (GF)(VEG)",
+                "Roasted Heirloom Carrots and Green Beans (GF)(VGN) (DF)",
+                "Battered Onion Rings (VGN)"
+            ],
+            "gluten-free": ["Indian Basmati Rice Bowl (Vegan/Beef Curry)"],
+            "soup": ["Moroccan Chickpea (GF)(VGN)", "Beef Barley Vegetable (H)(DF)"],
+            "food_bar": ["Pizza (Pepperoni - Halal, Jerk Chicken, Garden Veggie, Cheese Pizza)"]
+        },
+        "sunday": {
+            "entree": ["Brazilian BBQ Chicken (H)(GF)(DF)"],
+            "veg_entree": ["Brazilian Roasted Vegetable Feijoada (GF)(VGN)"],
+            "sides": [
+                "Cilantro Rice (GF)(VGN)",
+                "Sauteed Garlic Collard Greens (GF)(VGN)",
+                "Brazilian Fried Pastel Eggroll (VEG)"
+            ],
+            "gluten-free": ["Rice Vermicelli Bowl (Thai Tofu / Shrimp Curry)"],
+            "food_bar": ["Pizza (Pepperoni - Halal, Tuscan Chicken, Garden Veggie, Cheese Pizza)"]
+        }
+    }
+]

@@ -3,15 +3,10 @@
 import TorontoDate from "@/TorontoDate"
 import Button from "@/components/Button"
 import Menu from "@/components/Menu"
+import { FALL_FIRST_MEAL, FALL_LAST_MEAL, WINTER_FIRST_MEAL, WINTER_LAST_MEAL } from "@/constants"
 import getMenu, { getMenuIndices } from "@/menu"
 
 import { useState } from "react"
-
-const FALL_FIRST_MEAL = TorontoDate.customDate(2023, 9, 4)
-const FALL_LAST_MEAL = TorontoDate.customDate(2023, 12, 20)
-
-const WINTER_FIRST_MEAL = TorontoDate.customDate(2024, 1, 8)
-const WINTER_LAST_MEAL = TorontoDate.customDate(2024, 5, 1)
 
 function getDayString(date: TorontoDate): string[] | null {
     const indices = getMenuIndices(date)
@@ -83,7 +78,9 @@ export default function Home() {
                 <div className="flex flex-col items-center justify-center">
                     <h1 className="text-2xl font-semibold">Menu Not Available 🥲</h1>
                     {day.isAfter(WINTER_LAST_MEAL) ? (
-                        <p className="text-lg">The academic year is over. Go back to check the old menu.</p>
+                        <p className="text-lg">
+                            The academic year is over. Go back to check the old menu.
+                        </p>
                     ) : (
                         <p className="text-lg">Check back later!</p>
                     )}

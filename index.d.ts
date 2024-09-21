@@ -1,17 +1,26 @@
 type Tag = "GF" | "H" | "VEG" | "DF" | "VGN"
 
-type MenuItem = {
-    foodtype: "entree" | "vegetarianentree" | "byoglutenfree" | "sides" | "soups"
-    item: string
+type LunchDinnerFoodType =
+    | "entree"
+    | "vegetarian_entree"
+    | "sides"
+    | "gluten_free"
+    | "soups"
+    | "food_bar"
+
+type LunchOrDinner = {
+    [key in LunchDinnerFoodType]: Food[]
+}
+
+type Food = {
+    name: string
     tags: Tag[]
 }
 
 type DayMeal = {
-    lunch: MenuItem[]
-    dinner: MenuItem[]
+    lunch: LunchOrDinner
+    dinner: LunchOrDinner
 }
-
-type Menu = DayMeal[][]
 
 type IGReview = {
     lunch?: string

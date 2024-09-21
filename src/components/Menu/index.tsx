@@ -9,13 +9,14 @@ import TorontoDate from "@/TorontoDate"
 import { useEffect, useState } from "react"
 import { usePlausible } from "next-plausible"
 
-const FOOD_TYPE_TITLES: { [key: string]: string } = {
+const FOOD_TYPE_TITLES: Record<LunchDinnerFoodType, string> = {
     entree: "Entrees",
-    vegetarianentree: "Vegetarian Entrees",
-    byoglutenfree: "Gluten-Free Options",
+    vegetarian_entree: "Vegetarian Entrees",
     sides: "Side Dishes",
+    gluten_free: "Gluten-Free Options",
     soups: "Soups",
-}
+    food_bar: "Food Bar",
+} as const
 
 function shouldDisplayLunch(): boolean {
     const now = TorontoDate.now()
@@ -23,17 +24,6 @@ function shouldDisplayLunch(): boolean {
     const lunchEndTime = TorontoDate.customDate(year, month, day, 15, 30)
 
     return now.isBefore(lunchEndTime) // Before 3:30 p.m., display lunch
-}
-
-function normalizeTags(tags: Tag[], type: string): Tag[] {
-    // add GF tag to gluten-free options if it already doesn't exist
-    // this is required as burwash dining hall menu does not include
-    // the gluten free tag for "BYO Gluten Free"
-    // this is assuming every food in "BYO Gluten Free" is gluten free...
-    if (type === "byoglutenfree") {
-        return tags.includes("GF") ? tags : [...tags, "GF" as Tag]
-    }
-    return tags
 }
 
 type MenuProps = {
@@ -88,34 +78,44 @@ export default function Menu({ menu, dateData }: MenuProps) {
                     </p>
                 </div>
             ) : (
-                Object.keys(FOOD_TYPE_TITLES).map(type => {
-                    let itemsOfType = menu[mealType].filter(item => item.foodtype === type)
+                (Object.keys(FOOD_TYPE_TITLES) as LunchDinnerFoodType[]).map(foodType => {
+                    // type Tag = "GF" | "H" | "VEG" | "DF" | "VGN"
 
-                    // if mealType is dinner, byoglutenfree and soups will always be missing.
-                    // they should be added from the lunch menu
-                    // This should optimally be handled in the scraping process, but I adopted
-                    // this approach to keep the scraping process independent from the UI. Scraper
-                    // should display the data as is, and the UI should handle the data as it sees fit.
-                    // However, I will consider changing this in the future.
-                    if (mealType === "dinner" && (type === "byoglutenfree" || type === "soups")) {
-                        itemsOfType = [
-                            ...itemsOfType,
-                            ...menu.lunch.filter(item => item.foodtype === type),
-                        ]
-                    }
+                    // type LunchDinnerFoodType = "entree" | "vegetarian_entree" | "sides" | "gluten_free" | "soups" | "food_bar"
+
+                    // type LunchAndDinner = {
+                    //     [key in LunchDinnerFoodType]?: Food[]
+                    // }
+
+                    // type Food = {
+                    //     name: string
+                    //     tags: Tag[]
+                    // }
+
+                    // type DayMeal = {
+                    //     lunch: LunchAndDinner
+                    //     dinner: LunchAndDinner
+                    // }
+
+                    // type IGReview = {
+                    //     lunch?: string
+                    //     dinner?: string
+                    // }
+                    // let itemsOfType = menu[mealType].filter(item => item.foodtype === type)
+                    let itemsOfType = menu[mealType][foodType]
 
                     if (itemsOfType.length > 0) {
                         return (
-                            <div key={type} className="mb-8">
+                            <div key={foodType} className="mb-8">
                                 <h3 className="text-lg font-bold uppercase tracking-wide mb-5">
-                                    {FOOD_TYPE_TITLES[type]}
+                                    {FOOD_TYPE_TITLES[foodType]}
                                 </h3>
                                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-32 gap-y-6">
                                     {itemsOfType.map((item, index) => (
                                         <div key={index} className="flex justify-between">
-                                            <span className="font-normal">{item.item}</span>
+                                            <span className="font-normal">{item.name}</span>
                                             <span className="flex items-center font-normal">
-                                                <Icons icons={normalizeTags(item.tags, type)} />
+                                                <Icons icons={item.tags} />
                                             </span>
                                         </div>
                                     ))}

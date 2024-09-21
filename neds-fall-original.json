@@ -1,0 +1,200 @@
+[
+    {
+        "type": "all_day",
+        "items": {
+            "all_day": [
+                "Pastries, Beverages-Hot & Cold, Yogurt, Milk, Whole Fruits, Snacks, Desserts"
+            ]
+        }
+    },
+    {
+        "type": "everyday",
+        "items": {
+            "deli_sandwiches_everyday": [
+                "Classic Egg Salad (VEG) / Hummus and Roast Vegetables (VGN) / Tuna Salad (H) / Roast Turkey and Cheddar Cheese"
+            ],
+            "salads_everyday": [
+                "Garden Salad / Crudités / Salad Bowl with Meat or Vegetable Protein"
+            ]
+        }
+    },
+    {
+        "type": "breakfast",
+        "items": {
+            "breakfast_sandwich": [
+                "Egg and Cheese on Bagel or English Muffin. (Add Protein and Lettuce/Tomato)",
+                "Toasted Bagel with Cream Cheese. (Add Lettuce/Tomato)"
+            ]
+        }
+    },
+    {
+        "type": "main",
+        "week": 1,
+        "monday": {
+            "soups": ["Harvest Vegetable Barley (VGN)", "Turkey Noodle (H)(DF)"],
+            "entree": ["Beef Lasagna"],
+            "vegetable_entree": ["Vegetable Lasagna (VEG)"],
+            "sides": ["Garlic Bread \u2013 2 pcs (VEG)", "Balsamic Glazed Zucchini (GF)(VGN)"],
+            "feature_hot_sandwich": ["Chicken Quesadilla (H)"],
+            "feature_hot_vegetable_sandwich": ["Vegetable and Bean Quesadilla (VGN)"]
+        },
+        "tuesday": {
+            "soups": ["Broccoli & Cheddar (GF)(VEG)", "Hearty Chicken Minestrone (H)(DF)"],
+            "entree": ["Orange Ginger Teriyaki Chicken (H)(GF)"],
+            "vegetable_entree": ["Orange Ginger Teriyaki Chicken (GF)(VGN)"],
+            "sides": [
+                "Fluffy Rice (GF)(VGN)",
+                "Steamed Green Vegetable Blend (GF)(VGN)",
+                "Vegetable Spring Rolls (GF)(VGN)"
+            ],
+            "feature_hot_sandwich": ["Meatball Sub (H)"],
+            "feature_hot_vegetable_sandwich": ["Vegetable Meatball Sub (VGN)"]
+        },
+        "wednesday": {
+            "soups": ["Lentil Spinach (GF)(VGN)", "Woodland Mushroom (DF)"],
+            "entree": ["Tuscan Style Sausage (H)(DF)"],
+            "vegetable_entree": ["Tuscan Style Vegan Sausage (GF)(VGN)"],
+            "sides": [
+                "Mac & Cheese or Veggie Chilli (VEG)",
+                "Vegetable Medley (GF)(VGN)",
+                "Garlic Bread (VGN)"
+            ],
+            "feature_hot_sandwich": ["Southern Chicken (H)"],
+            "feature_hot_vegetable_sandwich": ["Meatless Tenders (VGN)"]
+        },
+        "thursday": {
+            "soups": ["Spanish and Kale (GF)(VGN)", "Chicken Tortilla Soup (GF)"],
+            "entree": ["Butter Chicken \u2013 6oz (H) (GF)"],
+            "vegetable_entree": ["Butter Paneer and Cauliflower (GF)(VEG)"],
+            "sides": [
+                "Basmati Rice (GF)(VGN)",
+                "Steamed Vegetable Blend (GF)(VGN)",
+                "Vegetable Mini Samosas \u2013 3pcs (VGN)"
+            ],
+            "feature_hot_sandwich": ["Beef Burger (H)"],
+            "feature_hot_vegetable_sandwich": ["Veggie Burger (VGN)"]
+        },
+        "friday": {
+            "soups": ["Cream Of Roasted Squash (GF)(VGN)", "New England Clam Chowder (H)(GF)"],
+            "entree": ["Breaded Haddock"],
+            "vegetable_entree": ["Plant Based Nuggets (GF)(VGN)"],
+            "sides": ["Coleslaw (GF)(VEG)", "Tartar sauce (VGN)"],
+            "feature_hot_sandwich": ["Deluxe Personal Pizza Pepperoni / Chicken (H)"],
+            "feature_hot_vegetable_sandwich": ["Garden Vegetable Personal Pizza (VEG)"]
+        }
+    },
+    {
+        "type": "main",
+        "week": 2,
+        "monday": {
+            "soups": ["Mexican Bean (GF)(VGN)", "Lemon Turkey Orzo (H)(GF)(DF)"],
+            "entree": ["Meatballs in Marinara Sauce - 5pcs (H)(DF)"],
+            "vegetable_entree": ["Vegan Meatballs in Marinara Sauce - 5pcs (VGN)"],
+            "sides": [
+                "Primavera Pasta Casserole (VGN)",
+                "Roasted Vegetables",
+                "Garlic Bread \u2013 2 pcs (VEG)",
+                "Parmesan Cheese (ON SIDE)"
+            ],
+            "feature_hot_sandwich": ["Southern Chicken (H)"],
+            "feature_hot_vegetable_sandwich": ["Meatless Tenders (VGN)"]
+        },
+        "tuesday": {
+            "soups": ["Lentil Dahl (GF)(VGN)", "Italian Wedding (H)(DF)"],
+            "entree": ["Beef Chili (H)"],
+            "vegetable_entree": ["Veggie Chili (VEG)"],
+            "sides": ["Steamed Vegetables (VGN)", "Garlic Bread (VGN)"],
+            "feature_hot_sandwich": ["Hawaiian Personal Pizza (H)"],
+            "feature_hot_vegetable_sandwich": ["Hawaiian Vegetable Personal Pizza (VEG)"]
+        },
+        "wednesday": {
+            "soups": ["Roasted Curry Cauliflower (GF)(VGN)", "Tom Yum Chicken (H)(GF)(DF)"],
+            "entree": ["Spinach and Cheese Cannelloni \u2013 2pcs (VEG)"],
+            "vegetable_entree": ["Spinach and Cheese Cannelloni \u2013 2pcs (VEG)"],
+            "sides": [
+                "Marinara Sauce (GF)(VGN)",
+                "Caesar Salad (GF)(VGN)",
+                "Garlic Bread \u2013 2 pcs (VEG)",
+                "Parmesan Cheese (ON SIDE)"
+            ],
+            "feature_hot_sandwich": ["Tandoori Chicken (H)"],
+            "feature_hot_vegetable_sandwich": ["Tandoori Paneer (VEG)"]
+        },
+        "thursday": {
+            "soups": ["Miso- Mushroom (GF)(VGN)", "Chicken Mulligatawny (H)(DF)"],
+            "entree": ["Creamy Peppercorn Chicken Breast -1pc (H)(GF)"],
+            "vegetable_entree": ["Bean and Vegetable Ratatouille (GF)(VGN)"],
+            "sides": [
+                "Lemon Rice (GF)(VGN)",
+                "Steamed Green Beans \u2013 4oz (VGN)",
+                "Spanakopita \u2013 2pcs (VEG)"
+            ],
+            "feature_hot_sandwich": ["Beef Burger (H)"],
+            "feature_hot_vegetable_sandwich": ["Veggie Burger (VGN)"]
+        },
+        "friday": {
+            "soups": ["Tomato Roasted Pepper (GF)(VGN)", "Seafood Creole (H)(GF)"],
+            "entree": ["Baked Salmon with Mango Ginger Salsa (GF)(DF)"],
+            "vegetable_entree": ["Four Cheese & Spinach Manicotti Pasta (VEG)"],
+            "sides": [
+                "Herb Scented Wild rice (GF)(VGN)",
+                "Yellow n Green Beans (GF)(VGN)",
+                "Dinner Roll (VEG)"
+            ],
+            "feature_hot_sandwich": ["Meatball Sub (H)"],
+            "feature_hot_vegetable_sandwich": ["Vegetable Meatball Sub (VGN)"]
+        }
+    },
+    {
+        "type": "main",
+        "week": 3,
+        "monday": {
+            "soups": ["Split Pea and Roasted pepper (GF)(VGN)", "Roasted Corn Chowder (GF)(VEG)"],
+            "entree": ["Beef Lasagna"],
+            "vegetable_entree": ["Vegetable Lasagna (VEG)"],
+            "sides": ["Balsamic Glazed Zucchini (GF)(VGN)", "Garlic Bread \u2013 2 pcs (VEG)"],
+            "feature_hot_sandwich": ["Chicken Quesadilla (H)"],
+            "feature_hot_vegetable_sandwich": ["Vegetable and Corn/Bean Quesadilla (VGN)"]
+        },
+        "tuesday": {
+            "soups": ["Navy Bean & Garden Vegetable (GF)(VGN)", "Chicken Noodle (H)(DF)"],
+            "entree": ["Chicken Souvlaki Off stick (H)(GF)"],
+            "vegetable_entree": ["Vegetable & Tofu Souvlaki Off stick (GF)(VGN)"],
+            "sides": [
+                "Lemon Rice (GF)(VGN)",
+                "Greek Salad (GF)(VEG)",
+                "Vegetable Spanakopita (VEG)"
+            ],
+            "feature_hot_sandwich": ["Meatball Sub (H)"],
+            "feature_hot_vegetable_sandwich": ["Vegetable Meatball Sub (VGN)"]
+        },
+        "wednesday": {
+            "soups": ["Wild Mushroom (GF)(VGN)", "Hearty Beef vegetable (H)(GF)(DF)"],
+            "entree": ["Swedish Meatballs in Gravy (H)"],
+            "vegetable_entree": ["Plant Based Swedish Meatballs (VEG)"],
+            "sides": ["Herbed pasta (VGN)", "Vegetable Medley (GF)(VGN)", "Garlic Bread (VGN)"],
+            "feature_hot_sandwich": ["Southern Chicken (H)"],
+            "feature_hot_vegetable_sandwich": ["Meatless Tenders (VGN)"]
+        },
+        "thursday": {
+            "soups": ["Brown Lentil & Spinach (GF)(VGN)", "Tom Yum Chicken (H)(GF)(DF)"],
+            "entree": ["Jerk Chicken (H)(GF)"],
+            "vegetable_entree": ["West Indian Vegetable Curry with Chickpeas (GF)(VEG)"],
+            "sides": [
+                "Rice and Peas (GF)(VGN)",
+                "Steamed Vegetable Blend (GF)(VGN)",
+                "Vegetable Jamaican Patty (GF)(VGN)"
+            ],
+            "feature_hot_sandwich": ["Beef Burger (H)"],
+            "feature_hot_vegetable_sandwich": ["Veggie Burger (VGN)"]
+        },
+        "friday": {
+            "soups": ["Spicy Black Bean (GF)(VGN)", "Potato Leek (GF)(VEG)"],
+            "entree": ["Chicken Fingers (H)"],
+            "vegetable_entree": ["Impossible Chicken Nuggets (VGN)"],
+            "sides": ["French Fries (GF)(VGN)", "Coleslaw (GF)(VEG)", "Plum Sauce (GF)(VGN)"],
+            "feature_hot_sandwich": ["Deluxe Personal Pizza Pepperoni / Chicken (H)"],
+            "feature_hot_vegetable_sandwich": ["Garden Vegetable Personal Pizza (VEG)"]
+        }
+    }
+]
