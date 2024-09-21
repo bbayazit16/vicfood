@@ -1,4 +1,4 @@
-import TorontoDate from "@/TorontoDate"
+import TorontoDate from "@/lib/TorontoDate"
 import { useEffect, useState } from "react"
 
 export default function useTime() {
@@ -13,5 +13,4 @@ export default function useTime() {
         return () => clearInterval(interval)
     }, [])
 
-    return date
-}
+    return dat

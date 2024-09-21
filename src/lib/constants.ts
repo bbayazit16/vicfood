@@ -1,4 +1,4 @@
-import TorontoDate from "./TorontoDate"
+import TorontoDate from "@/lib/TorontoDate"
 
 export const FALL_FIRST_MEAL = TorontoDate.customDate(2024, 9, 2)
 export const FALL_LAST_MEAL = TorontoDate.customDate(2024, 12, 22)

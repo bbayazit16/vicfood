@@ -2,12 +2,14 @@
 
 import Icons from "./Icons"
 import MenuSwitch from "./MenuSwitch"
-import getReviewsForDay from "@/firebase"
 import Embed from "./Embed"
-import TorontoDate from "@/TorontoDate"
+import TorontoDate from "@/lib/TorontoDate"
 
 import { useEffect, useState } from "react"
 import { usePlausible } from "next-plausible"
+import useMenuChoice from "@/hooks/useMenuChoice"
+import { WINTER_LAST_MEAL } from "@/lib/constants"
+import getReviews from "@/actions/getReviews"
 
 const FOOD_TYPE_TITLES: Record<LunchDinnerFoodType, string> = {
     entree: "Entrees",
@@ -26,16 +28,7 @@ function shouldDisplayLunch(): boolean {
     return now.isBefore(lunchEndTime) // Before 3:30 p.m., display lunch
 }
 
-type MenuProps = {
-    menu: DayMeal
-    dateData: {
-        year: number
-        month: number
-        day: number
-    }
-}
-
-export default function Menu({ menu, dateData }: MenuProps) {
+export default function Menu() {
     const [mealType, setMealType] = useState<"lunch" | "dinner" | "reviews">(
         shouldDisplayLunch() ? "lunch" : "dinner"
     )
@@ -43,11 +36,13 @@ export default function Menu({ menu, dateData }: MenuProps) {
 
     const plausible = usePlausible()
 
+    const { dailyMenu, day } = useMenuChoice()
+
     useEffect(() => {
-        getReviewsForDay(dateData.year, dateData.month, dateData.day).then(review => {
+        getReviews(day.year(), day.month(), day.day()).then(review => {
             setReview(review)
         })
-    }, [dateData])
+    }, [day])
 
     return (
         <div className="p-4">
@@ -60,7 +55,7 @@ export default function Menu({ menu, dateData }: MenuProps) {
                         if (meal === "reviews") {
                             plausible("ReviewViewed", {
                                 props: {
-                                    date: `${dateData.year}-${dateData.month}-${dateData.day}`,
+                                    date: `${day.year()}-${day.month()}-${day.day()}`,
                                 },
                             })
                             return
@@ -77,32 +72,9 @@ export default function Menu({ menu, dateData }: MenuProps) {
                         Reviews supplied by Burwash Food Review.
                     </p>
                 </div>
-            ) : (
+            ) : dailyMenu ? (
                 (Object.keys(FOOD_TYPE_TITLES) as LunchDinnerFoodType[]).map(foodType => {
-                    // type Tag = "GF" | "H" | "VEG" | "DF" | "VGN"
-
-                    // type LunchDinnerFoodType = "entree" | "vegetarian_entree" | "sides" | "gluten_free" | "soups" | "food_bar"
-
-                    // type LunchAndDinner = {
-                    //     [key in LunchDinnerFoodType]?: Food[]
-                    // }
-
-                    // type Food = {
-                    //     name: string
-                    //     tags: Tag[]
-                    // }
-
-                    // type DayMeal = {
-                    //     lunch: LunchAndDinner
-                    //     dinner: LunchAndDinner
-                    // }
-
-                    // type IGReview = {
-                    //     lunch?: string
-                    //     dinner?: string
-                    // }
-                    // let itemsOfType = menu[mealType].filter(item => item.foodtype === type)
-                    let itemsOfType = menu[mealType][foodType]
+                    const itemsOfType = dailyMenu[mealType][foodType] || []
 
                     if (itemsOfType.length > 0) {
                         return (
@@ -125,6 +97,17 @@ export default function Menu({ menu, dateData }: MenuProps) {
                     }
                     return null
                 })
+            ) : (
+                <div className="flex flex-col items-center justify-center">
+                    <h1 className="text-2xl font-semibold">Menu Not Available 🥲</h1>
+                    {day.isAfter(WINTER_LAST_MEAL) ? (
+                        <p className="text-lg">
+                            The academic year is over. Go back to check the old menu.
+                        </p>
+                    ) : (
+                        <p className="text-lg">Check back later!</p>
+                    )}
+                </div>
             )}
         </div>
     )

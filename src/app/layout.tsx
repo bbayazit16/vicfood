@@ -6,6 +6,7 @@ import { Inter } from "next/font/google"
 import PlausibleProvider from "next-plausible"
 import Footer from "@/components/Footer"
 import NavBar from "@/components/NavBar"
+import MenuChoiceProvider from "@/providers/MenuChoiceProvider"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,7 +28,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     selfHosted
                     trackOutboundLinks
                     taggedEvents
-
                     enabled
                     trackLocalhost
                     // If the prop `enabled` is not set, tracking is enabled in production.
@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <body className={inter.className}>
                 <div className="flex flex-col min-h-screen">
                     <NavBar />
-                    {children}
+                    <MenuChoiceProvider>{children}</MenuChoiceProvider>
                     <Footer />
                 </div>
             </body>

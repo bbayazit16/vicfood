@@ -1,6 +1,6 @@
 "use client"
 
-import TorontoDate from "@/TorontoDate"
+import TorontoDate from "@/lib/TorontoDate"
 import useTime from "@/hooks/useTime"
 
 const serving = (what: string) => (
