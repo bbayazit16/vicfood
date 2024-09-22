@@ -1,41 +1,25 @@
 "use client"
 
 import Button from "@/components/Button"
-import {
-    FALL_FIRST_MEAL,
-    FALL_LAST_MEAL,
-    WINTER_FIRST_MEAL,
-} from "@/lib/constants"
+import { FALL_FIRST_MEAL, FALL_LAST_MEAL, WINTER_FIRST_MEAL } from "@/lib/constants"
 import TorontoDate from "@/lib/TorontoDate"
-import { getMenuIndices } from "@/lib/menu"
 
 import useMenuChoice from "@/hooks/useMenuChoice"
-
-function getDayString(date: TorontoDate): string[] | null {
-    const indices = getMenuIndices(date)
-
-    if (!indices) return null
-
-    const { menu } = indices
-
-    const dayOfWeek = date.getCurrentDayAsString()
-    const { day, month } = date.getDateData()
-
-    return [`${dayOfWeek} ${month}/${day}`, `Week ${menu + 1} Menu`]
-}
+import DatePicker from "@/components/DatePicker"
+import getDayString from "@/lib/dateString"
+import PreferenceSelector from "./PreferenceSelector"
 
 export default function MenuPicker() {
     const { dailyMenu, day, setDay } = useMenuChoice()
 
-    const [dayString, weekString] = getDayString(day) || ["", ""]
+    const [_, weekString] = getDayString(day) || ["", ""]
 
     return (
         <div className="flex flex-row justify-between items-center sm:m-2 md:m-4">
             <Button
                 onClick={() =>
                     setDay((day: TorontoDate) => {
-                        if (day.isBefore(FALL_FIRST_MEAL)) return day
-
+                        if (day.isSameDay(FALL_FIRST_MEAL)) return day
                         if (day.isSameDay(WINTER_FIRST_MEAL)) return FALL_LAST_MEAL
 
                         const prevDay = day.clone()
@@ -48,10 +32,16 @@ export default function MenuPicker() {
                 <span className="text-sm inline md:hidden md:text-base">Prev Day</span>
             </Button>
 
-            <div className="flex flex-col md:flex-row items-center justify-center m-auto">
-                <span className="text-center text-sm md:text-base">{dayString}</span>
-                <span className="mx-2 hidden md:inline">{dailyMenu ? "|" : ""}</span>
-                <span className="text-center text-sm md:text-base">{weekString}</span>
+            <div className="flex flex-col space-y-4">
+                <div className="flex flex-col md:flex-row items-center justify-center m-auto">
+                    {/* <span className="text-center text-sm md:text-base">{dayString}</span> */}
+                    <DatePicker />
+                    <span className="mx-2 hidden md:inline">{dailyMenu ? "|" : ""}</span>
+                    <span className="text-center text-sm md:text-base">{weekString}</span>
+                </div>
+                <div className="flex flex-col md:flex-row items-center justify-center m-auto space-x-2">
+                    <span className="text-sm">Only show: </span><PreferenceSelector />
+                </div>
             </div>
 
             <Button

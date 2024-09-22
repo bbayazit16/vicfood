@@ -28,6 +28,17 @@ function shouldDisplayLunch(): boolean {
     return now.isBefore(lunchEndTime) // Before 3:30 p.m., display lunch
 }
 
+// If vegeterian ('VEG') is selected, also select vegan ('VGN')
+// but the opposite is not true. If Halal ('H') is selected,
+// automatically display vegan ('VGN') and vegetarian ('VEG') options.
+const subsetMap: Record<Tag, Tag[]> = {
+    GF: [],
+    H: ["VEG", "VGN"],
+    VEG: ["VGN"],
+    DF: [],
+    VGN: [],
+}
+
 export default function Menu() {
     const [mealType, setMealType] = useState<"lunch" | "dinner" | "reviews">(
         shouldDisplayLunch() ? "lunch" : "dinner"
@@ -37,7 +48,7 @@ export default function Menu() {
 
     const plausible = usePlausible()
 
-    const { dailyMenu, day } = useMenuChoice()
+    const { dailyMenu, day, preferences } = useMenuChoice()
 
     useEffect(() => {
         getReviews(day.year(), day.month(), day.day()).then(review => {
@@ -75,7 +86,15 @@ export default function Menu() {
                 </div>
             ) : dailyMenu ? (
                 (Object.keys(FOOD_TYPE_TITLES) as LunchDinnerFoodType[]).map(foodType => {
-                    const itemsOfType = dailyMenu[mealType][foodType] || []
+                    const itemsOfTypeUnfiltered = dailyMenu[mealType][foodType] || []
+                    const itemsOfType = itemsOfTypeUnfiltered.filter(item =>
+                        preferences.every(preference => {
+                            // Get all acceptable tags for this preference
+                            const acceptableTags = [preference, ...subsetMap[preference]]
+                            // Check if the item has at least one of the acceptable tags
+                            return acceptableTags.some(tag => item.tags.includes(tag))
+                        })
+                    )
 
                     if (itemsOfType.length > 0) {
                         return (

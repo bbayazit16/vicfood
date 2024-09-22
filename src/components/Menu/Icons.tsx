@@ -34,3 +34,9 @@ export default function Icons({ icons }: IconsProps) {
         </div>
     )
 }
+
+export const vegan = <LuVegan />
+export const vegetarian = <LuSalad />
+export const halal = <LuHeading />
+export const glutenFree = <LuWheatOff />
+export const dairyFree = <LuMilkOff />

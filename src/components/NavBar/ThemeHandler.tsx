@@ -1,44 +1,28 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { LuMoon, LuSun } from "react-icons/lu"
 
-function detectTheme() {
-    if (localStorage.getItem("darkTheme")) {
-        document.documentElement.classList.add("dark")
-    } else {
-        document.documentElement.classList.remove("dark")
-    }
-}
+import { LuMoon, LuSun, LuLoader } from "react-icons/lu"
+import { useTheme } from "next-themes"
 
 export default function ThemeHandler() {
-    const [icon, setIcon] = useState<JSX.Element>(<LuMoon />)
-
-    function updateTheme() {
-        localStorage.getItem("darkTheme")
-            ? localStorage.removeItem("darkTheme")
-            : localStorage.setItem("darkTheme", "1")
-        detectTheme()
-        if (localStorage.getItem("darkTheme")) {
-            document.querySelector('meta[name="theme-color"]')?.setAttribute("content", "#18181B")
-            setIcon(<LuSun />)
-        } else {
-            document.querySelector('meta[name="theme-color"]')?.setAttribute("content", "#ffffff")
-            setIcon(<LuMoon />)
-        }
-    }
+    const { theme, setTheme, resolvedTheme } = useTheme()
+    const [mounted, setMounted] = useState(false)
 
     useEffect(() => {
-        detectTheme()
-        if (localStorage.getItem("darkTheme")) {
-            setIcon(<LuSun />)
-        } else {
-            setIcon(<LuMoon />)
-        }
+        setMounted(true)
     }, [])
 
+    if (!mounted) return <LuLoader />
+
+    const currentTheme = theme === "system" ? resolvedTheme : theme
+    const icon = currentTheme === "dark" ? <LuMoon /> : <LuSun />
+
     return (
-        <button className="flex m-auto items-center justify-center" onClick={updateTheme}>
+        <button
+            className="flex m-auto items-center justify-center"
+            onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
+        >
             {icon}
         </button>
     )

@@ -2,6 +2,7 @@ import "./globals.css"
 
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
+import { ThemeProvider } from "next-themes"
 
 import PlausibleProvider from "next-plausible"
 import Footer from "@/components/Footer"
@@ -20,7 +21,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en">
+        // suppressHydrationWarning required by next-themess
+        <html lang="en" suppressHydrationWarning>
             <head>
                 <PlausibleProvider
                     domain="vicfood.ca"
@@ -35,11 +37,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 />
             </head>
             <body className={inter.className}>
-                <div className="flex flex-col min-h-screen">
-                    <NavBar />
-                    <MenuChoiceProvider>{children}</MenuChoiceProvider>
-                    <Footer />
-                </div>
+                <ThemeProvider enableSystem={false} attribute="class">
+                    <div className="flex flex-col min-h-screen">
+                        <NavBar />
+                        <MenuChoiceProvider>{children}</MenuChoiceProvider>
+                        <Footer />
+                    </div>
+                </ThemeProvider>
             </body>
         </html>
     )

@@ -1,16 +1,19 @@
 "use client"
 
 import { WINTER_LAST_MEAL } from "@/lib/constants"
-import getMenu from "@/lib/menu"
 import TorontoDate from "@/lib/TorontoDate"
 import { createContext, useState, ReactNode, useEffect } from "react"
 import type { Dispatch, SetStateAction } from "react"
+import getTodaysMenu from "@/lib/menu"
+import useLocalStorage from "@/hooks/useLocalStorage"
 
 interface MenuChoiceContextType {
     menuChoice: "lunch" | "dinner"
     day: TorontoDate
+    preferences: Tag[]
     setMenuChoice: Dispatch<SetStateAction<"lunch" | "dinner">>
     setDay: Dispatch<SetStateAction<TorontoDate>>
+    setPreferences: Dispatch<SetStateAction<Tag[]>>
     dailyMenu: DayMeal | null
 }
 
@@ -25,15 +28,25 @@ export default function MenuChoiceProvider({ children }: MenuChoiceProviderProps
     const [day, setDay] = useState<TorontoDate>(
         TorontoDate.now().isAfter(WINTER_LAST_MEAL) ? WINTER_LAST_MEAL : TorontoDate.now()
     )
-
-    const [dailyMenu, setDailyMenu] = useState<DayMeal | null>(getMenu(day))
+    const [dailyMenu, setDailyMenu] = useState<DayMeal | null>(getTodaysMenu(day))
+    const [preferences, setPreferences] = useState<Tag[]>([])
 
     useEffect(() => {
-        setDailyMenu(getMenu(day))
+        setDailyMenu(getTodaysMenu(day))
     }, [day])
 
     return (
-        <MenuChoiceContext.Provider value={{ menuChoice, day, setMenuChoice, setDay, dailyMenu }}>
+        <MenuChoiceContext.Provider
+            value={{
+                menuChoice,
+                day,
+                setMenuChoice,
+                setDay,
+                dailyMenu,
+                preferences,
+                setPreferences,
+            }}
+        >
             {children}
         </MenuChoiceContext.Provider>
     )

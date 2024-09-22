@@ -43,7 +43,7 @@ export function getMenuIndices(
     let startDate = FALL_FIRST_MEAL
     let isFall = false
     if (date.isBefore(FALL_FIRST_MEAL)) {
-        startDate = TorontoDate.customDate(2023, 9, 4)
+        startDate = FALL_FIRST_MEAL
         isFall = true
     }
 
