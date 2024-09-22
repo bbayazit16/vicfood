@@ -5,7 +5,6 @@ import TorontoDate from "@/lib/TorontoDate"
 import { createContext, useState, ReactNode, useEffect } from "react"
 import type { Dispatch, SetStateAction } from "react"
 import getTodaysMenu from "@/lib/menu"
-import useLocalStorage from "@/hooks/useLocalStorage"
 
 interface MenuChoiceContextType {
     menuChoice: "lunch" | "dinner"
