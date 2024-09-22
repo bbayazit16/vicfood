@@ -5,12 +5,10 @@ import {
     FALL_FIRST_MEAL,
     FALL_LAST_MEAL,
     WINTER_FIRST_MEAL,
-    WINTER_LAST_MEAL,
 } from "@/lib/constants"
 import TorontoDate from "@/lib/TorontoDate"
-import getMenu, { getMenuIndices } from "@/lib/menu"
+import { getMenuIndices } from "@/lib/menu"
 
-import { useMemo, useState } from "react"
 import useMenuChoice from "@/hooks/useMenuChoice"
 
 function getDayString(date: TorontoDate): string[] | null {

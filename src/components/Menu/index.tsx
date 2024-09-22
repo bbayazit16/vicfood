@@ -32,6 +32,7 @@ export default function Menu() {
     const [mealType, setMealType] = useState<"lunch" | "dinner" | "reviews">(
         shouldDisplayLunch() ? "lunch" : "dinner"
     )
+
     const [review, setReview] = useState<IGReview | undefined>()
 
     const plausible = usePlausible()
