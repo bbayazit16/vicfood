@@ -125,6 +125,7 @@ def normalize_json(json: list) -> tuple[dict, dict]:
     }
 
 
+# perl -pi -e 's/\\xe9/e/g' burwash-fall-original.json
 if __name__ == "__main__":
     with open("burwash-fall-original.json", 'r') as original_json_file, open("normalized_menu.json", "w+") as output:
         json = loads(original_json_file.read())

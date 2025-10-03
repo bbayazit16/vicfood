@@ -2,142 +2,645 @@
     "breakfast": [
         {
             "eggs": [
-                { "name": "Scrambled Eggs", "tags": ["GF", "VEG"] },
-                { "name": "Soft-Boiled Eggs", "tags": ["GF", "VEG"] }
+                {
+                    "name": "Scrambled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                },
+                {
+                    "name": "Soft-Boiled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
             ],
-            "eggs_specialty": [{ "name": "Fried Egg", "tags": ["GF", "VEG"] }],
-            "sweet_breakfast": [{ "name": "Pancakes", "tags": ["VEG"] }],
-            "potato": [{ "name": "Plain Home Fries", "tags": ["GF", "VGN"] }],
+            "eggs_specialty": [
+                {
+                    "name": "Fried Egg",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
+            ],
+            "sweet_breakfast": [
+                {
+                    "name": "French Toast Stick w/toppings",
+                    "tags": [
+                        "VEG"
+                    ]
+                }
+            ],
+            "starch": [
+                {
+                    "name": "Plain Home Fries",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                }
+            ],
             "protein": [
-                { "name": "Bacon", "tags": ["GF"] },
-                { "name": "Beef Sausage Patty", "tags": ["H", "GF", "DF"] }
+                {
+                    "name": "Bacon",
+                    "tags": []
+                },
+                {
+                    "name": "Beef Sausage Patty",
+                    "tags": [
+                        "H",
+                        "GF"
+                    ]
+                },
+                {
+                    "name": "Gardein Breakfast Patty",
+                    "tags": [
+                        "VGN"
+                    ]
+                }
             ],
-            "plant_based": [
-                { "name": "Roasted Sweet Potato, Black Beans, & Poblano", "tags": ["GF", "VGN"] },
-                { "name": "Spiced Tofu Scramble", "tags": ["GF", "VGN"] }
+            "plant-based": [
+                {
+                    "name": "Tofu Scramble with Peppers and Onions",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                }
+            ],
+            "Custom Breakfast Bar": [
+                {
+                    "name": "Breakfast Pizza Bar: Garlic Butter Scrambled Eggs, Diced Meat Sausage Crumble, Vegan Crumble, Cheese and Toppings",
+                    "tags": []
+                }
+            ],
+            "Yogurt Bar": [
+                {
+                    "name": "Variety of Yogurts and Toppings",
+                    "tags": []
+                }
             ],
             "smoothies": [
-                { "name": "Classic Green Smoothie", "tags": [] },
-                { "name": "Tropical", "tags": [] }
+                {
+                    "name": "Classic Green Smoothie",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                },
+                {
+                    "name": "Tropical",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
             ]
         },
         {
             "eggs": [
-                { "name": "Scrambled Eggs", "tags": ["GF", "VEG"] },
-                { "name": "Soft-Boiled Eggs", "tags": ["GF", "VEG"] }
+                {
+                    "name": "Scrambled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                },
+                {
+                    "name": "Soft-Boiled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
             ],
-            "eggs_specialty": [{ "name": "Mexican Omelette", "tags": ["GF", "VEG"] }],
-            "sweet_breakfast": [{ "name": "Belgian Waffles", "tags": ["VEG"] }],
-            "potato": [{ "name": "Potato Tots", "tags": ["GF", "VEG"] }],
+            "eggs_specialty": [
+                {
+                    "name": "Mexican Omelette",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
+            ],
+            "sweet_breakfast": [
+                {
+                    "name": "Belgian Waffles",
+                    "tags": [
+                        "VEG"
+                    ]
+                }
+            ],
+            "starch": [
+                {
+                    "name": "Potato Tots",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                }
+            ],
             "protein": [
-                { "name": "Bacon", "tags": ["GF"] },
-                { "name": "Chicken Sausage Patty", "tags": ["H"] }
+                {
+                    "name": "Bacon",
+                    "tags": [
+                        "GF"
+                    ]
+                },
+                {
+                    "name": "Beyond Breakfast Sausage",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                },
+                {
+                    "name": "Beef Sausage",
+                    "tags": [
+                        "H",
+                        "GF"
+                    ]
+                }
             ],
-            "plant_based": [
-                { "name": "Baked Beans", "tags": ["GF", "VGN"] },
-                { "name": "Spiced Tofu Scramble", "tags": ["GF", "VGN"] }
+            "plant-based": [
+                {
+                    "name": "Mexican Vegan Omelette",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                }
+            ],
+            "Custom Breakfast Bar": [
+                {
+                    "name": "Breakfast Sandwich Bar: Bagel, English Muffin, Meats, Egg Patty, Vegan Patty, Cheese and Tomato",
+                    "tags": []
+                }
+            ],
+            "Yogurt Bar": [
+                {
+                    "name": "Variety of Yogurts and Toppings",
+                    "tags": []
+                }
             ],
             "smoothies": [
-                { "name": "Classic Green Smoothie", "tags": [] },
-                { "name": "Mixed Berry", "tags": [] }
+                {
+                    "name": "Classic Green Smoothie",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                },
+                {
+                    "name": "Mixed Berry",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
             ]
         },
         {
             "eggs": [
-                { "name": "Scrambled Eggs", "tags": ["GF", "VEG"] },
-                { "name": "Soft-Boiled Eggs", "tags": ["GF", "VEG"] }
+                {
+                    "name": "Scrambled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                },
+                {
+                    "name": "Soft-Boiled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
             ],
-            "eggs_specialty": [{ "name": "Fried Egg", "tags": ["GF", "VEG"] }],
-            "sweet_breakfast": [{ "name": "Pancakes", "tags": ["VEG"] }],
-            "potato": [{ "name": "Potato Cakes", "tags": ["GF", "VEG"] }],
+            "eggs_specialty": [
+                {
+                    "name": "Fried Egg",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
+            ],
+            "sweet_breakfast": [
+                {
+                    "name": "Chocolate Pancake",
+                    "tags": [
+                        "VEG"
+                    ]
+                }
+            ],
+            "starch": [
+                {
+                    "name": "Potato Cakes",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
+            ],
             "protein": [
-                { "name": "Bacon", "tags": ["GF"] },
-                { "name": "Beef Sausage Patty", "tags": ["H", "GF", "DF"] }
+                {
+                    "name": "Bacon",
+                    "tags": []
+                },
+                {
+                    "name": "Maple Chili Impossible Meatballs",
+                    "tags": [
+                        "VGN"
+                    ]
+                },
+                {
+                    "name": "Beef Sausage Patty",
+                    "tags": [
+                        "H",
+                        "GF"
+                    ]
+                }
             ],
-            "plant_based": [
-                { "name": "Beyond Meat Sausage", "tags": ["GF", "VGN"] },
-                { "name": "Spiced Tofu Scramble", "tags": ["GF", "VGN"] }
+            "plant-based": [
+                {
+                    "name": "Indian Spiced Tofu Scramble",
+                    "tags": []
+                }
+            ],
+            "Custom Breakfast Bar": [
+                {
+                    "name": "Breakfast Quesadilla Bar: Scrambled Egg, Bacon, Vegan Sausage Crumble w/ cheese, sour cream, guacamole and salsa",
+                    "tags": []
+                }
+            ],
+            "Yogurt Bar": [
+                {
+                    "name": "Variety of Yogurts and Toppings",
+                    "tags": []
+                }
             ],
             "smoothies": [
-                { "name": "Classic Green Smoothie", "tags": [] },
-                { "name": "Strawberry Banana", "tags": [] }
+                {
+                    "name": "Classic Green Smoothie",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                },
+                {
+                    "name": "Strawberry Banana",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
             ]
         },
         {
             "eggs": [
-                { "name": "Scrambled Eggs", "tags": ["GF", "VEG"] },
-                { "name": "Soft-Boiled Eggs", "tags": ["GF", "VEG"] }
+                {
+                    "name": "Scrambled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                },
+                {
+                    "name": "Soft-Boiled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
             ],
-            "eggs_specialty": [{ "name": "Eggs Benedict", "tags": ["GF", "VEG"] }],
-            "sweet_breakfast": [{ "name": "Belgian Waffles", "tags": ["VEG"] }],
-            "potato": [{ "name": "Sweet Potato Tots", "tags": ["GF", "VEG"] }],
+            "eggs_specialty": [
+                {
+                    "name": "Spinach and Feta Frittata",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
+            ],
+            "sweet_breakfast": [
+                {
+                    "name": "Belgian Waffles",
+                    "tags": [
+                        "VEG"
+                    ]
+                }
+            ],
+            "starch": [
+                {
+                    "name": "Sweet Potato Tots",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                }
+            ],
             "protein": [
-                { "name": "Bacon", "tags": ["GF"] },
-                { "name": "Chicken Sausage Patty", "tags": ["H"] }
+                {
+                    "name": "Bacon",
+                    "tags": []
+                },
+                {
+                    "name": "Beef Sausage",
+                    "tags": [
+                        "H",
+                        "GF"
+                    ]
+                },
+                {
+                    "name": "Gardein Breakfast Patty",
+                    "tags": [
+                        "VGN"
+                    ]
+                }
             ],
-            "plant_based": [
-                { "name": "Roasted Sweet Potato, Black Beans, & Poblano", "tags": ["GF", "VGN"] },
-                { "name": "Spiced Tofu Scramble", "tags": ["GF", "VGN"] }
+            "plant-based": [
+                {
+                    "name": "Baked Beans with Vegan Ground Casserole",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                }
+            ],
+            "Custom Breakfast Bar": [
+                {
+                    "name": "Breakfast Pizza Bar: Garlic Butter Scrambled Eggs, Diced Meat Sausage Crumble, Vegan Crumble, Cheese and Toppings",
+                    "tags": []
+                }
+            ],
+            "Yogurt Bar": [
+                {
+                    "name": "Variety of Yogurts and Toppings",
+                    "tags": []
+                }
             ],
             "smoothies": [
-                { "name": "Classic Green Smoothie", "tags": [] },
-                { "name": "Tropical", "tags": [] }
+                {
+                    "name": "Classic Green Smoothie",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                },
+                {
+                    "name": "Tropical",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
             ]
         },
         {
             "eggs": [
-                { "name": "Scrambled Eggs", "tags": ["GF", "VEG"] },
-                { "name": "Soft-Boiled Eggs", "tags": ["GF", "VEG"] }
+                {
+                    "name": "Scrambled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                },
+                {
+                    "name": "Soft-Boiled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
             ],
-            "eggs_specialty": [{ "name": "Fried Egg", "tags": ["GF", "VEG"] }],
-            "sweet_breakfast": [{ "name": "Pancakes", "tags": ["VEG"] }],
-            "potato": [{ "name": "Plain Home Fries", "tags": ["GF", "VGN"] }],
+            "eggs_specialty": [
+                {
+                    "name": "Fried Egg",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
+            ],
+            "sweet_breakfast": [
+                {
+                    "name": "Pancake Bar",
+                    "tags": [
+                        "VEG"
+                    ]
+                }
+            ],
+            "starch": [
+                {
+                    "name": "Hash Triangles",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                }
+            ],
             "protein": [
-                { "name": "Bacon", "tags": ["GF"] },
-                { "name": "Beef Sausage Patty", "tags": ["H", "GF", "DF"] }
+                {
+                    "name": "Bacon",
+                    "tags": []
+                },
+                {
+                    "name": "Corned Beef Hash",
+                    "tags": [
+                        "H",
+                        "GF",
+                        "DF"
+                    ]
+                }
             ],
-            "plant_based": [
-                { "name": "Baked Beans", "tags": ["GF", "VGN"] },
-                { "name": "Spiced Tofu Scramble", "tags": ["GF", "VGN"] }
+            "plant-based": [
+                {
+                    "name": "Greek Vegan Omelette",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                }
+            ],
+            "Custom Breakfast Bar": [
+                {
+                    "name": "Breakfast Sandwich Bar: Bagel, English Muffin, Meats, Egg Patty, Vegan Patty, Cheese and Tomato",
+                    "tags": []
+                }
+            ],
+            "Yogurt Bar": [
+                {
+                    "name": "Variety of Yogurts and Toppings",
+                    "tags": []
+                }
             ],
             "smoothies": [
-                { "name": "Classic Green Smoothie", "tags": [] },
-                { "name": "Mixed Berry", "tags": [] }
+                {
+                    "name": "Classic Green Smoothie",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                },
+                {
+                    "name": "Mixed Berry",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
             ]
         },
         {
             "eggs": [
-                { "name": "Scrambled Eggs", "tags": ["GF", "VEG"] },
-                { "name": "Soft-Boiled Eggs", "tags": ["GF", "VEG"] }
+                {
+                    "name": "Scrambled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                },
+                {
+                    "name": "Soft-Boiled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
             ],
-            "eggs_specialty": [],
-            "sweet_breakfast": [{ "name": "Waffle Bar", "tags": [] }],
-            "potato": [{ "name": "Potato Tots", "tags": ["GF", "VEG"] }],
+            "eggs_specialty": [
+                {
+                    "name": "Waffle Bar",
+                    "tags": []
+                }
+            ],
+            "sweet_breakfast": [
+                {
+                    "name": "Waffle Bar",
+                    "tags": []
+                }
+            ],
+            "starch": [
+                {
+                    "name": "Potato Tots",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                }
+            ],
             "protein": [
-                { "name": "Bacon", "tags": ["GF"] },
-                { "name": "Chicken Sausage Patty", "tags": ["H"] }
+                {
+                    "name": "Bacon",
+                    "tags": []
+                },
+                {
+                    "name": "Beef Sausage",
+                    "tags": [
+                        "H",
+                        "GF"
+                    ]
+                },
+                {
+                    "name": "Maple Chili Impossible Meatballs",
+                    "tags": [
+                        "VGN"
+                    ]
+                }
             ],
-            "plant_based": [
-                { "name": "Beyond Meat Sausage", "tags": ["GF", "VGN"] },
-                { "name": "Spiced Tofu Scramble", "tags": ["GF", "VGN"] }
+            "plant-based": [
+                {
+                    "name": "Indian Spiced Tofu Scramble",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                }
+            ],
+            "Yogurt Bar": [
+                {
+                    "name": "Variety of Yogurts and Toppings",
+                    "tags": []
+                }
             ],
             "smoothies": []
         },
         {
             "eggs": [
-                { "name": "Scrambled Eggs", "tags": ["GF", "VEG"] },
-                { "name": "Soft-Boiled Eggs", "tags": ["GF", "VEG"] }
+                {
+                    "name": "Scrambled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                },
+                {
+                    "name": "Soft-Boiled Eggs",
+                    "tags": [
+                        "GF",
+                        "VEG"
+                    ]
+                }
             ],
-            "eggs_specialty": [],
-            "sweet_breakfast": [{ "name": "Waffle Bar", "tags": [] }],
-            "potato": [{ "name": "Potato cakes", "tags": ["GF", "VEG"] }],
+            "eggs_specialty": [
+                {
+                    "name": "Waffle Bar",
+                    "tags": []
+                }
+            ],
+            "sweet_breakfast": [
+                {
+                    "name": "Waffle Bar",
+                    "tags": []
+                }
+            ],
+            "starch": [
+                {
+                    "name": "Potato Cakes",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                }
+            ],
             "protein": [
-                { "name": "Bacon", "tags": ["GF"] },
-                { "name": "Beef Sausage Patty", "tags": ["H", "GF", "DF"] }
+                {
+                    "name": "Bacon",
+                    "tags": []
+                },
+                {
+                    "name": "Beef Sausage Patty",
+                    "tags": [
+                        "H",
+                        "GF",
+                        "DF"
+                    ]
+                },
+                {
+                    "name": "Tex-Mex Vegan Nuggets",
+                    "tags": [
+                        "VGN"
+                    ]
+                }
             ],
-            "plant_based": [
-                { "name": "Beyond Meat Sausage", "tags": ["GF", "VGN"] },
-                { "name": "Spiced Tofu Scramble", "tags": ["GF", "VGN"] }
+            "plant-based": [
+                {
+                    "name": "Spicy Southwest Tofu Scramble with Black Beans Corn and Tomato",
+                    "tags": [
+                        "GF",
+                        "VGN"
+                    ]
+                }
+            ],
+            "Yogurt Bar": [
+                {
+                    "name": "Variety of Yogurts and Toppings",
+                    "tags": []
+                }
             ],
             "smoothies": []
         }
@@ -145,24 +648,74 @@
     "lunch": [
         [
             {
-                "entree": [{ "name": "Pesto Chicken", "tags": ["H", "GF", "DF"] }],
+                "entree": [
+                    {
+                        "name": "Pesto Chicken",
+                        "tags": [
+                            "H",
+                            "GF"
+                        ]
+                    }
+                ],
                 "vegetarian_entree": [
-                    { "name": "Pesto Plant Based Strips", "tags": ["GF", "VGN"] }
+                    {
+                        "name": "Pesto Plant-Based Bites",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
                 ],
                 "sides": [
-                    { "name": "Mushroom Tetrazzini Bake", "tags": ["VEG"] },
-                    { "name": "Roasted Vegetable Medley", "tags": ["GF", "VGN"] },
-                    { "name": "Garlic Bread", "tags": ["VGN"] }
+                    {
+                        "name": "Linguini",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Creamy Mushroom Sauce",
+                        "tags": [
+                            "GF",
+                            "VEG"
+                        ]
+                    },
+                    {
+                        "name": "Roasted Vegetable Medley",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Cheesy Garlic Falt Bread",
+                        "tags": [
+                            "VEG"
+                        ]
+                    }
                 ],
                 "gluten_free": [
                     {
-                        "name": "Baked Potato Bar Roasted Mushrooms/Onion & Peppers/Bacon",
-                        "tags": ["GF"]
+                        "name": "Whole Baked Potato Bar Roasted Mushrooms/Onion & Peppers/Bacon",
+                        "tags": [
+                            "GF"
+                        ]
                     }
                 ],
                 "soups": [
-                    { "name": "Harvest Tomato Vegetable", "tags": ["VGN"] },
-                    { "name": "Turkey Noodle", "tags": ["H", "DF"] }
+                    {
+                        "name": "Harvest Tomato Vegetable",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Turkey Noodle",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
@@ -172,294 +725,378 @@
                 ]
             },
             {
-                "entree": [{ "name": "Sweet Italian Sausage/Buns", "tags": ["H", "DF"] }],
-                "vegetarian_entree": [{ "name": "Sausage/Buns", "tags": ["VGN"] }],
-                "sides": [
-                    { "name": "Skin On French Fries", "tags": ["GF", "VGN"] },
-                    { "name": "Sauteed Onions & Peppers", "tags": ["GF", "VGN"] },
-                    { "name": "Roasted Broccoli & Carrots", "tags": ["GF", "VGN"] }
-                ],
-                "gluten_free": [{ "name": "Nacho Bar Meat/Three Bean Chili", "tags": ["GF"] }],
-                "soups": [
-                    { "name": "Broccoli & Cheddar", "tags": ["VGN"] },
-                    { "name": "Hearty Chicken Crockpot", "tags": ["GF", "DF"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Pizza Pepperoni \u2013 Halal, BBQ Chicken, Garden Veggie, Cheese Pizza",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [{ "name": "Greek Style Grilled Chicken", "tags": ["H", "GF", "DF"] }],
-                "vegetarian_entree": [{ "name": "Falafels", "tags": ["GF", "VGN"] }],
-                "sides": [
-                    { "name": "Greek Lemon Rice", "tags": ["GF", "VGN"] },
-                    { "name": "Chunky Vegetable Souvlaki No stick", "tags": ["GF", "VGN"] },
-                    { "name": "Greek Pita/Tzatziki", "tags": ["VEG"] }
-                ],
-                "gluten_free": [
-                    {
-                        "name": "Gluten-Free Pasta Bar Meat/Arabiata Sauce/Toasted Chickpeas",
-                        "tags": ["GF"]
-                    }
-                ],
-                "soups": [
-                    { "name": "Lentil Spinach", "tags": ["GF", "VGN"] },
-                    { "name": "Woodland Mushroom", "tags": ["GF", "VEG"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Quesadilla Marinated Chicken Strips/Roasted Vegetable, Roasted Corn, Black Beans Monterey Jack Cheese",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [{ "name": "Lasagna in Marinara Sauce", "tags": ["H"] }],
-                "vegetarian_entree": [
-                    { "name": "Spinach/Cheese Lasagna", "tags": ["VGN"] },
-                    { "name": "Bake Pasta with Tempeh", "tags": ["VGN"] }
-                ],
-                "sides": [
-                    { "name": "Fresh Mix Vegetable", "tags": ["GF", "VGN"] },
-                    { "name": "Marinara Sauce", "tags": ["GF", "VGN"] },
-                    { "name": "Garlic Bread", "tags": ["VGN"] }
-                ],
-                "gluten_free": [
-                    {
-                        "name": "Poutine Bar Pulled Pork/Jackfruit/Provide Vegan Cheese",
-                        "tags": ["GF"]
-                    }
-                ],
-                "soups": [
-                    { "name": "Spanish and Kale", "tags": ["GF", "VGN"] },
-                    { "name": "Chicken Tortilla Soup", "tags": ["H", "GF", "DF"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Pizza Hawaiian/Ham, Greek Chicken, Pesto Mushroom, Cheese Pizza",
-                        "tags": []
-                    }
-                ]
-            },
-            {
                 "entree": [
                     {
-                        "name": "Cedar Spiced Atlantic Salmon on Wilted Greens",
-                        "tags": ["H", "GF", "DF"]
+                        "name": "Sweet Italian Sausage/Buns",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
                     }
                 ],
                 "vegetarian_entree": [
-                    { "name": "Vegetable Beans Cacciatore", "tags": ["GF", "VGN"] }
-                ],
-                "sides": [
-                    { "name": "Wild Rice Pilaf", "tags": ["GF", "VGN"] },
-                    { "name": "Crispy Brussel Sprouts with Tzatziki Sauce", "tags": ["VGN"] },
-                    { "name": "Winter Vegetable Mix", "tags": ["GF", "VGN"] }
-                ],
-                "gluten_free": [
-                    { "name": "Soba Noodle Bowl Chicken/Tofu Teriyaki", "tags": ["GF"] }
-                ],
-                "soups": [
-                    { "name": "Cream Of Roasted Squash", "tags": ["GF", "VGN"] },
-                    { "name": "New England Clam Chowder", "tags": ["H", "GF"] }
-                ],
-                "food_bar": [
                     {
-                        "name": "Panini Tuna Melt, Philly Beef, Plant Based Philly, Grilled Cheese",
-                        "tags": []
+                        "name": "Sweet Italian Beyond Meat Sausage on Bun",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
                     }
-                ]
-            },
-            {
-                "entree": [{ "name": "Szechuan Chicken Stir-Fry", "tags": ["H", "GF", "DF"] }],
-                "vegetarian_entree": [{ "name": "Szechuan Tofu Stir-Fry", "tags": ["GF", "VGN"] }],
-                "sides": [
-                    { "name": "Vegetable Chow Mein", "tags": ["VGN"] },
-                    { "name": "Spring Rolls", "tags": ["VGN"] },
-                    { "name": "Asian Vegetable Medley", "tags": ["GF", "VGN"] }
-                ],
-                "gluten_free": [],
-                "soups": [
-                    { "name": "Hot and Sour with Tofu", "tags": ["GF", "VGN"] },
-                    { "name": "Spicy Thai Chicken", "tags": ["H", "GF", "DF"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Pizza Pepperoni - Halal, Jerk Chicken, Garden Veggie, Cheese Pizza",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [{ "name": "Meatballs in Marinara", "tags": ["H", "DF"] }],
-                "vegetarian_entree": [{ "name": "Plant Based balls in Marinara", "tags": ["VGN"] }],
-                "sides": [
-                    { "name": "Rigatoni Pasta", "tags": ["VGN"] },
-                    { "name": "Italian Blend", "tags": ["GF", "VGN"] },
-                    { "name": "Garlic Bread", "tags": ["VGN"] }
-                ],
-                "gluten_free": [],
-                "soups": [
-                    { "name": "Moroccan Chickpea", "tags": ["GF", "VGN"] },
-                    { "name": "Herb Chicken Rice", "tags": ["H", "GF", "DF"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Pizza Pepperoni - Halal, Tuscan Chicken, Garden Veggie, Cheese Pizza",
-                        "tags": []
-                    }
-                ]
-            }
-        ],
-        [
-            {
-                "entree": [{ "name": "Butter Chicken", "tags": ["H", "GF"] }],
-                "vegetarian_entree": [{ "name": "Paneer Tikka Masala", "tags": ["GF", "VEG"] }],
-                "sides": [
-                    { "name": "Basmati Rice", "tags": ["GF", "VGN"] },
-                    { "name": "Naan Bread/Raita", "tags": ["VEG"] },
-                    { "name": "Steamed Vegetable Mix", "tags": ["GF", "VGN"] },
-                    { "name": "Vegetable Samosas", "tags": ["VGN"] }
-                ],
-                "gluten_free": [
-                    { "name": "Tater Tot Bar Spicy Vegan Strips/Pulled Pork", "tags": ["GF"] }
-                ],
-                "soups": [
-                    { "name": "Mexican Bean", "tags": ["GF", "VGN"] },
-                    { "name": "Lemon Turkey Orzo", "tags": ["H", "DF"] }
-                ],
-                "food_bar": [
-                    { "name": "Panini Buffalo Chicken", "tags": [] },
-                    { "name": "Grilled BLT", "tags": [] },
-                    { "name": "Crispy Tofu", "tags": [] },
-                    { "name": "Grilled Cheese", "tags": [] }
-                ]
-            },
-            {
-                "entree": [{ "name": "Cheesy Beef Penne Pasta", "tags": ["H"] }],
-                "vegetarian_entree": [
-                    { "name": "Cheesy Vegetarian Strips Penne Pasta", "tags": ["GF", "VEG"] }
-                ],
-                "sides": [
-                    { "name": "Fried Pickle", "tags": ["VEG"] },
-                    { "name": "Saut\u00e9d Green & Yellow Beans", "tags": ["GF", "VGN"] },
-                    { "name": "Garlic Butter Roll", "tags": ["GF", "VGN"] }
-                ],
-                "gluten_free": [{ "name": "Taco Bar Meat/Vegan Stuffing", "tags": ["GF"] }],
-                "soups": [
-                    { "name": "Lentil Dahl", "tags": ["GF", "VGN"] },
-                    { "name": "Italian Wedding", "tags": ["H", "DF"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Pizza Pepperoni \u2013 Halal, BBQ Chicken, Garden Veggie, Cheese Pizza",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [
-                    {
-                        "name": "Skewer less Chicken & Vegetable Souvlaki",
-                        "tags": ["H", "GF", "DF"]
-                    }
-                ],
-                "vegetarian_entree": [
-                    { "name": "Skewer less Tofu Vegetable Souvlaki", "tags": ["GF", "VGN"] }
-                ],
-                "sides": [
-                    { "name": "Yahni Potatoes", "tags": ["GF", "VGN"] },
-                    { "name": "Garlic Sauteed Rapini", "tags": ["GF", "VGN"] },
-                    { "name": "Spanakopita/Tzatziki", "tags": ["VEG"] }
-                ],
-                "gluten_free": [
-                    {
-                        "name": "Dips and Chips Tapas Hummaus, Babaganoush, Tzatzki , Pickled Vegetables",
-                        "tags": ["GF"]
-                    }
-                ],
-                "soups": [
-                    { "name": "Roasted Curry Cauliflower", "tags": ["GF", "VGN"] },
-                    { "name": "Tom Yum Chicken", "tags": ["H", "GF", "DF"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Quesadilla Marinated Chicken Strips/Roasted Vegetable, Roasted Corn, Black Bean Monterey Jack Cheese",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [
-                    { "name": "BBQ Beef Burgers/Buns Bacon Jam", "tags": ["H", "GF", "DF"] }
-                ],
-                "vegetarian_entree": [
-                    { "name": "Impossible Burger/Buns Onion Jam", "tags": ["GF", "VGN"] }
                 ],
                 "sides": [
                     {
-                        "name": "Saut\u00e9d Yellow and Green Zucchini with Tomatoes",
-                        "tags": ["GF", "VGN"]
+                        "name": "Skin On French Fries",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
                     },
-                    { "name": "French Fries", "tags": ["GF", "VGN"] },
-                    { "name": "Poutine with Gravy", "tags": ["VGN"] }
+                    {
+                        "name": "Sauteed Onions & Peppers",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Roasted Broccoli & Carrots",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Smoked Bean Chili",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
                 ],
                 "gluten_free": [
                     {
-                        "name": "Rice Vermicelli Bar Tofu Strips/Edamame/Ginger Soy Pork",
-                        "tags": ["GF"]
+                        "name": "Fusilli Pasta Bar \u2013 Arrabbiata Sauce, Bolognese, Toasted Chickpeas",
+                        "tags": [
+                            "GF"
+                        ]
                     }
                 ],
                 "soups": [
-                    { "name": "Miso-Mushroom", "tags": ["GF", "VGN"] },
-                    { "name": "Chicken Mulligatawny", "tags": ["H", "DF"] }
-                ],
-                "food_bar": [
-                    { "name": "Pizza Hawaiian/Ham", "tags": [] },
-                    { "name": "Greek Chicken", "tags": [] },
-                    { "name": "Pesto Mushroom", "tags": [] },
-                    { "name": "Cheese Pizza", "tags": [] }
-                ]
-            },
-            {
-                "entree": [{ "name": "Fish Taco Shell", "tags": ["H", "DF"] }],
-                "vegetarian_entree": [
-                    { "name": "Crispy Tofu Baton Taco Shell", "tags": ["GF", "VGN"] }
-                ],
-                "sides": [
-                    { "name": "Spicey Mexican Rice N peas", "tags": ["GF", "VGN"] },
-                    { "name": "Sauteed Sugar Snap Peas and Baby Corn", "tags": ["GF", "VGN"] },
-                    { "name": "Cole Slaw", "tags": ["GF", "VGN"] }
-                ],
-                "gluten_free": [
-                    { "name": "Quinoa Bowl Chimichurri Chicken/Tempeh", "tags": ["GF"] }
-                ],
-                "soups": [
-                    { "name": "Tomato Roasted Pepper", "tags": ["GF", "VGN"] },
-                    { "name": "Seafood Creole", "tags": ["H", "GF"] }
+                    {
+                        "name": "Broccoli & Cheddar",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Hearty Chicken Crockpot",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
-                        "name": "Panini Tuna Melt, Philly Beef, Plant Based Philly, Grilled Cheese",
+                        "name": "Quesadilla \u2013 Marinated Chicken Strips, Roasted Vegetables, Roasted Corn, Black Beans, Monterey Jack Cheese",
                         "tags": []
                     }
                 ]
             },
             {
-                "entree": [{ "name": "Sweet & Sour Chicken balls", "tags": ["H"] }],
-                "vegetarian_entree": [{ "name": "Sweet & Sour Vegan balls", "tags": ["VGN"] }],
+                "entree": [
+                    {
+                        "name": "Greek-Style Grilled Chicken",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Falafels",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
                 "sides": [
-                    { "name": "Vegetable Fried Rice", "tags": ["GF", "VGN"] },
-                    { "name": "Spring Rolls", "tags": ["VGN"] },
-                    { "name": "Asian Vegetable Medley", "tags": ["GF", "VGN"] }
+                    {
+                        "name": "Herbed Lemon Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Deconstructed Vegetable Souvlaki",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Greek Pita with Tzatziki",
+                        "tags": [
+                            "VEG"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Dips and Flatbread Tapas \u2013 Hummus, Baba Ghanoush, Tzatziki, Pickled Vegetables",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Lentil Spinach",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Woodland Mushroom",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Pizza \u2013 Pepperoni , BBQ Chicken, Garden Veggie, Cheese",
+                        "tags": [
+                            "H"
+                        ]
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Hearty Beef Lasagna in Marinara Sauce",
+                        "tags": [
+                            "H"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Spinach & Cheese Lasagna",
+                        "tags": [
+                            "VEG"
+                        ]
+                    },
+                    {
+                        "name": "Baked Gluten-Free Pasta with Tempeh",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Sauteed Garlic Rapini",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Marinara Sauce",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Garlic Rolls",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Parmesan Cheese",
+                        "tags": [
+                            "VEG"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Nacho Bar Three Bean Chili/Chicken Chili",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Spanish and Kale",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Chicken Tortilla Soup",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Panini Buffalo Chicken, Grilled BLT, Crispy Tofu, Grilled Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Teriyaki-Glazed Salmon Bites   DF",
+                        "tags": [
+                            "H",
+                            "GF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Teriyaki-Glazed Tofu Bites",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Vegetable Dim Sum",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Asian Medley with Baby Bok Choy",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Vegetable Fried Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Fortune Cookies",
+                        "tags": []
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Japchae Noodle Bowl \u2013 Tofu or Chicken Teriyaki",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Cream Of Roasted Squash",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "New England Clam Chowder",
+                        "tags": [
+                            "H",
+                            "GF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Quesadilla \u2013 Marinated Chicken Strips, Roasted Vegetables, Roasted Corn, Black Beans, Monterey Jack Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Szechuan Chicken Stir-Fry",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Szechuan Tofu Stir-Fry",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Vegetable Chow Mein",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Spring Rolls",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Asian Vegetable Medley",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
                 ],
                 "gluten_free": [],
                 "soups": [
-                    { "name": "Moroccan Chickpea", "tags": ["GF", "VGN"] },
-                    { "name": "Spicy Thai Chicken", "tags": ["H", "GF", "DF"] }
+                    {
+                        "name": "Hot and Sour with Tofu",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Spicy Thai Chicken",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
@@ -469,17 +1106,61 @@
                 ]
             },
             {
-                "entree": [{ "name": "Beef Sausage in Basil Tomato", "tags": ["H", "DF"] }],
-                "vegetarian_entree": [{ "name": "Romano Bean Primavera", "tags": ["GF", "VGN"] }],
+                "entree": [
+                    {
+                        "name": "Meatballs in Marinara",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Plant-Based Balls in Marinara",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
+                ],
                 "sides": [
-                    { "name": "Rigatoni Pasta", "tags": ["VGN"] },
-                    { "name": "Italian Blend", "tags": ["GF", "VGN"] },
-                    { "name": "Garlic Bread", "tags": ["VGN"] }
+                    {
+                        "name": "Rigatoni Pasta",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Italian Blend",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Garlic Bread",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
                 ],
                 "gluten_free": [],
                 "soups": [
-                    { "name": "Hot and Sour with Tofu", "tags": ["GF", "VGN"] },
-                    { "name": "Beef & Red Bean", "tags": ["H", "GF", "DF"] }
+                    {
+                        "name": "Moroccan Chickpea",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Herb Chicken Rice",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
@@ -492,24 +1173,588 @@
         [
             {
                 "entree": [
-                    { "name": "Creamy Chicken/Spinach with Parmesan Sauce", "tags": ["H", "GF"] }
+                    {
+                        "name": "Butter Chicken",
+                        "tags": [
+                            "H",
+                            "GF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Paneer Tikka Masala",
+                        "tags": [
+                            "GF",
+                            "VEG"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Basmati Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Naan Bread/Raita",
+                        "tags": [
+                            "VEG"
+                        ]
+                    },
+                    {
+                        "name": "Steamed Vegetable Mix",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Vegetable Samosas",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Tater Tot Bar Spicy Vegan Strips/Pulled Pork",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Mexican Bean",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Italian Wedding",
+                        "tags": [
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Panini Buffalo Chicken, Grilled BLT, Crispy Tofu, Grilled Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Maple Glazed Salmon",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Maple Glazed Tofu and Vegetables",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Wild Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Peppercorn Squash Rings",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Sauteed Bush Beans",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Bannock with Raspberry Jam",
+                        "tags": [
+                            "VEG"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Rice Vermicelli Bar Tofu Strips/Edamame/Ginger Soy Chicken",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Three Sisters",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Wild Turkey Kale and Potato",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Quesadilla: Marinated Chicken Strips, Roasted Vegetables, Roasted Corn, Black Beans, Monterey Jack Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Deconstructed Chicken & Vegetable Souvlaki",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Deconstructed Tofu Vegetable Souvlaki",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Yahni Potatoes",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Garlic Sauteed Broccoli and Cherry Tomatoes",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Spanakopita/Tzatziki",
+                        "tags": [
+                            "VEG"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Dips and Flat Bread Tapas \u2013 Hummus, Babaganoush, Tzatziki, Pickled Vegetables",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Roasted Curry Cauliflower",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Tom Yum Chicken",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Pizza: Pepperoni \u2013 Halal, BBQ Chicken, Garden Veggie, Cheese Pizza",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "BBQ Beef Burgers/Buns Bacon Jam",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Impossible Burger/Buns Onion Jam",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "French Fries",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Grilled Vegetable Medley",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Poutine with Gravy",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Thai Rice Buddha Bowl \u2013 Chickpeas / Edamame / Shrimp",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Miso-Mushroom",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Chicken Mulligatawny",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Panini Buffalo Chicken, Grilled BLT, Crispy Tofu, Grilled Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Fish Taco Shell",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Crispy Tofu and Taco Shell",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Spicey Mexican Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Corn on the Cob",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Cauliflower Bites",
+                        "tags": [
+                            "VEG"
+                        ]
+                    },
+                    {
+                        "name": "Red Cabbage Coleslaw",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Salsa, Sour Cream, Guacamole, Cheese",
+                        "tags": []
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Soba Noodle Bowl Chicken/Tofu Teriyaki",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Tomato Roasted Pepper",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Seafood Chowder",
+                        "tags": [
+                            "H",
+                            "GF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Quesadilla: Marinated Chicken Strips, Roasted Vegetables, Roasted Corn, Black Beans, Monterey Jack Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Sweet & Sour Chicken Balls",
+                        "tags": [
+                            "H"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Sweet & Sour Vegan Balls",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Vegetable Fried Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Spring Rolls",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Asian Vegetable Medley",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "gluten_free": [],
+                "soups": [
+                    {
+                        "name": "Moroccan Chickpea",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Spicy Thai Chicken",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Pizza Pepperoni - Halal, Jerk Chicken, Garden Veggie, Cheese Pizza",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Beef Sausage in Basil Tomato",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Romano Bean Primavera",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Rigatoni Pasta",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Italian Blend",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Garlic Bread",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
+                ],
+                "gluten_free": [],
+                "soups": [
+                    {
+                        "name": "Hot and Sour with Tofu",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Beef & Red Bean",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Pizza Pepperoni - Halal, Tuscan Chicken, Garden Veggie, Cheese Pizza",
+                        "tags": []
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "entree": [
+                    {
+                        "name": "Creamy Chicken/Spinach with Parmesan Sauce",
+                        "tags": [
+                            "H",
+                            "GF"
+                        ]
+                    }
                 ],
                 "vegetarian_entree": [
                     {
                         "name": "Creamy Cauliflower and Chickpea with Parmesan Sauce",
-                        "tags": ["GF", "VEG"]
+                        "tags": [
+                            "GF",
+                            "VEG"
+                        ]
                     }
                 ],
                 "sides": [
-                    { "name": "Onion Rice Pilaf", "tags": ["GF", "VGN"] },
-                    { "name": "Balsamic Roast Tomatoes", "tags": ["VEG"] },
-                    { "name": "Garlic Saut\u00e9d Purple and Green Kale", "tags": ["GF", "VGN"] },
-                    { "name": "Vegetable Samosas", "tags": ["VGN"] }
+                    {
+                        "name": "Onion Rice Pilaf",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Balsamic Roast Tomatoes",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Garlic Sauteed Purple and Green Kale",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
                 ],
-                "gluten_free": [{ "name": "Nacho Bar Five Bean Chili/Meat", "tags": ["GF"] }],
+                "gluten_free": [
+                    {
+                        "name": "Nacho Bar Five Bean Chili/Meat",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
                 "soups": [
-                    { "name": "Split Pea and Roasted Pepper", "tags": ["GF", "VGN"] },
-                    { "name": "Roasted Corn Chowder", "tags": ["GF", "VEG"] }
+                    {
+                        "name": "Split Pea and Roasted Pepper",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Roasted Corn Chowder",
+                        "tags": [
+                            "GF",
+                            "VEG"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
@@ -520,137 +1765,453 @@
             },
             {
                 "entree": [
-                    { "name": "Texas Style Pulled Pork/ Bao Bun", "tags": ["H", "GF", "DF"] }
+                    {
+                        "name": "Char Siu Pulled Pork/Bao Bun",
+                        "tags": [
+                            "GF",
+                            "DF"
+                        ]
+                    }
                 ],
                 "vegetarian_entree": [
-                    { "name": "Spicy Pull Cauliflower & Jackfruit/ Bao Bun", "tags": ["GF", "VEG"] }
+                    {
+                        "name": "Char Siu Roast Cauliflower and Tofu Shreds/Bao Bun",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
                 ],
                 "sides": [
-                    { "name": "Southwest Fried Rice", "tags": ["GF", "VGN"] },
-                    { "name": "Saut\u00e9d Corn Succotash", "tags": ["GF", "VGN"] },
-                    { "name": "Vegetable Spring Rolls", "tags": ["VGN"] }
+                    {
+                        "name": "Vegetable Fried Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Sauteed Asian Greens",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Vegetable Spring Rolls",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Ginger Sesame Slaw",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
                 ],
                 "gluten_free": [
                     {
                         "name": "Shawarma Bar Falafel with Flatbread/Chicken Shawarma",
-                        "tags": ["GF"]
+                        "tags": [
+                            "GF"
+                        ]
                     }
                 ],
                 "soups": [
-                    { "name": "Navy Bean & Garden Vegetable", "tags": ["GF", "VGN"] },
-                    { "name": "Chicken Noodle", "tags": ["H", "DF"] }
-                ],
-                "food_bar": [
                     {
-                        "name": "Pizza Pepperoni \u2013 Halal, BBQ Chicken, Garden Veggie, Cheese Pizza",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [{ "name": "Southern Fried Chicken/ White Gravy", "tags": ["H"] }],
-                "vegetarian_entree": [
-                    { "name": "Portobello Stuffed with Spinach and Havarti", "tags": ["GF", "VEG"] }
-                ],
-                "sides": [
-                    { "name": "Red Skin Potato Wedges", "tags": ["GF", "VGN"] },
-                    { "name": "Corn on the Cob", "tags": ["GF", "VGN"] },
-                    { "name": "Kale Slaw", "tags": ["GF", "VGN"] }
-                ],
-                "gluten_free": [{ "name": "Pasta Bar Arabiata Sauce/Meat", "tags": ["GF"] }],
-                "soups": [
-                    { "name": "Wild Mushroom", "tags": ["GF", "VGN"] },
-                    { "name": "Hearty Beef vegetable", "tags": ["H", "GF", "DF"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Quesadilla Marinated Chicken Strips/Roasted Vegetable, Roasted Corn, Black Bean Monterey Jack Cheese",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [{ "name": "Korean Beef Stir Fry", "tags": ["H", "GF"] }],
-                "vegetarian_entree": [{ "name": "Gochujang Tofu Stir Fry", "tags": ["GF", "VGN"] }],
-                "sides": [
-                    { "name": "Jasmine Rice", "tags": ["GF", "VGN"] },
-                    { "name": "Stir-Fried Choy Sum Vegetable and Broccoli", "tags": ["GF", "VGN"] },
-                    { "name": "Pot Sticker", "tags": ["VGN"] }
-                ],
-                "gluten_free": [{ "name": "Poke Bowl Edamame/Shrimp Ceviche", "tags": ["GF"] }],
-                "soups": [
-                    { "name": "Brown Lentil & Spinach", "tags": ["GF", "VGN"] },
-                    { "name": "Tom Yum Chicken", "tags": ["H", "GF", "DF"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Pizza Hawaiian/Ham, Greek Chicken, Pesto Mushroom, Cheese Pizza",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [{ "name": "Homemade Tempura Haddock Fish", "tags": ["H", "DF"] }],
-                "vegetarian_entree": [
-                    {
-                        "name": "Mediterranean Chickpeas Button Mushroom Pasta Bake",
-                        "tags": ["VEG"]
-                    }
-                ],
-                "sides": [
-                    { "name": "French Fries", "tags": ["GF", "VGN"] },
-                    {
-                        "name": "Steamed Broccoli, Carrots, Cauliflower and Green Peas",
-                        "tags": ["GF", "VGN"]
+                        "name": "Navy Bean & Garden Vegetable",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
                     },
-                    { "name": "ColeSlaw", "tags": ["GF", "VGN"] }
+                    {
+                        "name": "Chicken Noodle",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Quesadilla: Marinated Chicken Strips / Roasted Vegetables, Roasted Corn, Black Beans, Monterey Jack Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Southern Fried Chicken/ White Gravy",
+                        "tags": [
+                            "H"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Brown Lentil & Mushroom Ragout",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Steak-Cut Fries",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Mexican Street Corn",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Onion Rice Pilaf",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Kale Slaw",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
                 ],
                 "gluten_free": [
-                    { "name": "Greek Pasta Salad Plant Based Strips/Chicken", "tags": ["GF"] }
+                    {
+                        "name": "Poke Bowl Edamame/Shrimp Ceviche",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
                 ],
                 "soups": [
-                    { "name": "Spicy Black Bean", "tags": ["GF", "VGN"] },
-                    { "name": "Potato Leek", "tags": ["GF", "VEG"] }
+                    {
+                        "name": "Chickpea & Vegetable Mulligatawny",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Hearty Beef Vegetable",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
-                        "name": "Panini Tuna Melt, Philly Beef, Plant Based Philly, Grilled Cheese",
+                        "name": "Pizza: Pepperoni , BBQ Chicken, Garden Veggie, Cheese Pizza",
+                        "tags": [
+                            "H"
+                        ]
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Beef Rogan Josh",
+                        "tags": [
+                            "H",
+                            "GF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Cremy Spinach and Paneer",
+                        "tags": [
+                            "GF",
+                            "VEG"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Saffron Basmati Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Rajmah Masala",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Vegetable Medley",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Grilled Naan",
+                        "tags": [
+                            "VEG"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Gnocchi Bar Arabiata Sauce/Pesto Cream Sauce/Cooked Ground Beef",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Wild Mushroom",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Tom Yum Chicken",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Panini Buffalo Chicken, Grilled BLT, Crispy Tofu, Grilled Cheese",
                         "tags": []
                     }
                 ]
             },
             {
-                "entree": [{ "name": "Lemongrass Chicken", "tags": ["H", "GF", "DF"] }],
-                "vegetarian_entree": [{ "name": "Lemongrass Tofu", "tags": ["GF", "VGN"] }],
-                "sides": [
-                    { "name": "Steamed Lo-mein", "tags": ["VGN"] },
-                    { "name": "Spring Rolls", "tags": ["VGN"] },
-                    { "name": "Asian Vegetable Medley VGN", "tags": ["GF"] }
+                "entree": [
+                    {
+                        "name": "Homemade Tempura Haddock Fish",
+                        "tags": [
+                            "H"
+                        ]
+                    }
                 ],
-                "gluten_free": [],
+                "vegetarian_entree": [
+                    {
+                        "name": "Chickpea Battered Tofu",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "German Red Skin Potato Salad",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Steamed Broccoli, Carrots, Cauliflower and Green Peas",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Coleslaw",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Tartar Sauce",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Greek Pasta Salad Plant-Based Strips/Chicken",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
                 "soups": [
-                    { "name": "Moroccan Chickpea", "tags": ["GF", "VGN"] },
-                    { "name": "Beef Barley Vegetable", "tags": ["H", "DF"] }
+                    {
+                        "name": "Lentil & Spinach",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Potato Leek",
+                        "tags": [
+                            "GF",
+                            "VEG"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
-                        "name": "Pizza Pepperoni - Halal, Jerk Chicken, Garden Veggie, Cheese Pizza",
+                        "name": "Quesadilla: Marinated Chicken Strips / Roasted Vegetables, Roasted Corn, Black Beans, Monterey Jack Cheese",
                         "tags": []
                     }
                 ]
             },
             {
-                "entree": [{ "name": "Beef Tips with Marinara", "tags": ["H", "GF", "DF"] }],
-                "vegetarian_entree": [{ "name": "Edamame Primavera", "tags": ["GF", "VGN"] }],
+                "entree": [
+                    {
+                        "name": "Lemongrass Chicken",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Lemongrass Tofu",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
                 "sides": [
-                    { "name": "Rigatoni Pasta", "tags": ["VGN"] },
-                    { "name": "Italian Blend", "tags": ["GF", "VGN"] },
-                    { "name": "Garlic Bread", "tags": ["VGN"] }
+                    {
+                        "name": "Steamed Lo-mein",
+                        "tags": [
+                            "VEG"
+                        ]
+                    },
+                    {
+                        "name": "Spring Rolls",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Asian Vegetable Medley VGN",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
                 ],
                 "gluten_free": [],
                 "soups": [
-                    { "name": "Hot and Sour with Tofu", "tags": ["GF", "VGN"] },
-                    { "name": "Chicken Orzo", "tags": ["H", "DF"] }
+                    {
+                        "name": "Moroccan Chickpea",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Beef Barley Vegetable",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Pizza Pepperoni , Jerk Chicken, Garden Veggie, Cheese Pizza",
+                        "tags": [
+                            "H"
+                        ]
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Beef Tenderloin in Marinara",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Cremini Primavera",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Rigatoni Pasta",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Garlic Bread",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Garlic Bread",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Italian Blend Vegetables",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "gluten_free": [],
+                "soups": [
+                    {
+                        "name": "Hot and Sour with Tofu",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Chicken Orzo",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
@@ -664,27 +2225,68 @@
     "dinner": [
         [
             {
-                "entree": [{ "name": "Asian BBQ Beef Brisket", "tags": ["H", "GF", "DF"] }],
+                "entree": [
+                    {
+                        "name": "Asian BBQ Beef Brisket",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
                 "vegetarian_entree": [
                     {
                         "name": "Thai Sweet Chili Tofu and Vegetable Stir-Fry",
-                        "tags": ["GF", "VGN"]
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
                     }
                 ],
                 "sides": [
-                    { "name": "Vegetable Rice vermicelli", "tags": ["GF", "VGN"] },
-                    { "name": "Garlic Saut\u00e9d Gai Lan Vegetable Mix", "tags": ["GF", "VGN"] },
-                    { "name": "Vegetable Spring Rolls", "tags": ["VGN"] }
+                    {
+                        "name": "Vegetable Hakka Noodles",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Garlic Sauteed Gai Lan Vegetable Mix",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Vegetable Spring Rolls",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
                 ],
                 "gluten_free": [
                     {
                         "name": "Baked Potato Bar Roasted Mushrooms/Onion & Peppers/Bacon",
-                        "tags": ["GF"]
+                        "tags": [
+                            "GF"
+                        ]
                     }
                 ],
                 "soups": [
-                    { "name": "Harvest Tomato Vegetable", "tags": ["VGN"] },
-                    { "name": "Turkey Noodle", "tags": ["H", "DF"] }
+                    {
+                        "name": "Harvest Tomato Vegetable",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Turkey Noodle",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
@@ -695,155 +2297,461 @@
             },
             {
                 "entree": [
-                    { "name": "Peruvian Chicken in Green Sauce", "tags": ["H", "GF", "DF"] }
+                    {
+                        "name": "Peruvian Chicken in Green Sauce",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
                 ],
                 "vegetarian_entree": [
                     {
-                        "name": "Peruvian Grilled Tofu/ Lima Bean in Green Sauce",
-                        "tags": ["GF", "VGN"]
+                        "name": "Peruvian Grilled Tofu/Lima Bean in Green Sauce",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
                     }
                 ],
                 "sides": [
-                    { "name": "Cilantro Chaufa Rice", "tags": ["GF", "VGN"] },
-                    { "name": "Green Beans with Red Onions and Tomatoes", "tags": ["GF", "VGN"] },
-                    { "name": "Battered Yam", "tags": ["GF", "VGN"] }
-                ],
-                "gluten_free": [{ "name": "Nacho Bar Meat/Three Bean Chili", "tags": ["GF"] }],
-                "soups": [
-                    { "name": "Broccoli & Cheddar", "tags": ["VGN"] },
-                    { "name": "Hearty Chicken Crockpot", "tags": ["GF", "DF"] }
-                ],
-                "food_bar": [
-                    { "name": "Pizza Pepperoni \u2013 Halal", "tags": [] },
-                    { "name": "BBQ Chicken", "tags": [] },
-                    { "name": "Garden Veggie", "tags": [] },
-                    { "name": "Cheese Pizza", "tags": [] }
-                ]
-            },
-            {
-                "entree": [{ "name": "Beef Fajita", "tags": ["H", "GF", "DF"] }],
-                "vegetarian_entree": [
-                    { "name": "Ground Soy, Bean Fajita with Bell Pepper", "tags": ["GF", "VGN"] }
-                ],
-                "sides": [
-                    { "name": "Spanish Rice with Corn", "tags": ["GF", "VGN"] },
-                    { "name": "Warm Flour Tortilla", "tags": ["VEG"] },
-                    { "name": "California Roast Vegetable", "tags": ["GF", "VGN"] }
-                ],
-                "gluten_free": [
                     {
-                        "name": "Gluten-Free Pasta Bar Meat/Arabiata Sauce/Toasted Chickpeas",
-                        "tags": ["GF"]
-                    }
-                ],
-                "soups": [
-                    { "name": "Lentil Spinach", "tags": ["GF", "VGN"] },
-                    { "name": "Woodland Mushroom", "tags": ["GF", "VEG"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Quesadilla Marinated Chicken Strips, Roasted Vegetable, Roasted Corn, Black Beans, Monterey Jack Cheese",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [{ "name": "Chicken Fingers Fried", "tags": ["H"] }],
-                "vegetarian_entree": [{ "name": "NotCo Plant-Based Fingers", "tags": ["VGN"] }],
-                "sides": [
-                    { "name": "Mac and Cheese", "tags": ["VEG"] },
-                    { "name": "Daya Cheese Macaroni", "tags": ["GF", "VGN"] },
-                    { "name": "Maple Glazed Carrot & French Beans", "tags": ["GF", "VGN"] },
-                    { "name": "Vinegar Coleslaw", "tags": ["GF", "VGN"] }
-                ],
-                "gluten_free": [
-                    {
-                        "name": "Poutine Bar Pulled Pork/Jackfruit/Provide Vegan Cheese",
-                        "tags": ["GF"]
-                    }
-                ],
-                "soups": [
-                    { "name": "Spanish and Kale", "tags": ["GF", "VGN"] },
-                    { "name": "Chicken Tortilla Soup", "tags": ["H", "GF", "DF"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Pizza Hawaiian/Ham, Greek Chicken, Pesto Mushroom, Cheese Pizza",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [{ "name": "Beef Tajine", "tags": ["H", "GF", "DF"] }],
-                "vegetarian_entree": [
-                    { "name": "Root Vegetable and Chickpea Tajine", "tags": ["GF", "VGN"] }
-                ],
-                "sides": [
-                    { "name": "Indian Style Saffron Rice", "tags": ["GF", "VGN"] },
-                    { "name": "Sabzi Indian Mixed Vegetable", "tags": ["GF", "VGN"] },
-                    { "name": "Naan Bread", "tags": ["GF", "VGN"] }
-                ],
-                "gluten_free": [
-                    { "name": "Soba Noodle Bowl Chicken/Tofu Teriyaki", "tags": ["GF"] }
-                ],
-                "soups": [
-                    { "name": "Cream Of Roasted Squash", "tags": ["GF", "VGN"] },
-                    { "name": "New England Clam Chowder", "tags": ["H", "GF"] }
-                ],
-                "food_bar": [
-                    { "name": "Panini Tuna Melt", "tags": [] },
-                    { "name": "Philly Beef", "tags": [] },
-                    { "name": "Plant Based Philly", "tags": [] },
-                    { "name": "Grilled Cheese", "tags": [] }
-                ]
-            },
-            {
-                "entree": [
-                    { "name": "Breaded Veal Cutlets on a Bun Creole Sauce", "tags": ["H", "DF"] }
-                ],
-                "vegetarian_entree": [
-                    { "name": "Malibu Garden burger Veggie Creole Sauce on a Bun", "tags": ["VGN"] }
-                ],
-                "sides": [
-                    { "name": "Herb Red Skin Potato Wedges", "tags": ["GF", "VGN"] },
-                    { "name": "Saut\u00e9d Zucchini", "tags": ["GF", "VGN"] },
-                    { "name": "Kale Crunch Slaw", "tags": ["GF", "VGN"] }
-                ],
-                "gluten_free": [
-                    { "name": "Indian Basmati Rice Bowl Chicken/ Chickpea Curry", "tags": ["GF"] }
-                ],
-                "soups": [
-                    { "name": "Hot and Sour with Tofu", "tags": ["GF", "VGN"] },
-                    { "name": "Spicy Thai Chicken", "tags": ["H", "GF", "DF"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Pizza Pepperoni - Halal, Jerk Chicken, Garden Veggie, Cheese Pizza",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [
-                    { "name": "BBQ Quarter Chicken - Dark / White", "tags": ["H", "GF", "DF"] }
-                ],
-                "vegetarian_entree": [
-                    { "name": "Impossible Nuggets with BBQ sauce on the side", "tags": ["VGN"] }
-                ],
-                "sides": [
-                    {
-                        "name": "Roasted Butternut Squash and Root Vegetable Blend",
-                        "tags": ["GF", "VGN"]
+                        "name": "Cilantro Chaufa Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
                     },
-                    { "name": "Mashed Potato", "tags": ["GF", "VGN"] },
-                    { "name": "Creamy Coleslaw", "tags": ["GF", "VGN"] }
+                    {
+                        "name": "Green Beans with Red Onions and Tomatoes",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Battered Yam",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
                 ],
                 "gluten_free": [
-                    { "name": "Wild Rice Burrito Bowl Shrimp/Brown lentils", "tags": ["GF"] }
+                    {
+                        "name": "GF Pasta Bar Arabiata Sauce/Bolognese/Toasted Chickpeas",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
                 ],
                 "soups": [
-                    { "name": "Moroccan Chickpea", "tags": ["GF", "VGN"] },
-                    { "name": "Herb Chicken Rice", "tags": ["H", "GF", "DF"] }
+                    {
+                        "name": "Broccoli & Cheddar",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Hearty Chicken Crockpot",
+                        "tags": [
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Quesadilla \u2013 Marinated Chicken Strips, Roasted Vegetables, Roasted Corn, Black Beans, Monterey Jack Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Steak Fajita with Peppers and Onions",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Wild Mushroom & Bean Fajita",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Patatas Bravas",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Warm Flour Tortilla",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Roasted Corn",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Condiments",
+                        "tags": []
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Dips and Flat BreadTapas Hummaus, Babaganoush, Tzatziki, Pickled Vegetables",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Lentil Spinach",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Woodland Mushroom",
+                        "tags": [
+                            "GF",
+                            "VEG"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Pizza \u2013 Pepperoni , BBQ Chicken, Garden Veggie, Cheese",
+                        "tags": [
+                            "H"
+                        ]
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Chicken Fingers Fried",
+                        "tags": [
+                            "H"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Louisiana Seasoned Breaded Fingers",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Mac and Cheese",
+                        "tags": [
+                            "VEG"
+                        ]
+                    },
+                    {
+                        "name": "Plant-Based Mac and Cheese",
+                        "tags": [
+                            "VEG"
+                        ]
+                    },
+                    {
+                        "name": "Maple-Glazed Root Veggies",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Classic Coleslaw",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Nacho Bar Three Bean Chili/Chicken Chili",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Spanish and Kale",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Chicken Tortilla Soup",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Panini Buffalo Chicken, Grilled BLT, Crispy Tofu, Grilled Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Beef Vindaloo",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Chickpea and Potato Vindaloo",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Cumin Basmati Pulao",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Sabzi Indian Mixed Vegetable",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Naan Bread",
+                        "tags": [
+                            "VEG"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Soba Noodle Bowl Chicken/Tofu Teriyaki",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Cream Of Roasted Squash",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "New England Clam Chowder",
+                        "tags": [
+                            "H",
+                            "GF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Quesadilla \u2013 Marinated Chicken Strips, Roasted Vegetables, Roasted Corn, Black Beans, Monterey Jack Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Blackened Cajun Pork   and Creole Sauce",
+                        "tags": [
+                            "GF",
+                            "DF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Blackened Cajun Kidney Beans and Vegan Ground",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Cilantro Lime Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Wilted Seasonal Greens",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Onion Rings",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Indian Basmati Rice Bowl Chicken/Chickpea Curry",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Hot and Sour with Tofu",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Spicy Thai Chicken",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Pizza Pepperoni , Jerk Chicken, Garden Veggie, Cheese Pizza",
+                        "tags": [
+                            "H"
+                        ]
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Brazilian BBQ Chicken",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Acaraje Vigano Vegetable Stew",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Brazilian Vegan Gravy",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Mashed Potato",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Herb Rice Pilaf",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Grilled Vegetables",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Egg Rolls",
+                        "tags": [
+                            "VEG"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Wild Rice Burrito Bowl Shrimp/Brown Lentils",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Moroccan Chickpea",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Herb Chicken Rice",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
@@ -855,21 +2763,77 @@
         ],
         [
             {
-                "entree": [{ "name": "Korean BBQ Bulgogi Beef", "tags": ["H", "GF", "DF"] }],
+                "entree": [
+                    {
+                        "name": "Chilli Garlic Beef Stir-Fry",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
                 "vegetarian_entree": [
-                    { "name": "Korean Spicy BBQ Tofu Steak and Broccoli", "tags": ["GF", "VGN"] }
+                    {
+                        "name": "Chilli Garlic Tofu Stir-Fry",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
                 ],
                 "sides": [
-                    { "name": "Fluffy Rice", "tags": ["GF", "VGN"] },
-                    { "name": "Saut\u00e9d Bok Choy and Asian vegetable", "tags": ["GF", "VGN"] },
-                    { "name": "Mushroom Dumpling", "tags": ["VEG"] }
+                    {
+                        "name": "Fluffy Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Sauteed Bok Choy and Asian Vegetable",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Vegetable Dumpling",
+                        "tags": [
+                            "VEG"
+                        ]
+                    },
+                    {
+                        "name": "Asian Chili Oil",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
                 ],
                 "gluten_free": [
-                    { "name": "Tater Tot Bar Spicy Vegan Strips/Pulled Pork", "tags": ["GF"] }
+                    {
+                        "name": "Tater Tot Bar Spicy Vegan Strips/Pulled Pork",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
                 ],
                 "soups": [
-                    { "name": "Mexican Bean", "tags": ["GF", "VGN"] },
-                    { "name": "Lemon Turkey Orzo", "tags": ["H", "DF"] }
+                    {
+                        "name": "Mexican Bean",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Italian Wedding",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
@@ -879,120 +2843,360 @@
                 ]
             },
             {
-                "entree": [{ "name": "Chicken a la King", "tags": ["H", "GF"] }],
+                "entree": [
+                    {
+                        "name": "Honey Harissa Chicken",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
                 "vegetarian_entree": [
-                    { "name": "Shepherd\u2019s Pie with Plant Based Gravy", "tags": ["GF", "VGN"] }
+                    {
+                        "name": "Vegetable and White Bean Tajin",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
                 ],
                 "sides": [
-                    { "name": "Onion Rice Pilaf", "tags": ["GF", "VGN"] },
-                    { "name": "Roasted Heirloom Carrot & Peppers", "tags": ["GF", "VGN"] },
-                    { "name": "Vol Au Vent Pastry Puffs", "tags": ["VEG"] }
-                ],
-                "gluten_free": [{ "name": "Taco Bar Meat/Vegan Stuffing", "tags": ["GF"] }],
-                "soups": [
-                    { "name": "Lentil Dahl", "tags": ["GF", "VGN"] },
-                    { "name": "Italian Wedding", "tags": ["H", "DF"] }
-                ],
-                "food_bar": [
                     {
-                        "name": "Pizza Pepperoni \u2013 Halal, BBQ Chicken, Garden Veggie, Cheese Pizza",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [{ "name": "BBQ Pork Ribs", "tags": ["GF", "DF"] }],
-                "vegetarian_entree": [{ "name": "Spicy BBQ Grilled Tofu", "tags": ["GF", "VGN"] }],
-                "sides": [
-                    { "name": "Bake Mini Potato", "tags": ["GF", "VGN"] },
-                    { "name": "Creamy Coleslaw", "tags": ["GF", "VGN"] },
-                    { "name": "Garlic Parmesan Brussel Sprouts", "tags": ["GF", "VGN"] }
-                ],
-                "gluten_free": [
-                    {
-                        "name": "Dips and Chips Tapas Hummaus, Babaganoush, Tzatzki , Pickled Vegetables",
-                        "tags": ["GF"]
-                    }
-                ],
-                "soups": [
-                    { "name": "Roasted Curry Cauliflower", "tags": ["GF", "VGN"] },
-                    { "name": "Tom Yum Chicken", "tags": ["H", "GF", "DF"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Quesadilla Marinated Chicken Strips/Roasted Vegetable, Roasted Corn, Black Bean Monterey Jack Cheese",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [{ "name": "Jerk Chicken Legs", "tags": ["H", "GF", "DF"] }],
-                "vegetarian_entree": [
-                    { "name": "Jamaican Vegetable and Chickpea Curry", "tags": ["GF", "VGN"] }
-                ],
-                "sides": [
-                    { "name": "Rice and Red Kidney Bean", "tags": ["GF", "VGN"] },
-                    { "name": "Roasted Okra and Tomato Medley", "tags": ["GF", "VGN"] },
-                    { "name": "Aloo Tikki", "tags": ["VEG"] }
-                ],
-                "gluten_free": [
-                    {
-                        "name": "Rice Vermicelli Bar Tofu Strips/Edamame/Ginger Soy Pork",
-                        "tags": ["GF"]
-                    }
-                ],
-                "soups": [
-                    { "name": "Miso-Mushroom", "tags": ["GF", "VGN"] },
-                    { "name": "Chicken Mulligatawny", "tags": ["H", "DF"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Pizza Hawaiian/Ham, Greek Chicken, Pesto Mushroom, Cheese Pizza",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [{ "name": "Beef Easy Enchilada", "tags": ["H"] }],
-                "vegetarian_entree": [
-                    { "name": "Ground Soy, Bean Easy Enchilada", "tags": ["VEG"] }
-                ],
-                "sides": [
-                    { "name": "Mexican Rice with Corn", "tags": ["GF", "VGN"] },
-                    { "name": "California Roast vegetable Mix", "tags": ["GF", "VGN"] },
-                    { "name": "Jalapeno Poppers", "tags": ["VEG"] }
-                ],
-                "gluten_free": [
-                    { "name": "Quinoa Bowl Chimichurri Chicken/Tempeh", "tags": ["GF"] }
-                ],
-                "soups": [
-                    { "name": "Tomato Roasted Pepper", "tags": ["GF", "VGN"] },
-                    { "name": "Seafood Creole", "tags": ["H", "GF"] }
-                ],
-                "food_bar": [
-                    {
-                        "name": "Panini Tuna Melt, Philly Beef, Plant Based Philly, Grilled Cheese",
-                        "tags": []
-                    }
-                ]
-            },
-            {
-                "entree": [{ "name": "Glazed Pork Char Siu", "tags": ["GF", "DF"] }],
-                "vegetarian_entree": [{ "name": "Tofu and Mushroom Satay", "tags": ["GF", "VGN"] }],
-                "sides": [
-                    {
-                        "name": "Honey Garlic String Beans and Root Vegetable Blend",
-                        "tags": ["GF", "VGN"]
+                        "name": "Moroccan Roasted Potatoes",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
                     },
-                    { "name": "Jasmine Rice", "tags": ["GF", "VGN"] },
-                    { "name": "Tempura Vegetable", "tags": ["VGN"] }
+                    {
+                        "name": "Roasted Heirloom Carrot & Parsnips",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Grilled Pita w/Harissa Yogurt Dip",
+                        "tags": [
+                            "VEG"
+                        ]
+                    }
                 ],
                 "gluten_free": [
-                    { "name": "GF Pasta Bar Meat/Arabiata Sauce/Beans", "tags": ["GF"] }
+                    {
+                        "name": "Rice Vermicelli Bar Tofu Strips/Edamame/Ginger Soy Chicken",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
                 ],
                 "soups": [
-                    { "name": "Moroccan Chickpea", "tags": ["GF", "VGN"] },
-                    { "name": "Spicy Thai Chicken", "tags": ["H", "GF", "DF"] }
+                    {
+                        "name": "Three Sisters",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Wild Turkey Kale and Potato",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Quesadilla: Marinated Chicken Strips, Roasted Vegetables, Roasted Corn, Black Beans, Monterey Jack Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Sticky Glazed Pork Ribs",
+                        "tags": [
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Ginger Glazed Tofu and Vegetable Stir-Fry",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Steamed Chowmein",
+                        "tags": [
+                            "VEG"
+                        ]
+                    },
+                    {
+                        "name": "Tempura Battered Mushroom",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Mixed Vegetables",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Dips and Chips Tapas Hummaus, Babaganoush, Tzatziki, Pickled Vegetables",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Roasted Curry Cauliflower",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Tom Yum Chicken",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Pizza: Pepperoni \u2013 Halal, BBQ Chicken, Garden Veggie, Cheese Pizza",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Jerk Chicken Legs and Thighs",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Chickpea Spinach & Cauliflower Coconut Curry",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Rice and Peas",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Roasted Okra and Tomato Medley",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Aloo Tikki",
+                        "tags": [
+                            "VEG"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Thai Rice Buddha Bowl Chickpea/Endamame/Shrimp",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Miso-Mushroom",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Chicken Mulligatawny",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Panini Buffalo Chicken, Grilled BLT, Crispy Tofu, Grilled Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Beef Brisket with Au Jus",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Grilled Portobello with Havarti and Asparagus",
+                        "tags": [
+                            "GF",
+                            "VEG"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Sauteed Perogies with Sour Cream and Onions",
+                        "tags": [
+                            "VEG"
+                        ]
+                    },
+                    {
+                        "name": "Steamed Broccoli",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Breaded Spear Dill - Assorted Mustard and Pickles",
+                        "tags": [
+                            "VEG"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Soba Noodle Bowl Chicken/Tofu Teriyaki",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Tomato Roasted Pepper",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Seafood Chowder",
+                        "tags": [
+                            "H",
+                            "GF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Quesadilla: Marinated Chicken Strips, Roasted Vegetables, Roasted Corn, Black Beans, Monterey Jack Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Filipino Pork Adobo",
+                        "tags": [
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Tofu and Mushroom Adobo",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "String Beans and Root Vegetable Blend",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Jasmine Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Tempura Vegetable",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "GF Pasta Bar \u2013 Meat Sauce / Arrabiata / Beans Dinner Only",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Moroccan Chickpea",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Spicy Thai Chicken",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
@@ -1002,23 +3206,77 @@
                 ]
             },
             {
-                "entree": [{ "name": "Chicken Vindaloo", "tags": ["H", "GF", "DF"] }],
+                "entree": [
+                    {
+                        "name": "Chicken Tikka Masala",
+                        "tags": [
+                            "H",
+                            "GF"
+                        ]
+                    }
+                ],
                 "vegetarian_entree": [
-                    { "name": "Mattar Paneer Curry", "tags": ["GF", "VEG"] },
-                    { "name": "Chana Masala", "tags": ["GF", "VGN"] }
+                    {
+                        "name": "Mattar Paneer Curry",
+                        "tags": [
+                            "GF",
+                            "VEG"
+                        ]
+                    }
                 ],
                 "sides": [
-                    { "name": "Cumin Basmati Rice", "tags": ["GF", "VGN"] },
                     {
-                        "name": "Roasted Button Mushroom, Bell Peppers & Cauliflower",
-                        "tags": ["GF", "VGN"]
+                        "name": "Savory Coconut Basmati Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
                     },
-                    { "name": "Mini Vegetable Samosa", "tags": ["VGN"] }
+                    {
+                        "name": "Roasted Cauliflower",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Chana Masala",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Mini Vegetable Samosas",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
                 ],
-                "gluten_free": [{ "name": "Baked Potato Bar Mushrooms/Bacon", "tags": ["GF"] }],
+                "gluten_free": [
+                    {
+                        "name": "Baked Potato Bar Mushrooms/Bacon",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
                 "soups": [
-                    { "name": "Hot and Sour with Tofu", "tags": ["GF", "VGN"] },
-                    { "name": "Beef & Red Bean", "tags": ["H", "GF", "DF"] }
+                    {
+                        "name": "Hot and Sour with Tofu",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Beef & Red Bean",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
@@ -1030,17 +3288,63 @@
         ],
         [
             {
-                "entree": [{ "name": "Hungarian Goulash", "tags": ["H", "GF", "DF"] }],
-                "vegetarian_entree": [{ "name": "Vegetable Goulash", "tags": ["GF", "VGN"] }],
-                "sides": [
-                    { "name": "Herb Egg Noodles", "tags": ["VGN"] },
-                    { "name": "Saut\u00e9d Green & Yellow Beans", "tags": ["GF", "VGN"] },
-                    { "name": "Fried Pickle", "tags": ["VEG"] }
+                "entree": [
+                    {
+                        "name": "Beef Bourguignon",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
                 ],
-                "gluten_free": [{ "name": "Nacho Bar Five Bean Chili/Meat", "tags": ["GF"] }],
+                "vegetarian_entree": [
+                    {
+                        "name": "Mushroom, Chickpea, and Root Vegetable Ragout",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Herb Egg Noodles",
+                        "tags": [
+                            "VEG"
+                        ]
+                    },
+                    {
+                        "name": "Steamed Garden Vegetable Mix",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Nacho Bar Five Bean Chili/Meat",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
                 "soups": [
-                    { "name": "Split Pea and Roasted Pepper", "tags": ["GF", "VGN"] },
-                    { "name": "Roasted Corn Chowder", "tags": ["GF", "VEG"] }
+                    {
+                        "name": "Split Pea and Roasted Pepper",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Roasted Corn Chowder",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
@@ -1050,127 +3354,370 @@
                 ]
             },
             {
-                "entree": [{ "name": "Roasted Turkey/ Gravy", "tags": ["H", "GF", "DF"] }],
+                "entree": [
+                    {
+                        "name": "Turkey Cacciatore",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
                 "vegetarian_entree": [
-                    { "name": "Spinach & Cheese Cannelloni/Marinara Sauce", "tags": ["VEG"] }
+                    {
+                        "name": "Garden Vegetable and Bean Cacciatore",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
                 ],
                 "sides": [
-                    { "name": "Garlic Mashed Potato", "tags": ["GF", "VGN"] },
-                    { "name": "Saut\u00e9d Seasonal Vegetables", "tags": ["GF", "VGN"] },
-                    { "name": "Cranberry Stuffing", "tags": ["GF", "VGN"] }
+                    {
+                        "name": "Ziti Pasta",
+                        "tags": [
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Sauteed Seasonal Vegetables",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Garlic Bread",
+                        "tags": [
+                            "VEG"
+                        ]
+                    }
                 ],
                 "gluten_free": [
                     {
                         "name": "Shawarma Bar Falafel with Flatbread/Chicken Shawarma",
-                        "tags": ["GF"]
+                        "tags": [
+                            "GF"
+                        ]
                     }
                 ],
                 "soups": [
-                    { "name": "Navy Bean & Garden Vegetable", "tags": ["GF", "VGN"] },
-                    { "name": "Chicken Noodle", "tags": ["H", "DF"] }
+                    {
+                        "name": "Navy Bean & Garden Vegetable",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Chicken Noodle",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
-                        "name": "Pizza Pepperoni \u2013 Halal, BBQ Chicken, Garden Veggie, Cheese Pizza",
+                        "name": "Quesadilla: Marinated Chicken Strips / Roasted Vegetables, Roasted Corn, Black Beans, Monterey Jack Cheese",
                         "tags": []
                     }
                 ]
             },
             {
                 "entree": [
-                    { "name": "Salmon Steaks with Orange Ginger Sauce", "tags": ["H", "GF", "DF"] }
+                    {
+                        "name": "Salmon Steaks with Orange Ginger Sauce",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
                 ],
                 "vegetarian_entree": [
-                    { "name": "Vegetable Orange Ginger Tofu", "tags": ["GF", "VGN"] }
-                ],
-                "sides": [
-                    { "name": "Vegetable Fried Rice", "tags": ["GF", "VGN"] },
-                    { "name": "Yellow & Green Beans Saut\u00e9", "tags": ["GF", "VGN"] },
-                    { "name": "Vegetable Egg Roll", "tags": ["VEG"] }
-                ],
-                "gluten_free": [{ "name": "Pasta Bar Arabiata Sauce/Meat", "tags": ["GF"] }],
-                "soups": [
-                    { "name": "Wild Mushroom", "tags": ["GF", "VGN"] },
-                    { "name": "Hearty Beef vegetable", "tags": ["H", "GF", "DF"] }
-                ],
-                "food_bar": [
                     {
-                        "name": "Quesadilla Marinated Chicken Strips, Roasted Vegetable, Roasted Corn, Black Bean Monterey Jack Cheese",
-                        "tags": []
+                        "name": "Vegetable Orange Ginger Tofu",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
                     }
-                ]
-            },
-            {
-                "entree": [{ "name": "Dry Rub Chicken Wings", "tags": ["H", "GF", "DF"] }],
-                "vegetarian_entree": [{ "name": "Beyond Burger and Buns", "tags": ["GF", "VGN"] }],
+                ],
                 "sides": [
-                    { "name": "Mac \u2018n\u2019 Cheese", "tags": ["VEG"] },
                     {
-                        "name": "Garlic Saut\u00e9d Yellow and Green Zucchini and Tomatoes",
-                        "tags": ["GF", "VGN"]
+                        "name": "Vegetable Rice Noodles",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
                     },
-                    { "name": "Assortment of Sauces", "tags": [] }
-                ],
-                "gluten_free": [{ "name": "Poke Bowl Edamame/Shrimp Ceviche", "tags": ["GF"] }],
-                "soups": [
-                    { "name": "Brown Lentil & Spinach", "tags": ["GF", "VGN"] },
-                    { "name": "Tom Yum Chicken", "tags": ["H", "GF", "DF"] }
-                ],
-                "food_bar": [
                     {
-                        "name": "Pizza Hawaiian/Ham, Greek Chicken, Pesto Mushroom, Cheese Pizza",
-                        "tags": []
+                        "name": "Yellow & Green Beans Saute",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Vegetable Dim Sum",
+                        "tags": [
+                            "VGN"
+                        ]
                     }
-                ]
-            },
-            {
-                "entree": [{ "name": "Beef Tips with Mushroom Gravy", "tags": ["H", "GF", "DF"] }],
-                "vegetarian_entree": [
-                    { "name": "Plant Based Sausage Mushroom Gravy", "tags": ["GF", "VGN"] }
-                ],
-                "sides": [
-                    { "name": "Sauteed Perogies", "tags": ["VEG"] },
-                    { "name": "Stir fried Red &Green Cabbage", "tags": ["GF", "VGN"] },
-                    { "name": "Breaded Spear Dill", "tags": ["VEG"] }
                 ],
                 "gluten_free": [
-                    { "name": "Greek Pasta Salad Plant Based Strips/Chicken", "tags": ["GF"] }
+                    {
+                        "name": "Poke Bowl Edamame/Shrimp Ceviche",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
                 ],
                 "soups": [
-                    { "name": "Spicy Black Bean", "tags": ["GF", "VGN"] },
-                    { "name": "Potato Leek", "tags": ["GF", "VEG"] }
+                    {
+                        "name": "Chickpea & Vegetable Mulligatawny",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Hearty Beef Vegetable",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
-                        "name": "Panini Tuna Melt, Philly Beef, Plant Based Philly, Grilled Cheese",
+                        "name": "Pizza: Pepperoni \u2013 Halal, BBQ Chicken, Garden Veggie, Cheese Pizza",
                         "tags": []
                     }
                 ]
             },
             {
                 "entree": [
-                    { "name": "Maple Balsamic Glaze Grilled Baked Pork Chop", "tags": ["GF", "DF"] }
+                    {
+                        "name": "Crispy Baked Chicken Wings",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
                 ],
                 "vegetarian_entree": [
                     {
-                        "name": "Maple Balsamic Glaze Impossible Meatless Patty",
-                        "tags": ["GF", "VGN"]
+                        "name": "Plant Based Chicken Tenders",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
                     }
                 ],
                 "sides": [
-                    { "name": "Scalloped Potatoes", "tags": ["GF", "VEG"] },
+                    {
+                        "name": "Mac \u2018n\u2019 Cheese",
+                        "tags": [
+                            "VEG"
+                        ]
+                    },
+                    {
+                        "name": "Garlic Sauteed Yellow and Green Zucchini and Tomatoes",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Assortment of Sauces",
+                        "tags": []
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Gnocchi BarArabiata Sauce/Pesto Cream Sauce/Cooked Ground Beef",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Wild Mushroom",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Tom Yum Chicken",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Panini Buffalo Chicken, Grilled BLT, Crispy Tofu, Grilled Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Beef Taco Fiesta",
+                        "tags": [
+                            "H",
+                            "GF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Verduras Taco Fiesta",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Sweet Potato Fries",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Mexican Rice",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Roast Vegetable Mix",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Jalapeno Poppers",
+                        "tags": [
+                            "VEG"
+                        ]
+                    },
+                    {
+                        "name": "Salsa, Sour Cream, Cheese, Guacamole",
+                        "tags": []
+                    }
+                ],
+                "gluten_free": [
+                    {
+                        "name": "Greek Pasta Salad Plant-Based Strips/Chicken",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Lentil & Spinach",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Potato Leek",
+                        "tags": [
+                            "GF",
+                            "VEG"
+                        ]
+                    }
+                ],
+                "food_bar": [
+                    {
+                        "name": "Quesadilla: Marinated Chicken Strips / Roasted Vegetables, Roasted Corn, Black Beans, Monterey Jack Cheese",
+                        "tags": []
+                    }
+                ]
+            },
+            {
+                "entree": [
+                    {
+                        "name": "Chimichurri Grilled Prok Chop",
+                        "tags": [
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
+                "vegetarian_entree": [
+                    {
+                        "name": "Chimichurri Tofu Steak",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
+                ],
+                "sides": [
+                    {
+                        "name": "Scalloped Potatoes",
+                        "tags": [
+                            "GF",
+                            "VEG"
+                        ]
+                    },
                     {
                         "name": "Roasted Heirloom Carrots and Green Beans",
-                        "tags": ["GF", "DF", "VGN"]
+                        "tags": [
+                            "GF",
+                            "DF",
+                            "VGN"
+                        ]
                     },
-                    { "name": "Battered Onion Rings", "tags": ["VGN"] }
+                    {
+                        "name": "Battered Onion Rings",
+                        "tags": [
+                            "VGN"
+                        ]
+                    }
                 ],
                 "gluten_free": [
-                    { "name": "Indian Basmati Rice Bowl Vegan/Beef Curry", "tags": ["GF"] }
+                    {
+                        "name": "Indian Basmati Rice Bowl Vegan/Beef Curry",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
                 ],
                 "soups": [
-                    { "name": "Moroccan Chickpea", "tags": ["GF", "VGN"] },
-                    { "name": "Beef Barley Vegetable", "tags": ["H", "DF"] }
+                    {
+                        "name": "Moroccan Chickpea",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Beef Barley Vegetable",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
@@ -1180,17 +3727,70 @@
                 ]
             },
             {
-                "entree": [{ "name": "Brazilian BBQ Chicken", "tags": ["H", "GF", "DF"] }],
+                "entree": [
+                    {
+                        "name": "Rosemary Chicken Thighs with Pan Jus",
+                        "tags": [
+                            "H",
+                            "GF",
+                            "DF"
+                        ]
+                    }
+                ],
                 "vegetarian_entree": [
-                    { "name": "Brazilian Roasted Vegetable Feijoada", "tags": ["GF", "VGN"] }
+                    {
+                        "name": "Kerala Chickpea & Vegetable in Coconut Sauce",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    }
                 ],
                 "sides": [
-                    { "name": "Cilantro Rice", "tags": ["GF", "VGN"] },
-                    { "name": "Sauteed Garlic Collard Greens", "tags": ["GF", "VGN"] },
-                    { "name": "Brazilian Fried Pastel Eggroll", "tags": ["VEG"] }
+                    {
+                        "name": "Rice Pilaf",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Roasted Carrots and Parsnip",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Cauliflower Bites",
+                        "tags": [
+                            "VEG"
+                        ]
+                    }
                 ],
                 "gluten_free": [
-                    { "name": "Rice Vermicelli Bowl Thai Tofu / Shrimp Curry", "tags": ["GF"] }
+                    {
+                        "name": "Rice Vermicelli Bowl Thai Tofu/Shrimp Curry",
+                        "tags": [
+                            "GF"
+                        ]
+                    }
+                ],
+                "soups": [
+                    {
+                        "name": "Hot and Sour with Tofu",
+                        "tags": [
+                            "GF",
+                            "VGN"
+                        ]
+                    },
+                    {
+                        "name": "Chicken Orzo",
+                        "tags": [
+                            "H",
+                            "DF"
+                        ]
+                    }
                 ],
                 "food_bar": [
                     {
